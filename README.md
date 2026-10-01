@@ -1,8 +1,6 @@
 # KaiserComponent
 
-A small website of prepackaged, reusable UI components built with
-[Lit 3](https://lit.dev) and bundled with [Webpack](https://webpack.js.org/),
-so they can be dropped into any website as a single `<script>` tag.
+A Lit 3 photo gallery bundled with Webpack and packaged as a WordPress plugin.
 
 ## Getting started
 
@@ -18,14 +16,21 @@ Run the local dev server (serves `public/index.html` with live reload):
 npm start
 ```
 
-Build the production bundle:
+Build the demo production bundle:
 
 ```bash
 npm run build
 ```
 
-This produces `dist/kaiser-component.js`, which registers the custom
-elements (e.g. `<kaiser-greeting>`) when loaded in a browser.
+This produces the demo page and hashed JavaScript and CSS assets in `dist/`.
+
+Build an installable WordPress plugin ZIP:
+
+```bash
+npm run package:wordpress
+```
+
+The package command writes `dist/flickr-mosaic.zip`.
 
 Run the component tests:
 
@@ -33,20 +38,38 @@ Run the component tests:
 npm test
 ```
 
-## Embedding a component in another website
+## Install in WordPress
 
-Copy `dist/kaiser-component.js` to the target site (or load it from wherever
-it is hosted), then use the custom element anywhere in the page's HTML:
+In WordPress, go to **Plugins > Add New Plugin > Upload Plugin**, select
+`dist/flickr-mosaic.zip`, install it, and activate Flickr Mosaic. Add the
+gallery to a post or page with this shortcode:
 
-```html
-<script src="kaiser-component.js" defer></script>
-<kaiser-greeting name="Kaiser"></kaiser-greeting>
+```text
+[flickr-mosaic]
 ```
+
+Optional attributes:
+
+```text
+[flickr-mosaic width="100%" height="500px" columns="5" gap="10px" background-color="#1d1d1f" border-color="#1d1d1f"]
+```
+
+`width`, `height`, and `gap` accept `px`, `%`, `em`, `rem`, `vw`, `vh`,
+`vmin`, or `vmax` lengths. `columns` is clamped to 1–12. Colors accept
+three- or six-digit hexadecimal values; invalid values use the defaults.
+Assets load on pages containing the shortcode.
+
+The gallery fetches photo data from Flickr, loads photos from Flickr image
+hosts, fonts from Google Fonts, and the existing ABU logo from its current
+host. Visitors' browsers need access to these services. The current Flickr API
+key is included in the client-side bundle and is visible to site visitors.
 
 ## Project structure
 
 - `src/components/` – individual Lit component source files.
 - `src/index.js` – the bundle entry point; exports/registers every component.
 - `public/index.html` – demo page used by the dev server.
-- `webpack.config.js` – bundles the components into `dist/kaiser-component.js`.
+- `wordpress/flickr-mosaic/` – WordPress plugin source and generated assets.
+- `scripts/package-wordpress.js` – creates the installable plugin ZIP.
+- `webpack.config.js` – builds the demo and WordPress asset bundles.
 - `test/` – component tests run with `@web/test-runner`.

@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit';
+import { customElement } from 'lit/decorators.js';
 
 /**
  * `<kaiser-greeting>` is a small, self-contained web component built with
@@ -8,6 +9,7 @@ import { LitElement, html, css } from 'lit';
  * @element kaiser-greeting
  * @attr {string} name - The name to greet.
  */
+@customElement('kaiser-greeting')
 export class KaiserGreeting extends LitElement {
   static properties = {
     name: { type: String },
@@ -33,5 +35,3 @@ export class KaiserGreeting extends LitElement {
     return html`<p>Hello, ${this.name}! 👋 This component came from KaiserComponent.</p>`;
   }
 }
-
-customElements.define('kaiser-greeting', KaiserGreeting);
