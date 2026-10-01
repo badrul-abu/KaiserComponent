@@ -16,7 +16,7 @@ module.exports = (env = {}, argv) => {
         ? 'flickr-mosaic.js'
         : `${isProduction ? `component.[contenthash].min.js` : 'component.js'}`,
       chunkFilename: isWordPress
-        ? '[name].js'
+        ? '[name].[contenthash:8].js'
         : `${isProduction ? `component.[contenthash].[name].js` : 'component.[name].js'}`,
       cssFilename: isWordPress ? 'flickr-mosaic.css' : 'component.[contenthash].css',
       cssChunkFilename: isWordPress ? '[id].css' : '[id].[contenthash].css',

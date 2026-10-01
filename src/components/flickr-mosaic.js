@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { customElement } from 'lit/decorators.js';
-
+import { classMap } from 'lit/directives/class-map.js';
 import './flickr-mosaic/film-strip.js';
 import './flickr-mosaic.css';
 
@@ -21,7 +21,7 @@ export class FlickrMosaic extends LitElement {
     }
 
     .container {
-      width: var(--container-width);
+      width: calc(var(--container-width) - 2 * var(--gap));
       height: var(--container-height);
       border: var(--gap) solid var(--border-color);
       background-color: var(--background-color);
@@ -43,6 +43,7 @@ export class FlickrMosaic extends LitElement {
       display: grid;
       gap: 0.7rem;
       overflow: hidden;
+      cursor: default;
       border: 1px solid rgba(224, 240, 246, 0.28);
       border-left: 3px solid #67ddff;
       border-radius: 6px;
@@ -51,39 +52,15 @@ export class FlickrMosaic extends LitElement {
       backdrop-filter: blur(12px);
       color: #f7fbfc;
 
-      & .orbit {
+      &::before {
         position: absolute;
         inset: 0;
-        width: 100%;
-        height: 100%;
-        overflow: visible;
-        opacity: 0;
+        content: '';
+        background: linear-gradient(135deg, #1389a0, #0d596f 72%);
+        clip-path: circle(0 at 0 100%);
         pointer-events: none;
-        filter: drop-shadow(0 0 4px rgba(88, 218, 255, 0.85));
-        transition: opacity 180ms ease;
+        transition: clip-path 650ms cubic-bezier(0.2, 0.75, 0.25, 1);
         z-index: -1;
-      }
-
-      & .orbit .tail,
-      & .orbit .head {
-        fill: none;
-        stroke-linecap: round;
-        animation: orbit-border 4s linear infinite;
-        animation-play-state: paused;
-      }
-
-      & .orbit .tail {
-        stroke: #67ddff;
-        stroke-width: 2.5;
-        stroke-opacity: 0.5;
-        stroke-dasharray: 44 956;
-      }
-
-      & .orbit .head {
-        stroke: #fff;
-        stroke-width: 3;
-        stroke-dasharray: 4 996;
-        animation-delay: -80ms;
       }
 
       & .brand-row {
@@ -176,36 +153,31 @@ export class FlickrMosaic extends LitElement {
       }
     }
 
-    .gallery-panel:is(:hover, :focus-within) {
-      & .orbit {
-        opacity: 1;
+    .gallery-panel:focus-within {
+      &::before {
+        clip-path: circle(150% at 0 100%);
       }
-
-      & .orbit .tail,
-      & .orbit .head {
-        animation-play-state: running;
-      }
-
     }
 
-    @keyframes orbit-border {
-      from {
-        stroke-dashoffset: 0;
+    @media (hover: hover) {
+      .gallery-panel:hover::before {
+        clip-path: circle(150% at 0 100%);
       }
+    }
 
-      to {
-        stroke-dashoffset: -1000;
+    .gallery-panel.is-revealed::before {
+      clip-path: circle(150% at 0 100%);
+    }
+
+    @media (hover: none) {
+      .gallery-panel:active::before {
+        clip-path: circle(150% at 0 100%);
       }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .gallery-panel .orbit {
-        opacity: 0;
-      }
-
-      .gallery-panel .orbit .tail,
-      .gallery-panel .orbit .head {
-        animation: none;
+      .gallery-panel::before {
+        transition: none;
       }
 
       .gallery-panel .gallery-link {
@@ -245,8 +217,9 @@ export class FlickrMosaic extends LitElement {
     columns: { type: Number },
     gap: { type: String },
     flickrLogoUrl: { type: String, attribute: 'flickr-logo-url' },
-    flickrImageUrls: { type: Array },
-    flickrImageIndex: { type: Number },
+    flickrImageUrls: { type: Array, state: true },
+    flickrImageIndex: { type: Number, state: true },
+    colorRevealed: { state: true },
   }
 
   constructor() {
@@ -259,11 +232,12 @@ export class FlickrMosaic extends LitElement {
     this.gap = '10px';
     this.flickrLogoUrl = 'assets/flickr-logo.png';
     this.flickrImageUrls = [];
+    this.colorRevealed = false;
+    this.photoStrip = [];
   }
 
   connectedCallback() {
     super.connectedCallback();
-    this.flickrJson();
   }
 
   willUpdate(changedProperties) {
@@ -286,14 +260,21 @@ export class FlickrMosaic extends LitElement {
     if (changedProperties.has('gap')) {
       this.style.setProperty('--gap', this.gap);
     }
+    if (changedProperties.has('flickrImageUrls')) {
+      this.photoStrip = this.repeatFlickrImage();
+    }
+  }
+
+  firstUpdated() {
+    this.flickrJson();
   }
 
   async flickrJson() {
     try {
-      const params = new URLSearchParams({ api_key: 'afb50c566b96ad82afd6517569db973f', user_id: '144302542@N04', format: 'json', nojsoncallback: '1', method: 'flickr.people.getPhotos', privacy_filter: '1', extras: 'url_sq,url_t,url_s,url_q,url_m,url_n,url_z,url_c,url_l,url_o', per_page: '200' });
+      const params = new URLSearchParams({ api_key: 'afb50c566b96ad82afd6517569db973f', user_id: '144302542@N04', format: 'json', nojsoncallback: '1', method: 'flickr.people.getPhotos', privacy_filter: '1', extras: 'url_n', per_page: '200' });
       const response = await fetch(`https://www.flickr.com/services/rest/?${params}`);
       const data = await response.json();
-      this.flickrImageUrls = data.photos.photo.map(photo => photo.url_q).slice(0, 200);
+      this.flickrImageUrls = data.photos.photo.map(photo => photo.url_n).slice(0, 200);
     } catch (error) {
       console.error('Error fetching Flickr JSON:', error);
       return null;
@@ -304,8 +285,13 @@ export class FlickrMosaic extends LitElement {
     return Math.floor(Math.random() * (this.flickrImageUrls.length || 1));
   }
 
+  togglePanelColor(event) {
+    if (!event.target.closest('a')) {
+      this.colorRevealed = !this.colorRevealed;
+    }
+  }
+
   repeatFlickrImage() {
-    
     return Array.from({ length: this.columns }, () => {
       const jugglePhoto = this.flickrImageUrls.sort(() => Math.random() - 0.5); 
       return html`
@@ -318,16 +304,12 @@ export class FlickrMosaic extends LitElement {
 
   render() {
     return html`<div class="container">
-      <aside class="gallery-panel" aria-labelledby="gallery-title">
-        <svg class="orbit" viewBox="0 0 720 100" preserveAspectRatio="none" aria-hidden="true">
-          <path class="tail" pathLength="1000" d="M 7 1 H 713 A 6 6 0 0 1 719 7 V 93 A 6 6 0 0 1 713 99 H 7 A 6 6 0 0 1 1 93 V 7 A 6 6 0 0 1 7 1 Z"></path>
-          <path class="head" pathLength="1000" d="M 7 1 H 713 A 6 6 0 0 1 719 7 V 93 A 6 6 0 0 1 713 99 H 7 A 6 6 0 0 1 1 93 V 7 A 6 6 0 0 1 7 1 Z"></path>
-        </svg>
+      <aside class="gallery-panel ${classMap({ 'is-revealed': this.colorRevealed })}" aria-labelledby="gallery-title" @click=${this.togglePanelColor}>
         <div class="brand-row">
           <img class="brand-logo" src="https://abu-prod-wp-media.s3.ap-southeast-1.amazonaws.com/uploads/2026/04/ABU-Logo-white-2026-lines-semibold-768x227.png" alt="ABU">
           <p class="eyebrow">Photo journal</p>
         </div>
-        <h2 class="gallery-title" id="gallery-title">Our world, in focus.</h2>
+        <h2 class="gallery-title" id="gallery-title">Our world,<br>in focus.</h2>
         <p class="description">Moments, places, and people behind the work.</p>
         <a class="gallery-link" href="https://www.flickr.com/photos/abu_hq/" target="_blank" rel="noopener noreferrer">
           <span>Explore on</span>
@@ -335,7 +317,7 @@ export class FlickrMosaic extends LitElement {
           <span class="external-arrow" aria-hidden="true">↗</span>
         </a>
       </aside>
-      ${this.repeatFlickrImage()}
+      ${this.photoStrip.map(item => item)}
     </div>`;
   }
 }

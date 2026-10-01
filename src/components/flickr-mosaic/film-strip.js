@@ -40,7 +40,7 @@ export class FilmStrip extends LitElement {
 		}
 
 		img {
-			aspect-ratio: 4 / 3;
+			aspect-ratio: auto;
 			background: #262626;
 			border-radius: 2px;
 			display: block;
