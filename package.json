@@ -1,0 +1,33 @@
+{
+  "name": "kaisercomponent",
+  "version": "1.0.0",
+  "description": "Prepackaged web components (built with Lit 3 and bundled with Webpack) that can be embedded as a single script into any website.",
+  "main": "dist/kaiser-component.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "test": "web-test-runner"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/badrul-abu/KaiserComponent"
+  },
+  "keywords": [
+    "lit",
+    "web-components",
+    "webpack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit": "^3.3.3"
+  },
+  "devDependencies": {
+    "@open-wc/testing": "^5.0.0",
+    "@web/test-runner": "^1.0.0",
+    "html-webpack-plugin": "^5.6.8",
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0"
+  }
+}
