@@ -274,7 +274,7 @@ export class FlickrMosaic extends LitElement {
       const params = new URLSearchParams({ api_key: 'afb50c566b96ad82afd6517569db973f', user_id: '144302542@N04', format: 'json', nojsoncallback: '1', method: 'flickr.people.getPhotos', privacy_filter: '1', extras: 'url_n', per_page: '200' });
       const response = await fetch(`https://www.flickr.com/services/rest/?${params}`);
       const data = await response.json();
-      this.flickrImageUrls = data.photos.photo.map(photo => photo.url_n).slice(0, 200);
+      this.flickrImageUrls = data.photos.photo.map(photo => { return { url: photo.url_n, height: photo.height_n, width: photo.width_n }; }).slice(0, 200);
     } catch (error) {
       console.error('Error fetching Flickr JSON:', error);
       return null;
@@ -298,6 +298,7 @@ export class FlickrMosaic extends LitElement {
       <film-strip
         .images=${jugglePhoto}
         .index=${this.getRandomIndex()}
+        .gap=${this.gap}
       ></film-strip>
     `});
   }

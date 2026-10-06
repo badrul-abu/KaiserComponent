@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Flickr Mosaic
  * Description: Displays the Flickr Mosaic photo gallery with the [flickr-mosaic] shortcode.
- * Version: 1.0.5
+ * Version: 1.0.6
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * License: ISC
@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('FLICKR_MOSAIC_VERSION', '1.0.5');
+define('FLICKR_MOSAIC_VERSION', '1.0.6');
 
 function flickr_mosaic_enqueue_assets()
 {

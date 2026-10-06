@@ -6,6 +6,7 @@ export class FilmStrip extends LitElement {
 	static properties = {
 		images: { type: Array },
 		index: { type: Number },
+    gap: { type: String }
 	};
 
 	static styles = css`
@@ -14,6 +15,7 @@ export class FilmStrip extends LitElement {
 			height: 100%;
 			min-width: 0;
 			overflow: hidden;
+			--gap: 8px;
 		}
 
 		.window {
@@ -35,8 +37,7 @@ export class FilmStrip extends LitElement {
 			box-sizing: border-box;
 			display: flex;
 			flex-direction: column;
-			gap: 8px;
-			padding-bottom: 8px;
+			gap: var(--gap);
 		}
 
 		img {
@@ -79,7 +80,14 @@ export class FilmStrip extends LitElement {
 		super();
 		this.images = [];
 		this.index = 0;
+		this.gap = '8px';
 	}
+
+  willUpdate(changedProperties) {
+    if (changedProperties.has('gap')) {
+      this.style.setProperty('--gap', this.gap);
+    }
+  }
 
 	render() {
 		if (!this.images?.length) {
@@ -98,7 +106,7 @@ export class FilmStrip extends LitElement {
 				<div class="track" style="--drift-duration: ${duration}s">
 					${[0, 1].map(() => html`
 						<div class="sequence" aria-hidden="true">
-							${sequence.map((imageUrl) => html`<img src=${imageUrl} alt="" loading="lazy" />`)}
+							${sequence.map((imageUrl) => html`<img src=${imageUrl.url} alt="" style="aspect-ratio: ${imageUrl.width} / ${imageUrl.height}" loading="lazy" />`)}
 						</div>
 					`)}
 				</div>
