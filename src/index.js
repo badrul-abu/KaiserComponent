@@ -6,3 +6,4 @@
 // export * from './components/kaiser-greeting.js';
 
 export * from './components/flickr-mosaic.js';
+export * from './components/custom-pdf-reader.js';

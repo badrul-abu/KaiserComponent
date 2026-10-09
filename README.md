@@ -73,3 +73,22 @@ key is included in the client-side bundle and is visible to site visitors.
 - `scripts/package-wordpress.js` – creates the installable plugin ZIP.
 - `webpack.config.js` – builds the demo and WordPress asset bundles.
 - `test/` – component tests run with `@web/test-runner`.
+
+## ABU Programme PDF plugin
+
+`src/components/pdf-reader.js` is a Lit `<abu-pdf-reader>` component (ported from the original PHP/inline-JS shortcode). `wordpress/abu-programme-pdf/` is the plugin: it looks up the PDF URL in Firestore, proxies non-CORS hosts, and renders the component.
+
+- `npm run package:pdfreader` builds the bundle and writes `dist/abu-programme-pdf.zip`.
+- Configure under **Settings → ABU Programme PDF** (Firebase project, collection/fields, allowed hosts, PDF.js URLs, defaults, cache).
+- Shortcode: `[firebase_programme_pdf programme="technical" width="600px" height="849px"]`
+- The component accepts `pdf-url` for the PDF, and `pdfjs-version` to choose the PDF.js CDN version (defaults to `3.11.174`). Explicit `pdfjs-url` and `pdfjs-worker-url` attributes override the version-based URLs, for example:
+
+  ```html
+  <abu-pdf-reader
+    pdf-url="https://example.com/document.pdf"
+    pdfjs-version="3.11.174"
+    width="600px"
+    height="849px"
+  ></abu-pdf-reader>
+  ```
+- Add the boolean `continuous` attribute (shortcode: `continuous="yes"`) to show all pages in one scrollable column. This hides the previous/next, 1 page/2 pages and Pages sidebar controls; fit, rotate and zoom still work.

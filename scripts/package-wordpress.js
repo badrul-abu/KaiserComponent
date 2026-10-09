@@ -5,20 +5,22 @@ const path = require('node:path');
 const { ZipArchive } = require('archiver');
 
 const projectRoot = path.resolve(__dirname, '..');
-const pluginDirectory = path.join(projectRoot, 'wordpress', 'flickr-mosaic');
+const plugins = {
+  'flickr-mosaic': ['flickr-mosaic.php', 'readme.txt', 'assets/flickr-mosaic.js', 'assets/flickr-mosaic.css', 'assets/flickr-logo.png'],
+  'abu-programme-pdf': ['abu-programme-pdf.php', 'readme.txt', 'assets/custom-pdf-reader.js'],
+};
+const pluginName = process.argv[2] || 'flickr-mosaic';
+if (!plugins[pluginName]) {
+  throw new Error(`Unknown plugin: ${pluginName}`);
+}
+const pluginDirectory = path.join(projectRoot, 'wordpress', pluginName);
 const outputDirectory = path.join(projectRoot, 'dist');
-const outputFile = path.join(outputDirectory, 'flickr-mosaic.zip');
-const requiredFiles = [
-  'flickr-mosaic.php',
-  'readme.txt',
-  'assets/flickr-mosaic.js',
-  'assets/flickr-mosaic.css',
-  'assets/flickr-logo.png',
-];
+const outputFile = path.join(outputDirectory, `${pluginName}.zip`);
+const requiredFiles = plugins[pluginName];
 
 for (const relativePath of requiredFiles) {
   if (!fs.existsSync(path.join(pluginDirectory, relativePath))) {
-    throw new Error(`Missing plugin package file: ${relativePath}. Run npm run build:wordpress first.`);
+    throw new Error(`Missing plugin package file: ${relativePath}. Run the plugin build first.`);
   }
 }
 
@@ -42,5 +44,5 @@ archive.on('error', (error) => {
 });
 
 archive.pipe(output);
-archive.directory(pluginDirectory, 'flickr-mosaic');
+archive.directory(pluginDirectory, pluginName);
 archive.finalize();

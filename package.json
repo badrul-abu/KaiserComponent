@@ -8,6 +8,8 @@
     "build": "webpack --mode production",
     "build:wordpress": "webpack --mode production --env wordpress",
     "package:wordpress": "npm run build:wordpress && node scripts/package-wordpress.js",
+    "build:pdfreader": "webpack --env pdfreader",
+    "package:pdfreader": "npm run build:pdfreader && node scripts/package-wordpress.js abu-programme-pdf",
     "test": "web-test-runner"
   },
   "repository": {

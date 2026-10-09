@@ -5,6 +5,34 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = (env = {}, argv) => {
   const isProduction = argv.mode === 'production';
   const isWordPress = Boolean(env.wordpress);
+  const isPdfReader = Boolean(env.pdfreader);
+
+  if (isPdfReader) {
+    return {
+      entry: './src/pdf-reader-entry.js',
+      output: {
+        path: path.resolve(__dirname, 'wordpress/abu-programme-pdf/assets'),
+        filename: 'custom-pdf-reader.js',
+        clean: true,
+      },
+      mode: 'production',
+      devtool: false,
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                plugins: [['@babel/plugin-proposal-decorators', { version: 'legacy' }]],
+              },
+            },
+          },
+        ],
+      },
+    };
+  }
 
   return {
     entry: './src/index.js',
