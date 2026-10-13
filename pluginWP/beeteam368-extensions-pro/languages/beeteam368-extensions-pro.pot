@@ -1,0 +1,4175 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeTeam368 Extensions Pro - VidMov Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-13 03:04+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: BeeTeam368 <support@beeteam368.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Loco-Version: 2.5.3; wp-5.7.2\n"
+"X-Domain: beeteam368-extensions-pro\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_html__;esc_attr__;esc_html_e;esc_attr_e;"
+"esc_html_x;esc_attr_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: elementor/slider-pro/slider-pro.php:40
+msgid "[Pro] Sunflower"
+msgstr ""
+
+#: elementor/slider-pro/slider-pro.php:41
+msgid "[Pro] Cyclamen"
+msgstr ""
+
+#: elementor/slider-pro/slider-pro.php:42
+msgid "[Pro] Daffodil"
+msgstr ""
+
+#: inc/buycred/buycred.php:34 inc/buycred/buycred.php:35
+msgid "buyCred Settings"
+msgstr ""
+
+#: inc/buycred/buycred.php:45
+msgid "Stripe - buyCred Gateway"
+msgstr ""
+
+#: inc/buycred/buycred.php:46
+msgid "Turn ON/OFF Stripe Gateway for buyCred."
+msgstr ""
+
+#: inc/buycred/buycred.php:51 inc/buycred/buycred.php:126
+#: inc/cdn/bunny-cdn.php:37 inc/ffmpeg/ffmpeg.php:467 inc/ffmpeg/ffmpeg.php:480
+#: inc/ffmpeg/ffmpeg.php:491 inc/ffmpeg/ffmpeg.php:503
+#: inc/ffmpeg/ffmpeg.php:515 inc/ffmpeg/ffmpeg.php:527
+#: inc/live-streaming/live-streaming.php:935
+#: inc/live-streaming/live-streaming.php:948
+#: inc/live-streaming/live-streaming.php:962
+#: inc/live-streaming/live-streaming.php:985
+#: inc/mycred-sell-content/mycred-sell-content.php:411
+#: inc/pro-player/pro-player.php:829 inc/settings-pro/settings-pro.php:114
+#: inc/settings-pro/settings-pro.php:126 inc/settings-pro/settings-pro.php:139
+#: inc/settings-pro/settings-pro.php:177 inc/settings-pro/settings-pro.php:189
+#: inc/settings-pro/settings-pro.php:212 inc/settings-pro/settings-pro.php:237
+#: inc/settings-pro/settings-pro.php:249 inc/settings-pro/settings-pro.php:288
+#: inc/settings-pro/settings-pro.php:311 inc/settings-pro/settings-pro.php:324
+#: inc/settings-pro/settings-pro.php:350 inc/settings-pro/settings-pro.php:362
+#: inc/settings-pro/settings-pro.php:375 inc/settings-pro/settings-pro.php:388
+#: inc/settings-pro/settings-pro.php:418 inc/settings-pro/settings-pro.php:430
+#: inc/settings-pro/settings-pro.php:442 inc/settings-pro/settings-pro.php:454
+#: inc/settings-pro/settings-pro.php:469
+#: inc/user-submit-post/post-submit.php:922
+#: inc/user-submit-post/post-submit.php:934
+#: inc/user-submit-post/post-submit.php:946
+#: inc/user-submit-post/post-submit.php:957
+#: inc/user-submit-post/post-submit.php:969 inc/woocommerce/woocommerce.php:616
+msgid "OFF"
+msgstr ""
+
+#: inc/buycred/buycred.php:52 inc/buycred/buycred.php:127
+#: inc/cdn/bunny-cdn.php:38 inc/ffmpeg/ffmpeg.php:468 inc/ffmpeg/ffmpeg.php:479
+#: inc/ffmpeg/ffmpeg.php:492 inc/ffmpeg/ffmpeg.php:504
+#: inc/ffmpeg/ffmpeg.php:516 inc/ffmpeg/ffmpeg.php:528
+#: inc/live-streaming/live-streaming.php:936
+#: inc/live-streaming/live-streaming.php:947
+#: inc/live-streaming/live-streaming.php:963
+#: inc/live-streaming/live-streaming.php:986
+#: inc/mycred-sell-content/mycred-sell-content.php:412
+#: inc/pro-player/pro-player.php:830 inc/settings-pro/settings-pro.php:113
+#: inc/settings-pro/settings-pro.php:125 inc/settings-pro/settings-pro.php:138
+#: inc/settings-pro/settings-pro.php:176 inc/settings-pro/settings-pro.php:188
+#: inc/settings-pro/settings-pro.php:211 inc/settings-pro/settings-pro.php:236
+#: inc/settings-pro/settings-pro.php:248 inc/settings-pro/settings-pro.php:287
+#: inc/settings-pro/settings-pro.php:312 inc/settings-pro/settings-pro.php:323
+#: inc/settings-pro/settings-pro.php:349 inc/settings-pro/settings-pro.php:361
+#: inc/settings-pro/settings-pro.php:374 inc/settings-pro/settings-pro.php:387
+#: inc/settings-pro/settings-pro.php:417 inc/settings-pro/settings-pro.php:429
+#: inc/settings-pro/settings-pro.php:441 inc/settings-pro/settings-pro.php:453
+#: inc/settings-pro/settings-pro.php:468
+#: inc/user-submit-post/post-submit.php:921
+#: inc/user-submit-post/post-submit.php:933
+#: inc/user-submit-post/post-submit.php:945
+#: inc/user-submit-post/post-submit.php:958
+#: inc/user-submit-post/post-submit.php:970 inc/woocommerce/woocommerce.php:615
+msgid "ON"
+msgstr ""
+
+#: inc/buycred/buycred.php:60
+msgid ""
+"You need to install myCred Stripe extension to use this feature: <a href="
+"\"https://mycred.me/store/buycred-stripe/\" target=\"_blank\">Stripe - "
+"buyCred Gateway</a><br><br>"
+msgstr ""
+
+#: inc/buycred/buycred.php:64
+msgid "Button {#}"
+msgstr ""
+
+#: inc/buycred/buycred.php:65
+msgid "Add Button"
+msgstr ""
+
+#: inc/buycred/buycred.php:66
+msgid "Remove Button"
+msgstr ""
+
+#: inc/buycred/buycred.php:75
+msgid "Amount"
+msgstr ""
+
+#: inc/buycred/buycred.php:77
+msgid ""
+"The amount of points to sell using this shortcode. The price is "
+"automatically calculated using this amount and the exchange rate you set. If "
+"a user with a custom exchange rate views the shortcode, their price will "
+"adjust accordingly."
+msgstr ""
+
+#: inc/buycred/buycred.php:87
+msgid "Button Title"
+msgstr ""
+
+#: inc/buycred/buycred.php:89
+msgid "Enter the title of the button."
+msgstr ""
+
+#: inc/buycred/buycred.php:91
+msgid "Buy 50 Points"
+msgstr ""
+
+#: inc/buycred/buycred.php:96
+msgid "Title"
+msgstr ""
+
+#: inc/buycred/buycred.php:98
+msgid ""
+"Option to set a custom title for the Stripe Checkout window. If not set, the "
+"default title you set in your gateway settings is used."
+msgstr ""
+
+#: inc/buycred/buycred.php:104 inc/pro-player/media-multi-links.php:210
+#: inc/pro-player/pro-player.php:493 inc/pro-player/pro-player.php:593
+#: inc/pro-player/time-stamp.php:58
+msgid "Label"
+msgstr ""
+
+#: inc/buycred/buycred.php:106
+msgid ""
+"Option to set a custom button label for the Stripe Checkout window. If not "
+"set, the default button label you set in your gateway settings is used."
+msgstr ""
+
+#: inc/buycred/buycred.php:112 inc/live-streaming/live-streaming.php:1909
+msgid "Descriptions"
+msgstr ""
+
+#: inc/buycred/buycred.php:115
+msgid ""
+"Option to set a custom description for the Stripe Checkout window. If not "
+"set, the default description you set in your gateway settings is used."
+msgstr ""
+
+#: inc/buycred/buycred.php:120
+msgid "Advanced Methods with WooCommerce"
+msgstr ""
+
+#: inc/buycred/buycred.php:121
+msgid ""
+"Turn ON/OFF Woocommerce for buyCred. You need to install the WooCommerce "
+"plugin to use this feature."
+msgstr ""
+
+#: inc/buycred/buycred.php:132
+msgid "WooCommerce Products"
+msgstr ""
+
+#: inc/buycred/buycred.php:135 inc/woocommerce/woocommerce.php:538
+#: inc/woocommerce/woocommerce.php:552 inc/woocommerce/woocommerce.php:568
+#: inc/woocommerce/woocommerce.php:582
+msgid "Start typing product name"
+msgstr ""
+
+#: inc/buycred/buycred.php:149 inc/buycred/buycred.php:158
+#: inc/buycred/buycred.php:181 inc/buycred/buycred.php:442
+msgid "Buy Points"
+msgstr ""
+
+#: inc/buycred/buycred.php:179 inc/buycred/buycred.php:206
+#: inc/buycred/buycred.php:255
+msgid "Buy points to give away or watch premium videos"
+msgstr ""
+
+#: inc/buycred/buycred.php:191 inc/buycred/buycred.php:195
+#: inc/buycred/buycred.php:237 inc/buycred/buycred.php:241
+#: inc/buycred/buycred.php:270 inc/buycred/buycred.php:274
+#: inc/buycred/buycred.php:297 inc/buycred/buycred.php:301
+#: inc/buycred/buycred.php:322 inc/buycred/buycred.php:326
+#: inc/buycred/buycred.php:346 inc/buycred/buycred.php:350
+#: inc/buycred/buycred.php:369 inc/buycred/buycred.php:373
+msgid "Please login to use this feature!"
+msgstr ""
+
+#: inc/buycred/buycred.php:192 inc/buycred/buycred.php:238
+#: inc/buycred/buycred.php:271 inc/buycred/buycred.php:298
+#: inc/buycred/buycred.php:323 inc/buycred/buycred.php:347
+#: inc/buycred/buycred.php:370
+msgid "Please login to use this feature."
+msgstr ""
+
+#: inc/buycred/buycred.php:195 inc/buycred/buycred.php:241
+#: inc/buycred/buycred.php:274 inc/buycred/buycred.php:301
+#: inc/buycred/buycred.php:326 inc/buycred/buycred.php:350
+#: inc/buycred/buycred.php:373 inc/login-register/login-register.php:71
+#: inc/login-register/login-register.php:76
+#: inc/virtual-gifts/virtual-gifts.php:237
+msgid "Login"
+msgstr ""
+
+#: inc/buycred/buycred.php:208
+msgid "Buy points with Stripe"
+msgstr ""
+
+#: inc/buycred/buycred.php:257
+msgid "Buy points with Advanced Method"
+msgstr ""
+
+#: inc/buycred/buycred.php:285
+msgid "Enter coupon code to get points"
+msgstr ""
+
+#: inc/buycred/buycred.php:287
+msgid "Redeeming Coupons"
+msgstr ""
+
+#: inc/buycred/buycred.php:310 inc/virtual-gifts/virtual-gifts.php:201
+msgid "Your Balance"
+msgstr ""
+
+#: inc/buycred/buycred.php:312
+msgid "Your Accumulated Points"
+msgstr ""
+
+#: inc/buycred/buycred.php:335
+msgid "Pending List"
+msgstr ""
+
+#: inc/buycred/buycred.php:337
+msgid "Pending Payments"
+msgstr ""
+
+#: inc/buycred/buycred.php:358
+msgid "Your Transaction History"
+msgstr ""
+
+#: inc/buycred/buycred.php:360
+msgid "Sales History"
+msgstr ""
+
+#: inc/buycred/buycred.php:389 inc/buycred/buycred.php:406
+msgid "Purchases"
+msgstr ""
+
+#: inc/buycred/buycred.php:414
+msgid "Your Balance:"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:19 inc/cdn/bunny-cdn.php:20
+msgid "Bunny CDN Settings"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:31
+msgid "Delete Original File"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:32
+msgid ""
+"Delete original file after successful upload to BunnyStream. [Be careful "
+"with your data]"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:43
+msgid "[Bunny Stream] Mode Of Use"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:48
+msgid "HLS Playlist URL"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:49
+msgid "Embed Mode"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:54
+msgid "[Bunny Stream] Video Library ID"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:61
+msgid "[Bunny Stream] CDN Hostname"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:68
+msgid "[Bunny Stream] API Key"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:75
+msgid "[Bunny Stream] Webhook URL"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:87
+msgid "[Bunny Storage] Zone"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:94
+msgid "[Bunny Storage] Hostname"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:101
+msgid "[Bunny Storage] Username"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:108
+msgid "[Bunny Storage] Port"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:115
+msgid "[Bunny Storage] Password"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:122
+msgid "[Bunny Pull Zones] Hostname"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:176
+msgid "HTTP/1.0 415 Unsupported Media Type."
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:186
+msgid "Insufficient input parameters."
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:190
+msgid "BAD METHOD!"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:311
+msgid "Done!"
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:367 inc/cdn/bunny-cdn.php:517
+msgid "You need to declare information for Bunny Storage and Pull Zones."
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:507 inc/cdn/bunny-cdn.php:618
+msgid "You need to login to use this feature."
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:589
+msgid "File does not exist."
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:670
+msgid "The collection could not be created."
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:727
+msgid "Media file does not exist."
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:731
+msgid "The video could not be created."
+msgstr ""
+
+#: inc/cdn/bunny-cdn.php:738
+msgid "The matching collection could not be found."
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:561
+#, php-format
+msgid ""
+"Error retrieving a thumbnail from the URL %1$s using wp_remote_get(). If "
+"opening that URL in your web browser returns anything else than an error "
+"page, the problem may be related to your web server and might be something "
+"your host administrator can solve."
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:561
+msgid "Error Details:"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:578
+msgid "Unsupported MIME type:"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:586
+msgid "Error uploading image data:"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:653 inc/fetch-data/fetch-data.php:786
+#: inc/settings-pro/settings-pro.php:607
+msgid "Fetching Data"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:654 inc/settings-pro/settings-pro.php:608
+msgid ""
+"Automatically fetch data when your video post uses a link from Youtube, "
+"Vimeo or Dailymotion."
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:659
+msgid "Enable"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:660 inc/fetch-data/fetch-data.php:793
+#: inc/video-advertising/video-advertising.php:504
+#: inc/video-advertising/video-advertising.php:509
+msgid "Disable"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:665 inc/fetch-data/fetch-data.php:814
+#: inc/settings-pro/settings-pro.php:634
+msgid "Fetch Video Description"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:670 inc/fetch-data/fetch-data.php:686
+#: inc/fetch-data/fetch-data.php:700 inc/fetch-data/fetch-data.php:715
+#: inc/fetch-data/fetch-data.php:762 inc/fetch-data/fetch-data.php:805
+#: inc/fetch-data/fetch-data.php:819 inc/fetch-data/fetch-data.php:835
+#: inc/fetch-data/fetch-data.php:849 inc/fetch-data/fetch-data.php:864
+#: inc/fetch-data/fetch-data.php:911 inc/history/history.php:164
+#: inc/history/history.php:200 inc/history/history.php:263
+#: inc/mycred-sell-content/mycred-sell-content.php:399
+#: inc/notification/notification.php:71 inc/notification/notification.php:107
+#: inc/notification/notification.php:145 inc/pro-player/pro-player.php:353
+#: inc/pro-player/pro-player.php:368 inc/pro-player/pro-player.php:661
+#: inc/pro-player/pro-player.php:671 inc/pro-player/pro-player.php:682
+#: inc/pro-player/pro-player.php:693 inc/pro-player/pro-player.php:704
+#: inc/pro-player/pro-player.php:714 inc/pro-player/pro-player.php:817
+#: inc/settings-pro/settings-pro.php:546 inc/settings-pro/settings-pro.php:613
+#: inc/settings-pro/settings-pro.php:625 inc/settings-pro/settings-pro.php:639
+#: inc/settings-pro/settings-pro.php:655 inc/settings-pro/settings-pro.php:669
+#: inc/settings-pro/settings-pro.php:684 inc/settings-pro/settings-pro.php:731
+#: inc/subscription/subscription.php:263 inc/subscription/subscription.php:297
+#: inc/user-submit-post/post-submit.php:1065
+#: inc/user-submit-post/post-submit.php:1096
+#: inc/user-submit-post/post-submit.php:1146
+#: inc/user-submit-post/user-submit-post.php:563
+#: inc/user-submit-post/user-submit-post.php:576
+#: inc/user-submit-post/user-submit-post.php:590
+#: inc/user-submit-post/user-submit-post.php:604
+#: inc/user-submit-post/user-submit-post.php:685
+#: inc/user-submit-post/user-submit-post.php:751
+#: inc/user-submit-post/user-submit-post.php:763
+#: inc/user-submit-post/user-submit-post.php:829
+#: inc/user-submit-post/user-submit-post.php:842
+#: inc/user-submit-post/user-submit-post.php:910
+#: inc/user-submit-post/user-submit-post.php:923
+#: inc/user-submit-post/user-submit-post.php:988
+#: inc/virtual-gifts/virtual-gifts.php:93
+#: inc/virtual-gifts/virtual-gifts.php:113
+msgid "YES"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:671 inc/fetch-data/fetch-data.php:685
+#: inc/fetch-data/fetch-data.php:701 inc/fetch-data/fetch-data.php:716
+#: inc/fetch-data/fetch-data.php:763 inc/fetch-data/fetch-data.php:804
+#: inc/fetch-data/fetch-data.php:820 inc/fetch-data/fetch-data.php:834
+#: inc/fetch-data/fetch-data.php:850 inc/fetch-data/fetch-data.php:865
+#: inc/fetch-data/fetch-data.php:912 inc/history/history.php:165
+#: inc/history/history.php:201 inc/history/history.php:264
+#: inc/mycred-sell-content/mycred-sell-content.php:400
+#: inc/notification/notification.php:72 inc/notification/notification.php:108
+#: inc/notification/notification.php:146 inc/pro-player/pro-player.php:352
+#: inc/pro-player/pro-player.php:369 inc/pro-player/pro-player.php:660
+#: inc/pro-player/pro-player.php:672 inc/pro-player/pro-player.php:683
+#: inc/pro-player/pro-player.php:694 inc/pro-player/pro-player.php:705
+#: inc/pro-player/pro-player.php:715 inc/pro-player/pro-player.php:818
+#: inc/settings-pro/settings-pro.php:547 inc/settings-pro/settings-pro.php:614
+#: inc/settings-pro/settings-pro.php:624 inc/settings-pro/settings-pro.php:640
+#: inc/settings-pro/settings-pro.php:654 inc/settings-pro/settings-pro.php:670
+#: inc/settings-pro/settings-pro.php:685 inc/settings-pro/settings-pro.php:732
+#: inc/subscription/subscription.php:264 inc/subscription/subscription.php:298
+#: inc/user-submit-post/post-submit.php:1066
+#: inc/user-submit-post/post-submit.php:1097
+#: inc/user-submit-post/post-submit.php:1147
+#: inc/user-submit-post/user-submit-post.php:564
+#: inc/user-submit-post/user-submit-post.php:577
+#: inc/user-submit-post/user-submit-post.php:591
+#: inc/user-submit-post/user-submit-post.php:605
+#: inc/user-submit-post/user-submit-post.php:686
+#: inc/user-submit-post/user-submit-post.php:752
+#: inc/user-submit-post/user-submit-post.php:764
+#: inc/user-submit-post/user-submit-post.php:830
+#: inc/user-submit-post/user-submit-post.php:843
+#: inc/user-submit-post/user-submit-post.php:911
+#: inc/user-submit-post/user-submit-post.php:924
+#: inc/user-submit-post/user-submit-post.php:989
+#: inc/virtual-gifts/virtual-gifts.php:94
+#: inc/virtual-gifts/virtual-gifts.php:114
+msgid "NO"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:680 inc/fetch-data/fetch-data.php:829
+#: inc/settings-pro/settings-pro.php:649
+msgid "Fetch Video Tags"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:695 inc/fetch-data/fetch-data.php:844
+#: inc/settings-pro/settings-pro.php:664
+msgid "Fetch Video Duration"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:710 inc/fetch-data/fetch-data.php:859
+#: inc/settings-pro/settings-pro.php:679
+msgid "Fetch Video View Count"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:757 inc/fetch-data/fetch-data.php:906
+#: inc/settings-pro/settings-pro.php:726
+msgid "Fetch Video Thumbnail"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:777
+msgid "Fetch Data Settings"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:787
+msgid ""
+"Automatically fetch data when your video post uses a link from Youtube, "
+"Vimeo or Dailymotion. Select \"Default\" to use settings in Theme Settings "
+">  API & Fetch Data (PRO)."
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:792 inc/pro-player/pro-player.php:351
+#: inc/pro-player/pro-player.php:367 inc/pro-player/pro-player.php:647
+#: inc/pro-player/pro-player.php:763 inc/user-submit-post/post-submit.php:1133
+#: inc/video-advertising/video-advertising.php:508
+#: inc/woocommerce/woocommerce.php:614
+msgid "Default"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:794
+#: inc/video-advertising/video-advertising.php:413
+msgid "Custom"
+msgstr ""
+
+#: inc/fetch-data/fetch-data.php:799 inc/settings-pro/settings-pro.php:619
+msgid "Fetch Video Title"
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:70
+msgid "Upload Successful!!!"
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:449 inc/ffmpeg/ffmpeg.php:450
+msgid "FFMPEG Settings"
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:461
+msgid "Merge File Chunks"
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:462
+msgid "Turn ON/OFF \"Merge File Chunks\" feature for your theme."
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:473
+msgid "Fetch thumbnails"
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:474
+msgid "Auto-fetch thumbnails for self-hosted videos."
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:485
+msgid "360P-Resolution"
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:486
+msgid "Automatically generate 360p resolution for video uploads."
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:497
+msgid "720P-Resolution"
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:498
+msgid "Automatically generate 720p resolution for video uploads."
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:509
+msgid "1080P-Resolution"
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:510
+msgid "Automatically generate 1080p resolution for video uploads."
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:521
+msgid "1440P-Resolution"
+msgstr ""
+
+#: inc/ffmpeg/ffmpeg.php:522
+msgid "Automatically generate 1440p resolution for video uploads."
+msgstr ""
+
+#: inc/history/history.php:39
+msgid "History Tab [Privacy]"
+msgstr ""
+
+#: inc/history/history.php:41 inc/notification/notification.php:37
+#: inc/subscription/subscription.php:56 inc/user-submit-post/edit-post.php:953
+#: inc/user-submit-post/post-submit.php:870
+#: inc/user-submit-post/user-submit-post.php:329
+#: inc/user-submit-post/user-submit-post.php:368
+#: inc/user-submit-post/user-submit-post.php:381
+#: inc/user-submit-post/user-submit-post.php:397
+#: inc/user-submit-post/user-submit-post.php:410
+#: inc/virtual-gifts/virtual-gifts.php:59
+msgid "Public"
+msgstr ""
+
+#: inc/history/history.php:42 inc/notification/notification.php:38
+#: inc/subscription/subscription.php:57 inc/user-submit-post/edit-post.php:954
+#: inc/user-submit-post/post-submit.php:871
+#: inc/user-submit-post/user-submit-post.php:330
+#: inc/user-submit-post/user-submit-post.php:369
+#: inc/user-submit-post/user-submit-post.php:382
+#: inc/user-submit-post/user-submit-post.php:398
+#: inc/user-submit-post/user-submit-post.php:411
+#: inc/virtual-gifts/virtual-gifts.php:60
+msgid "Private"
+msgstr ""
+
+#: inc/history/history.php:55 inc/history/history.php:251
+msgid "Recently Viewed"
+msgstr ""
+
+#: inc/history/history.php:125 inc/history/history.php:132
+#: inc/history/history.php:140 inc/history/history.php:144
+#: inc/history/history.php:179 inc/history/history.php:293
+#: inc/history/history.php:307
+msgid "History"
+msgstr ""
+
+#: inc/history/history.php:158 inc/history/history.php:194
+msgid "Display \"History\" Item (Pro)"
+msgstr ""
+
+#: inc/history/history.php:159
+msgid "Hide or show \"History\" item on Side Menu."
+msgstr ""
+
+#: inc/history/history.php:195
+msgid "Hide or show \"History\" item on Tab."
+msgstr ""
+
+#: inc/history/history.php:206 inc/notification/notification.php:113
+#: inc/settings-pro/settings-pro.php:488
+#: inc/user-submit-post/user-submit-post.php:693
+#: inc/user-submit-post/user-submit-post.php:771
+#: inc/user-submit-post/user-submit-post.php:852
+#: inc/user-submit-post/user-submit-post.php:930
+msgid "Layout"
+msgstr ""
+
+#: inc/history/history.php:212 inc/notification/notification.php:119
+#: inc/settings-pro/settings-pro.php:494
+#: inc/user-submit-post/user-submit-post.php:699
+#: inc/user-submit-post/user-submit-post.php:777
+#: inc/user-submit-post/user-submit-post.php:858
+#: inc/user-submit-post/user-submit-post.php:936
+msgid "Theme Options"
+msgstr ""
+
+#: inc/history/history.php:217 inc/notification/notification.php:124
+#: inc/settings-pro/settings-pro.php:499
+#: inc/user-submit-post/user-submit-post.php:704
+#: inc/user-submit-post/user-submit-post.php:782
+#: inc/user-submit-post/user-submit-post.php:863
+#: inc/user-submit-post/user-submit-post.php:941
+msgid ""
+"Change display layout for posts. Select \"Theme Options\" to use settings in "
+"Theme Options > Blog Settings."
+msgstr ""
+
+#: inc/history/history.php:220 inc/notification/notification.php:128
+#: inc/subscription/subscription.php:303
+#: inc/user-submit-post/user-submit-post.php:707
+#: inc/user-submit-post/user-submit-post.php:785
+#: inc/user-submit-post/user-submit-post.php:866
+#: inc/user-submit-post/user-submit-post.php:944
+msgid "Items Per Page"
+msgstr ""
+
+#: inc/history/history.php:221 inc/notification/notification.php:129
+#: inc/subscription/subscription.php:304
+#: inc/user-submit-post/user-submit-post.php:708
+#: inc/user-submit-post/user-submit-post.php:786
+#: inc/user-submit-post/user-submit-post.php:867
+#: inc/user-submit-post/user-submit-post.php:945
+msgid "Number of items to show per page. Defaults to: 10"
+msgstr ""
+
+#: inc/history/history.php:230 inc/subscription/subscription.php:313
+#: inc/user-submit-post/user-submit-post.php:717
+#: inc/user-submit-post/user-submit-post.php:795
+#: inc/user-submit-post/user-submit-post.php:876
+#: inc/user-submit-post/user-submit-post.php:954
+msgid "Pagination"
+msgstr ""
+
+#: inc/history/history.php:231 inc/subscription/subscription.php:314
+#: inc/user-submit-post/user-submit-post.php:718
+#: inc/user-submit-post/user-submit-post.php:796
+#: inc/user-submit-post/user-submit-post.php:877
+#: inc/user-submit-post/user-submit-post.php:955
+msgid ""
+"Choose type of navigation. For WP PageNavi, you will need to install WP "
+"PageNavi plugin."
+msgstr ""
+
+#: inc/history/history.php:236 inc/subscription/subscription.php:319
+#: inc/user-submit-post/user-submit-post.php:723
+#: inc/user-submit-post/user-submit-post.php:801
+#: inc/user-submit-post/user-submit-post.php:882
+#: inc/user-submit-post/user-submit-post.php:960
+msgid "WordPress Default"
+msgstr ""
+
+#: inc/history/history.php:237 inc/subscription/subscription.php:320
+#: inc/user-submit-post/user-submit-post.php:724
+#: inc/user-submit-post/user-submit-post.php:802
+#: inc/user-submit-post/user-submit-post.php:883
+#: inc/user-submit-post/user-submit-post.php:961
+msgid "Load More Button (Ajax)"
+msgstr ""
+
+#: inc/history/history.php:238 inc/subscription/subscription.php:321
+#: inc/user-submit-post/user-submit-post.php:725
+#: inc/user-submit-post/user-submit-post.php:803
+#: inc/user-submit-post/user-submit-post.php:884
+#: inc/user-submit-post/user-submit-post.php:962
+msgid "Infinite Scroll (Ajax)"
+msgstr ""
+
+#: inc/history/history.php:245 inc/user-submit-post/user-submit-post.php:732
+#: inc/user-submit-post/user-submit-post.php:810
+#: inc/user-submit-post/user-submit-post.php:891
+#: inc/user-submit-post/user-submit-post.php:969
+msgid "Default Ordering"
+msgstr ""
+
+#: inc/history/history.php:246 inc/user-submit-post/user-submit-post.php:733
+#: inc/user-submit-post/user-submit-post.php:811
+#: inc/user-submit-post/user-submit-post.php:892
+#: inc/user-submit-post/user-submit-post.php:970
+msgid "Default display order for posts."
+msgstr ""
+
+#: inc/history/history.php:252 inc/subscription/subscription.php:95
+#: inc/user-submit-post/user-submit-post.php:740
+#: inc/user-submit-post/user-submit-post.php:818
+#: inc/user-submit-post/user-submit-post.php:899
+#: inc/user-submit-post/user-submit-post.php:977
+msgid "Alphabetical (A-Z)"
+msgstr ""
+
+#: inc/history/history.php:253 inc/subscription/subscription.php:96
+#: inc/user-submit-post/user-submit-post.php:741
+#: inc/user-submit-post/user-submit-post.php:819
+#: inc/user-submit-post/user-submit-post.php:900
+#: inc/user-submit-post/user-submit-post.php:978
+msgid "Alphabetical (Z-A)"
+msgstr ""
+
+#: inc/history/history.php:257 inc/notification/notification.php:139
+#: inc/settings-pro/settings-pro.php:540
+#: inc/user-submit-post/user-submit-post.php:745
+#: inc/user-submit-post/user-submit-post.php:823
+#: inc/user-submit-post/user-submit-post.php:904
+#: inc/user-submit-post/user-submit-post.php:982
+msgid "Display Categories"
+msgstr ""
+
+#: inc/history/history.php:258 inc/notification/notification.php:140
+#: inc/user-submit-post/user-submit-post.php:746
+#: inc/user-submit-post/user-submit-post.php:824
+#: inc/user-submit-post/user-submit-post.php:905
+#: inc/user-submit-post/user-submit-post.php:983
+msgid "Hide or show categories on post list."
+msgstr ""
+
+#: inc/history/history.php:299
+msgid "Sign in to see your history."
+msgstr ""
+
+#: inc/live-search/live-search.php:37
+msgid "Sorry, no results were found."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:56
+msgid "Live"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:238
+#: inc/live-streaming/live-streaming.php:479
+msgid "No records found"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:260
+#: inc/live-streaming/live-streaming.php:562
+msgid "Record copied successfully"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:267
+#: inc/live-streaming/live-streaming.php:565
+msgid "Record copying in progress..."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:276
+#: inc/live-streaming/live-streaming.php:295
+#: inc/live-streaming/live-streaming.php:557
+msgid "Transfer this record to your server"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:300
+#: inc/live-streaming/live-streaming.php:543
+msgid "Processing recording..."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:368
+#: inc/live-streaming/live-streaming.php:369
+#: inc/live-streaming/live-streaming.php:370
+#: inc/live-streaming/live-streaming.php:471
+#: inc/live-streaming/live-streaming.php:472
+#: inc/live-streaming/live-streaming.php:473
+msgid "Loading..."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:371
+#: inc/live-streaming/live-streaming.php:616
+msgid "Channel is OFF"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:399
+#: inc/live-streaming/live-streaming.php:620
+msgid "Channel is ON"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:413
+#: inc/live-streaming/live-streaming.php:414
+#: inc/live-streaming/live-streaming.php:415
+#: inc/live-streaming/live-streaming.php:514
+#: inc/live-streaming/live-streaming.php:515
+#: inc/live-streaming/live-streaming.php:516
+msgid "Connecting..."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:425
+#: inc/live-streaming/live-streaming.php:426
+#: inc/live-streaming/live-streaming.php:427
+#: inc/live-streaming/live-streaming.php:523
+#: inc/live-streaming/live-streaming.php:524
+#: inc/live-streaming/live-streaming.php:525
+msgid "Stopping..."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:437
+#: inc/live-streaming/live-streaming.php:438
+#: inc/live-streaming/live-streaming.php:439
+#: inc/live-streaming/live-streaming.php:532
+#: inc/live-streaming/live-streaming.php:533
+#: inc/live-streaming/live-streaming.php:534
+msgid "Stopped..."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:578
+msgid "RTMP Encoder/Broadcaster"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:580
+msgid "Go Live with external streaming app"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:584
+msgid "Server:"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:587
+msgid "Stream Key:"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:597
+msgid "A Simpler Way"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:599
+msgid "Go live with your webcam"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:604
+msgid "Live Now"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:626
+#: inc/live-streaming/live-streaming.php:1872
+msgid "Live Streaming"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:630
+msgid "Stop Streaming"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:650
+msgid "Error: You need to login to create a stream."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:699
+msgid "Error: You don't have permission to live stream."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:713
+msgid "Error: You do not have permission to create streams."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:725
+msgid "Error: Failed to Connect to Streaming Server."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:730
+msgid ""
+"Error: You can't create more than one streaming video. Your current streams:"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:739
+msgid "Error: Please enter the title of the stream."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:743
+#: inc/user-submit-post/edit-post.php:107
+#: inc/user-submit-post/post-submit.php:129
+msgid ""
+"Error: Please wait until the image file is uploaded before submitting your "
+"form."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:855
+#: inc/user-submit-post/edit-post.php:415
+#: inc/user-submit-post/post-submit.php:433
+msgid "Error: An error has occurred. Please reload the page and try again!"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:865
+msgid ""
+"Please wait a moment, you will be redirected to your live video, or click "
+"here:"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:865
+msgid "View Live Video & Settings"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:877
+#: inc/live-streaming/live-streaming.php:878
+msgid "Live Streaming Settings"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:890
+msgid "Token not verified"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:894
+msgid "[WpStream.net] Token"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:906
+msgid "[WpStream.net] Username or Email"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:917
+msgid "[WpStream.net] Password"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:929
+msgid "[WpStream.net] Record"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:930
+msgid "Record streaming videos."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:941
+msgid "[WpStream.net] Live With Webcam"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:942
+msgid "Go live with your webcam."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:956
+#: inc/user-submit-post/post-submit.php:963
+msgid "Roles"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:957
+#: inc/mycred-sell-content/mycred-sell-content.php:406
+#: inc/user-submit-post/post-submit.php:964
+msgid "Define roles for each posting function."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:967
+msgid "Live Streaming Roles"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:968
+msgid "Permissions can create live streaming. Separated by commas. Eg(s): "
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:979
+#: inc/user-submit-post/post-submit.php:951
+msgid "Enable tinyMCE for the description field"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:980
+#: inc/user-submit-post/post-submit.php:952
+msgid "Turn ON/OFF \"tinyMCE\" for the description field."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:991
+#: inc/user-submit-post/post-submit.php:1103
+msgid "Exclude Video Categories"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:992
+#: inc/user-submit-post/post-submit.php:1104
+#: inc/user-submit-post/post-submit.php:1112
+#: inc/user-submit-post/post-submit.php:1120
+msgid ""
+"You can restrict users to add posts to the categories listed above. Enter "
+"category id or slug, eg: 245, 126, ..."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1123
+#: inc/user-submit-post/edit-post.php:632
+#: inc/user-submit-post/post-submit.php:523
+msgid "Select a Category"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1232
+#: inc/live-streaming/live-streaming.php:1290
+#: inc/live-streaming/live-streaming.php:1384
+#: inc/live-streaming/live-streaming.php:1443
+#: inc/live-streaming/live-streaming.php:1507
+#: inc/live-streaming/live-streaming.php:1576
+#: inc/live-streaming/live-streaming.php:1646
+#: inc/live-streaming/live-streaming.php:1708
+msgid "Invalid Token"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1263
+msgid "FILE_NOT_FOUND"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1322
+msgid "ITEM_NOT_FOUND"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1416
+msgid "NO_VIDEOS"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1480
+#: inc/live-streaming/live-streaming.php:1682
+msgid "NO_SUCH_CHANNEL"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1549
+msgid "CHANNEL_NOT_ACTIVE"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1619
+msgid "CHANNEL_NOT_STOPPED"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1716
+msgid "Not logged in yet"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1764
+msgid "An unknown error"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1792
+msgid "Go Live"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1806
+msgid "You need to login to create a stream."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1847
+msgid "You don't have permission to live stream."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1852
+msgid "Failed to Connect to Streaming Server."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1857
+msgid "You can't create more than one streaming video. Your current streams:"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1870
+msgid "For Streamers"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1887
+msgid "Details"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1890
+msgid "Title (required)"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1891
+msgid "Add a title that describers your stream"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1896
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1898
+msgid "Supports: *.png, *.jpg, *.gif, *.jpeg. Maximum upload file size: 3mb"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1902
+msgid ""
+"Drag and drop image file to upload ( select or upload a picture that "
+"represents your stream )"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1903
+#: inc/user-submit-post/edit-post.php:933
+#: inc/user-submit-post/post-submit.php:851
+msgid "Select Image"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1913
+msgid "Tell viewers more about your stream"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1918
+#: inc/user-submit-post/edit-post.php:855
+#: inc/user-submit-post/post-submit.php:798
+msgid "Post Tags"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1919
+#: inc/user-submit-post/edit-post.php:856
+#: inc/user-submit-post/post-submit.php:799
+msgid "Enter comma-separated values"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1928
+#: inc/user-submit-post/edit-post.php:878
+#: inc/user-submit-post/post-submit.php:811
+msgid "Video Categories"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1929
+msgid "Add your stream to a category so viewers can find it more easily."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1941
+msgid "Create Stream"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1978
+#: inc/user-submit-post/post-submit.php:1328
+msgid "File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1979
+#: inc/user-submit-post/post-submit.php:1329
+msgid "You can't upload files of this type."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1980
+#: inc/user-submit-post/post-submit.php:1330
+msgid "Server responded with {{statusCode}} code."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1981
+#: inc/user-submit-post/post-submit.php:1331
+msgid "Processing... [Cancel Upload]"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1982
+#: inc/user-submit-post/post-submit.php:1332
+msgid "Are you sure you want to cancel this upload?"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1983
+#: inc/user-submit-post/post-submit.php:1333
+msgid "Remove"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1984
+#: inc/user-submit-post/post-submit.php:1334
+msgid "Are you sure you want to delete this file?"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1985
+#: inc/user-submit-post/post-submit.php:1335
+msgid "You can not upload any more files."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1989
+msgid "The stream has ended, thanks for watching!"
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1990
+msgid "The live stream is paused and may resume shortly."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1991
+msgid "Stream is starting soon."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1992
+msgid "We are not live at this moment. Please check back later."
+msgstr ""
+
+#: inc/live-streaming/live-streaming.php:1993
+msgid "Unknown State."
+msgstr ""
+
+#: inc/login-register/login-register.php:71
+#: inc/login-register/login-register.php:76
+msgid ""
+"Please login to buy points. Then use them to view premium content or give "
+"away to other creators."
+msgstr ""
+
+#: inc/login-register/login-register.php:86
+msgid "Processing failed."
+msgstr ""
+
+#: inc/login-register/login-register.php:117
+msgid "Successful processing."
+msgstr ""
+
+#: inc/login-register/login-register.php:162
+#: inc/login-register/login-register.php:321
+#: inc/login-register/login-register.php:391
+msgid "<strong>Error</strong>: Invalid data."
+msgstr ""
+
+#: inc/login-register/login-register.php:189
+msgid "<strong>Error</strong>: The avatar image is too big."
+msgstr ""
+
+#: inc/login-register/login-register.php:193
+msgid "<strong>Error</strong>: The channel banner is too big."
+msgstr ""
+
+#: inc/login-register/login-register.php:267
+msgid "<strong>Success</strong>: Avatar updated successfully."
+msgstr ""
+
+#: inc/login-register/login-register.php:274
+msgid "<strong>Success</strong>: The banner has been updated successfully."
+msgstr ""
+
+#: inc/login-register/login-register.php:282
+msgid "<strong>Error</strong>: Unknown error."
+msgstr ""
+
+#: inc/login-register/login-register.php:307
+msgid "Updated successfully."
+msgstr ""
+
+#: inc/login-register/login-register.php:335
+msgid "<strong>Error</strong>: Please enter a password."
+msgstr ""
+
+#: inc/login-register/login-register.php:338
+msgid "<strong>Error</strong>: Password must be at least 6 characters."
+msgstr ""
+
+#: inc/login-register/login-register.php:341
+msgid "<strong>Error</strong>: Passwords may not contain the character \"\\\"."
+msgstr ""
+
+#: inc/login-register/login-register.php:344
+msgid ""
+"<strong>Error</strong>: Passwords don&#8217;t match. Please enter the same "
+"password in both password fields."
+msgstr ""
+
+#: inc/login-register/login-register.php:373
+#: inc/login-register/login-register.php:474
+msgid "<strong>Error</strong>: Update failed."
+msgstr ""
+
+#: inc/login-register/login-register.php:376
+msgid ""
+"Password has been updated successfully. This page will reload in 5 seconds!!!"
+msgstr ""
+
+#: inc/login-register/login-register.php:408
+msgid "<strong>Error</strong>: Please type your email address."
+msgstr ""
+
+#: inc/login-register/login-register.php:412
+msgid "<strong>Error</strong>: The email address isn&#8217;t correct."
+msgstr ""
+
+#: inc/login-register/login-register.php:417
+msgid ""
+"<strong>Error</strong>: This email is already registered. Please choose "
+"another one."
+msgstr ""
+
+#: inc/login-register/login-register.php:424
+msgid "<strong>Error</strong>: Please type your nickname."
+msgstr ""
+
+#: inc/login-register/login-register.php:476
+msgid "Profile has been successfully updated."
+msgstr ""
+
+#: inc/login-register/login-register.php:486
+msgid "Profile"
+msgstr ""
+
+#: inc/login-register/login-register.php:507
+msgid "Update Your Profile"
+msgstr ""
+
+#: inc/login-register/login-register.php:512
+msgid "Email *"
+msgstr ""
+
+#: inc/login-register/login-register.php:516
+#: inc/login-register/login-register.php:674
+msgid "First Name"
+msgstr ""
+
+#: inc/login-register/login-register.php:520
+#: inc/login-register/login-register.php:682
+msgid "Last Name"
+msgstr ""
+
+#: inc/login-register/login-register.php:524
+msgid "Nickname [display name] *"
+msgstr ""
+
+#: inc/login-register/login-register.php:544
+msgid "Biographical Info"
+msgstr ""
+
+#: inc/login-register/login-register.php:549
+msgid "Introduce Yourself"
+msgstr ""
+
+#: inc/login-register/login-register.php:557
+msgid "Click the button below to update your profile."
+msgstr ""
+
+#: inc/login-register/login-register.php:561
+msgid "Update Profile"
+msgstr ""
+
+#: inc/login-register/login-register.php:574
+msgid "Update Your Avatar & Channel Banner"
+msgstr ""
+
+#: inc/login-register/login-register.php:587
+msgid "Avatar"
+msgstr ""
+
+#: inc/login-register/login-register.php:589
+msgid "Recommended size 122(px) x 122(px). Maximum upload file size: 3MB."
+msgstr ""
+
+#: inc/login-register/login-register.php:605
+msgid "Channel Banner"
+msgstr ""
+
+#: inc/login-register/login-register.php:607
+msgid "Recommended size 1920(px) x 500(px). Maximum upload file size: 3MB."
+msgstr ""
+
+#: inc/login-register/login-register.php:611
+msgid "Click the button below to update your avatar."
+msgstr ""
+
+#: inc/login-register/login-register.php:615
+msgid "Update Avatar"
+msgstr ""
+
+#: inc/login-register/login-register.php:630
+msgid "Update Your Password"
+msgstr ""
+
+#: inc/login-register/login-register.php:635
+msgid "New Password *"
+msgstr ""
+
+#: inc/login-register/login-register.php:639
+msgid "Confirm New Password *"
+msgstr ""
+
+#: inc/login-register/login-register.php:643
+msgid "Strength indicator"
+msgstr ""
+
+#: inc/login-register/login-register.php:646
+msgid ""
+"Hint: The password should be at least twelve characters long. To make it "
+"stronger, use upper and lower case letters, numbers, and symbols like ! \" ? "
+"$ % ^ & )."
+msgstr ""
+
+#: inc/login-register/login-register.php:650
+msgid "Update Password"
+msgstr ""
+
+#: inc/login-register/login-register.php:690
+msgid "Nickname [display name]"
+msgstr ""
+
+#: inc/login-register/login-register.php:699
+msgid "<strong>ERROR</strong>: Please enter your nickname."
+msgstr ""
+
+#: inc/login-register/login-register.php:839
+msgid "Click to open"
+msgstr ""
+
+#: inc/login-register/login-register.php:857
+msgid "Manage your account"
+msgstr ""
+
+#: inc/login-register/login-register.php:870
+msgid "Your Channel"
+msgstr ""
+
+#: inc/login-register/login-register.php:879
+#: inc/user-submit-post/user-submit-post.php:467
+#: inc/user-submit-post/user-submit-post.php:1154
+#: inc/user-submit-post/user-submit-post.php:1168
+msgid "Your Posts"
+msgstr ""
+
+#: inc/login-register/login-register.php:900
+msgid "Logout"
+msgstr ""
+
+#: inc/login-register/login-register.php:909
+msgid "If you already have an account, you can use it to sign in here."
+msgstr ""
+
+#: inc/login-register/login-register.php:911
+msgid "Click to login or register"
+msgstr ""
+
+#: inc/mega-menu/mega-menu.php:21
+msgid "Activate MegaMenu"
+msgstr ""
+
+#: inc/mega-menu/mega-menu.php:22
+msgid "Extra Class Name"
+msgstr ""
+
+#: inc/member-verification/member-verification.php:111
+msgid "User Settings"
+msgstr ""
+
+#: inc/member-verification/member-verification.php:117
+msgid "Member Verification"
+msgstr ""
+
+#: inc/member-verification/member-verification.php:122
+msgid "Not verified"
+msgstr ""
+
+#: inc/member-verification/member-verification.php:123
+msgid "Verified"
+msgstr ""
+
+#: inc/member-verification/member-verification.php:128
+msgid "User Avatar"
+msgstr ""
+
+#: inc/member-verification/member-verification.php:129
+#: inc/member-verification/member-verification.php:147
+msgid "Upload an image or enter an URL."
+msgstr ""
+
+#: inc/member-verification/member-verification.php:146
+msgid "User Channel Banner"
+msgstr ""
+
+#: inc/membership/membership.php:41
+msgid "Membership Transactions"
+msgstr ""
+
+#: inc/membership/membership.php:57 inc/membership/membership.php:112
+msgid "Membership Plans"
+msgstr ""
+
+#: inc/membership/membership.php:106
+msgid "Membership Settings"
+msgstr ""
+
+#: inc/membership/membership.php:113
+#: inc/video-advertising/video-advertising.php:570
+msgid "Choose the right plans for this item."
+msgstr ""
+
+#: inc/membership/membership.php:186
+#: inc/mycred-sell-content/mycred-sell-content.php:561
+#: inc/woocommerce/woocommerce.php:191
+msgid "Trailer"
+msgstr ""
+
+#: inc/membership/membership.php:212 inc/woocommerce/woocommerce.php:201
+msgid "Premium Content"
+msgstr ""
+
+#: inc/membership/membership.php:213
+msgid "This content is for $$plans$$ members only."
+msgstr ""
+
+#: inc/membership/membership.php:214
+msgid "Choose a plan"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:10
+msgid "%plural% for Viewing Video"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:59
+msgid "[VidMov] [Member] for Viewing Videos"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:138 inc/mycred-hook/mycred-hook.php:311
+#: inc/mycred-hook/mycred-hook.php:483 inc/mycred-hook/mycred-hook.php:574
+#: inc/mycred-hook/mycred-hook.php:649 inc/mycred-hook/mycred-hook.php:724
+#: inc/mycred-hook/mycred-hook.php:799
+msgid "Log template"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:145 inc/mycred-hook/mycred-hook.php:318
+#: inc/mycred-hook/mycred-hook.php:490
+msgid "Award Logic"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:154 inc/mycred-hook/mycred-hook.php:327
+#: inc/mycred-hook/mycred-hook.php:499
+msgid ""
+"If you set to -1: As soon as video/audio starts playing / If you set it to "
+"greater than 0: calculated in percent ( Length of video/audio )."
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:183 inc/mycred-hook/mycred-hook.php:356
+msgid "Bonus %plural% from the system when others watch your videos."
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:232
+msgid "[VidMov] [Creator] for Viewing Videos"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:404
+msgid "[VidMov] [Creator] [Not logged in] for Viewing Videos"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:528
+msgid "Bonus %plural% from the system when you un-reacts to any post."
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:537
+msgid "[VidMov] [Members] When Unreacted"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:603
+msgid "Bonus %plural% from the system when someone un-reacts to your post."
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:612
+msgid "[VidMov] [Creator] When Unreacted"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:678
+msgid "Bonus %plural% from the system when you react to any post."
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:687
+msgid "[VidMov] [Members] When Reacted"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:753
+msgid "Bonus %plural% from the system when someone reacts to your post."
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:762
+msgid "[VidMov] [Creator] When Reacted"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:838
+msgid "[VidMov] [Member] Earn %plural% for watching videos/audios"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:839
+msgid ""
+"This hook gives members a certain amount of %plural% when they watch videos/"
+"audios."
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:847
+msgid "[VidMov] [Creator] Earn %plural% for watching videos/audios"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:848 inc/mycred-hook/mycred-hook.php:857
+msgid ""
+"This hook gives creators a certain amount of %plural% when someone watches "
+"their videos/audios."
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:856
+msgid ""
+"[VidMov] [Creator] [Not logged in] Earn %plural% for watching videos/audios"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:865
+msgid "[VidMov] [Members] Earn %plural% for un-reacts to any post"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:866
+msgid ""
+"This hook gives members a certain amount of %plural% when they un-reacts to "
+"any post."
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:874
+msgid "[VidMov] [Creators] Earn %plural% for un-reacts to any post"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:875
+msgid ""
+"This hook gives creators a certain amount of %plural% when someone un-reacts "
+"to their post."
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:883
+msgid "[VidMov] [Members] Earn %plural% for reacts to any post"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:884
+msgid ""
+"This hook gives members a certain amount of %plural% when they reacts to any "
+"post."
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:892
+msgid "[VidMov] [Creators] Earn %plural% for reacts to any post"
+msgstr ""
+
+#: inc/mycred-hook/mycred-hook.php:893
+msgid ""
+"This hook gives creators a certain amount of %plural% when someone reacts to "
+"their post."
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:64
+#: inc/mycred-sell-content/mycred-sell-content.php:261
+#: inc/mycred-sell-content/mycred-sell-content.php:368
+msgid "Video - Pay Per View"
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:66
+#: inc/mycred-sell-content/mycred-sell-content.php:85
+#: inc/mycred-sell-content/mycred-sell-content.php:104
+#: inc/mycred-sell-content/mycred-sell-content.php:263
+#: inc/mycred-sell-content/mycred-sell-content.php:282
+#: inc/mycred-sell-content/mycred-sell-content.php:301
+#: inc/mycred-sell-content/mycred-sell-content.php:370
+msgid "Purchase Price"
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:67
+#: inc/mycred-sell-content/mycred-sell-content.php:86
+#: inc/mycred-sell-content/mycred-sell-content.php:105
+#: inc/mycred-sell-content/mycred-sell-content.php:264
+#: inc/mycred-sell-content/mycred-sell-content.php:283
+#: inc/mycred-sell-content/mycred-sell-content.php:302
+#: inc/mycred-sell-content/mycred-sell-content.php:371
+msgid ""
+"If you want to sell access to this content, enter the sale price for it. "
+"FREE = 0 or blank"
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:68
+#: inc/mycred-sell-content/mycred-sell-content.php:87
+#: inc/mycred-sell-content/mycred-sell-content.php:106
+#: inc/mycred-sell-content/mycred-sell-content.php:265
+#: inc/mycred-sell-content/mycred-sell-content.php:284
+#: inc/mycred-sell-content/mycred-sell-content.php:303
+#: inc/mycred-sell-content/mycred-sell-content.php:372
+msgid "1"
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:71
+#: inc/mycred-sell-content/mycred-sell-content.php:90
+#: inc/mycred-sell-content/mycred-sell-content.php:109
+#: inc/mycred-sell-content/mycred-sell-content.php:268
+#: inc/mycred-sell-content/mycred-sell-content.php:287
+#: inc/mycred-sell-content/mycred-sell-content.php:306
+#: inc/mycred-sell-content/mycred-sell-content.php:375
+msgid "Expiration"
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:72
+#: inc/mycred-sell-content/mycred-sell-content.php:91
+#: inc/mycred-sell-content/mycred-sell-content.php:110
+#: inc/mycred-sell-content/mycred-sell-content.php:269
+#: inc/mycred-sell-content/mycred-sell-content.php:288
+#: inc/mycred-sell-content/mycred-sell-content.php:307
+#: inc/mycred-sell-content/mycred-sell-content.php:376
+msgid ""
+"The default is 0, this is the expiration time to view that content after "
+"purchase. No expiration = 0 or blank"
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:73
+#: inc/mycred-sell-content/mycred-sell-content.php:92
+#: inc/mycred-sell-content/mycred-sell-content.php:111
+#: inc/mycred-sell-content/mycred-sell-content.php:270
+#: inc/mycred-sell-content/mycred-sell-content.php:289
+#: inc/mycred-sell-content/mycred-sell-content.php:308
+#: inc/mycred-sell-content/mycred-sell-content.php:377
+msgid "0"
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:83
+#: inc/mycred-sell-content/mycred-sell-content.php:280
+msgid "Audio - Pay Per Listen"
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:102
+#: inc/mycred-sell-content/mycred-sell-content.php:299
+#: inc/mycred-sell-content/mycred-sell-content.php:394
+msgid "Sell Content"
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:144
+msgid "Error: Price must be an integer."
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:148
+msgid "Error: Price must be greater than or equal to 0."
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:152
+msgid "Error: Expiration value must be an integer."
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:156
+msgid "Error: Expiration value must be greater than or equal to 0."
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:405
+msgid "[Sell Content] Roles"
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:421
+msgid "[Sell Content] Role Setting"
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:422
+msgid "Permissions can Sell Content. Separated by commas. Eg(s): "
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:466
+msgid "Sales"
+msgstr ""
+
+#: inc/mycred-sell-content/mycred-sell-content.php:468
+msgid "Sale"
+msgstr ""
+
+#: inc/notification/notification.php:35
+msgid "Notifications Tab [Privacy]"
+msgstr ""
+
+#: inc/notification/notification.php:47 inc/notification/notification.php:53
+#: inc/notification/notification.php:88 inc/notification/notification.php:176
+#: inc/notification/notification.php:190 inc/notification/notification.php:201
+#: inc/notification/notification.php:205 inc/notification/notification.php:455
+#: inc/notification/notification.php:459 inc/notification/notification.php:533
+msgid "Notifications"
+msgstr ""
+
+#: inc/notification/notification.php:65 inc/notification/notification.php:101
+msgid "Display \"Notifications\" Item (Pro)"
+msgstr ""
+
+#: inc/notification/notification.php:66
+msgid "Hide or show \"Notifications\" item on Side Menu."
+msgstr ""
+
+#: inc/notification/notification.php:102
+msgid "Hide or show \"Notifications\" item on Tab."
+msgstr ""
+
+#: inc/notification/notification.php:182
+msgid "Sign in to see your notifications."
+msgstr ""
+
+#: inc/notification/notification.php:257 inc/notification/notification.php:301
+#: inc/notification/notification.php:345 inc/notification/notification.php:388
+msgid "Latest Posts"
+msgstr ""
+
+#: inc/notification/notification.php:259
+msgid "Today"
+msgstr ""
+
+#: inc/notification/notification.php:303
+msgid "Yesterday"
+msgstr ""
+
+#: inc/notification/notification.php:347
+msgid "This Week"
+msgstr ""
+
+#: inc/notification/notification.php:390
+msgid "This Month"
+msgstr ""
+
+#: inc/notification/notification.php:518
+msgid ""
+"No new notifications, subscribe to more channels to see more new content."
+msgstr ""
+
+#: inc/notification/notification.php:524
+msgid "View All"
+msgstr ""
+
+#: inc/notification/notification.php:531
+msgid "Please subscribe your favorite channels to receive notifications."
+msgstr ""
+
+#: inc/pro-player/media-multi-links.php:133
+msgid "Multi-Links"
+msgstr ""
+
+#: inc/pro-player/media-multi-links.php:153
+msgid "Original Media"
+msgstr ""
+
+#: inc/pro-player/media-multi-links.php:164
+msgid "Link"
+msgstr ""
+
+#: inc/pro-player/media-multi-links.php:198
+msgid ""
+"You can create multiple videos/audio in one post. Videos will be listed as "
+"links."
+msgstr ""
+
+#: inc/pro-player/media-multi-links.php:200
+msgid "Multi-Links - [ Media ] {#}"
+msgstr ""
+
+#: inc/pro-player/media-multi-links.php:201 inc/pro-player/pro-player.php:379
+msgid "Add Media"
+msgstr ""
+
+#: inc/pro-player/media-multi-links.php:202 inc/pro-player/pro-player.php:380
+msgid "Remove Media"
+msgstr ""
+
+#: inc/pro-player/media-multi-links.php:217
+msgid "Media URL"
+msgstr ""
+
+#: inc/pro-player/media-multi-links.php:219
+msgid ""
+"Please use the same format as the original video. If you use different "
+"formats, choose the \"Automatic Recognition\" format for the original video."
+"<br><br>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tEnter one url per line. For Example: <br>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<code>Link 1</code><br>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<code>http://your-domain.com/sample-media-1.mp4 (or/"
+"*.mp3 ...)</code><br>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<code>Link 2</code><br>\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t<code>http://your-domain.com/sample-media-2.mp4 (or/"
+"*.mp3 ...)</code><br>"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:89
+msgid "Download File"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:147
+#, php-format
+msgid "FREE DOWNLOAD (%s)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:157
+msgid "Free Download"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:159 inc/woocommerce/woocommerce.php:133
+msgid "Download Files"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:201
+msgid "Watch NOW"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:235
+msgid "Preview"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:283
+msgid "Professional (media link with theme's player)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:300 inc/pro-player/pro-player.php:400
+msgid "Video Formats"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:303 inc/pro-player/pro-player.php:403
+#: inc/pro-player/pro-player.php:465 inc/pro-player/pro-player.php:512
+#: inc/pro-player/pro-player.php:574
+msgid "Automatic Recognition"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:304 inc/pro-player/pro-player.php:404
+#: inc/pro-player/pro-player.php:466
+msgid "Self-Hosted Videos (*.mp4, *.webm...)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:305 inc/pro-player/pro-player.php:405
+#: inc/pro-player/pro-player.php:467
+msgid "HLS (*.m3u8)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:306 inc/pro-player/pro-player.php:406
+#: inc/pro-player/pro-player.php:468
+msgid "M(PEG)-DASH (*.mpd)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:317
+msgid "Choose self-hosted Video"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:345 inc/pro-player/pro-player.php:654
+msgid "Video Autoplay"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:346 inc/pro-player/pro-player.php:655
+#: inc/pro-player/pro-player.php:722 inc/pro-player/pro-player.php:771
+msgid "This feature does not work with videos in embedded mode."
+msgstr ""
+
+#: inc/pro-player/pro-player.php:361 inc/pro-player/pro-player.php:665
+msgid "Load Optimization"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:362 inc/pro-player/pro-player.php:666
+msgid ""
+"Optimized loading in embedded mode. It will load the iframe after the user "
+"clicks the play button. If you disable this option, you won't be able to use "
+"\"Pre-roll Ad\" for embedded videos."
+msgstr ""
+
+#: inc/pro-player/pro-player.php:376
+msgid ""
+"Media Sources - [Only work with Self-Hosted Videos, HLS, M(PEG)-DASH] - "
+"Sources are inserted into playlist objects and are lists of files. Sources "
+"serve a dual purpose, depending on the files used."
+msgstr ""
+
+#: inc/pro-player/pro-player.php:378
+msgid "Media Source {#}"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:387
+msgid "Video Label"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:393
+msgid "Video File (or URL)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:415
+msgid ""
+"Subtitles are text derived from either a transcript or screenplay of the "
+"dialog or commentary in films, television programs, video games, and the "
+"like, usually displayed at the bottom of the screen."
+msgstr ""
+
+#: inc/pro-player/pro-player.php:417
+msgid "Subtitles {#}"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:418
+msgid "Add Subtitles"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:419
+msgid "Remove Subtitles"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:426
+msgid "Subtitle Label"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:428
+msgid ""
+"A user-readable title of the text track which is used by the browser when "
+"listing available text tracks."
+msgstr ""
+
+#: inc/pro-player/pro-player.php:433
+msgid "Srclang"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:435
+msgid ""
+"Language of the track text data. It must be a valid BCP 47 language tag "
+"( https://r12a.github.io/app-subtags/ ). If the kind attribute is set to "
+"subtitles, then srclang must be defined."
+msgstr ""
+
+#: inc/pro-player/pro-player.php:440
+msgid "Src"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:442
+msgid ""
+"Address of the track (.vtt file). Must be a valid URL. This attribute must "
+"be specified and its URL value must have the same origin as the document — "
+"unless the <audio> or <video> parent element of the track element has a "
+"crossorigin attribute."
+msgstr ""
+
+#: inc/pro-player/pro-player.php:448
+msgid "Preview Video URL ( url from video sites or self-hosted videos )"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:453
+msgid ""
+"Enter url from video sites like YouTube, Vimeo, Dailymotion or your file "
+"upload (*.mp4, *.webm, *.ogg, .ogv).                   \n"
+"                    <br><br><strong>For Video Support:</strong> [video/"
+"mp4]<strong>*.mp4</strong>, [video/webm]<strong>*.webm</strong>, [video/"
+"ogg]<strong>*.ogg</strong>, [video/ogv]<strong>*.ogv</strong>\n"
+"                    <br><strong>For HLS Support:</strong> [application/x-"
+"mpegURL]<strong>*.m3u8</strong>, [vnd.apple.mpegURL]<strong>*.m3u8</strong>, "
+"[video/MP2T]<strong>*.ts</strong>\n"
+"                    <br><strong>For M(PEG)-DASH Support:</strong> "
+"[application/dash+xml]<strong>*.mpd</strong>"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:462
+msgid "Preview Video Formats"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:474
+msgid "Preview Webp URL"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:482 inc/pro-player/pro-player.php:582
+msgid "FREE Download files."
+msgstr ""
+
+#: inc/pro-player/pro-player.php:484 inc/pro-player/pro-player.php:584
+msgid "File Download {#}"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:485 inc/pro-player/pro-player.php:585
+msgid "Add File"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:486 inc/pro-player/pro-player.php:586
+msgid "Remove File"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:499 inc/pro-player/pro-player.php:599
+msgid "File"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:509
+msgid "Audio Formats"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:513 inc/pro-player/pro-player.php:575
+msgid "Self-Hosted Audios (*.mp3, *.ogg...)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:524
+msgid "Choose self-hosted Audio"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:558
+msgid "Demo Audio URL ( url from audio sites or self-hosted audios )"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:563
+msgid ""
+"This is a shortened audio track for users to refer to before listening to "
+"the full version.<br>\n"
+"\t\t\t\t\t<strong>Only supports self-hosted audio</strong>:<br>\t\t\t\t\t\t\t"
+"\t\t\t\n"
+"\t\t\t\t\t[audio/mp3]<strong>*.mp3</strong>, [audio/oga]<strong>*.oga</"
+"strong>, [audio/ogg]<strong>*.ogg</strong>, [audio/wav]<strong>*.wav</strong>"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:571
+msgid "Demo Audio Formats"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:609 inc/pro-player/pro-player.php:629
+msgid "Player Settings"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:641 inc/pro-player/pro-player.php:757
+msgid "CORS"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:642 inc/pro-player/pro-player.php:758
+msgid ""
+"The crossorigin content attribute on media elements is a CORS settings "
+"attribute."
+msgstr ""
+
+#: inc/pro-player/pro-player.php:648 inc/pro-player/pro-player.php:764
+msgid "Anonymous"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:649 inc/pro-player/pro-player.php:765
+msgid "Use Credentials"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:676
+msgid "Video Preview"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:677
+msgid ""
+"This feature will enable preview mode when the mouse pointer is above the "
+"thumbnail image."
+msgstr ""
+
+#: inc/pro-player/pro-player.php:687
+msgid "Adjust Video Size"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:688
+msgid ""
+"Automatically adjust the size of the video to fit the player size [For self-"
+"hosted videos]."
+msgstr ""
+
+#: inc/pro-player/pro-player.php:699
+msgid "Minimize + Float Player (Desktop)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:709
+msgid "Minimize + Float Player (Mobile)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:721 inc/pro-player/pro-player.php:770
+msgid "Default Languages"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:727 inc/pro-player/pro-player.php:776
+msgid "English (en)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:728 inc/pro-player/pro-player.php:777
+msgid "Català / Catalan (ca)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:729 inc/pro-player/pro-player.php:778
+msgid "Čeština / Czech (cs)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:730 inc/pro-player/pro-player.php:779
+msgid "Deutsch / German (de)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:731 inc/pro-player/pro-player.php:780
+msgid "Español / Spanish; Castilian (es)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:732 inc/pro-player/pro-player.php:781
+msgid "فارسی / Persian (fa)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:733 inc/pro-player/pro-player.php:782
+msgid "Français / French (fr)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:734 inc/pro-player/pro-player.php:783
+msgid "Hrvatski / Croatian (hr)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:735 inc/pro-player/pro-player.php:784
+msgid "Magyar / Hungarian (hu)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:736 inc/pro-player/pro-player.php:785
+msgid "Italiano / Italian (it)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:737 inc/pro-player/pro-player.php:786
+msgid "日本語 / Japanese (ja)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:738 inc/pro-player/pro-player.php:787
+msgid "한국어 / Korean (ko)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:739 inc/pro-player/pro-player.php:788
+msgid "Melayu / Malay (ms)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:740 inc/pro-player/pro-player.php:789
+msgid "Nederlands / Dutch (nl)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:741 inc/pro-player/pro-player.php:790
+msgid "Polski / Polish (pl)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:742 inc/pro-player/pro-player.php:791
+msgid "Português / Portuguese (pt)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:743 inc/pro-player/pro-player.php:792
+msgid "Română / Romanian (ro)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:744 inc/pro-player/pro-player.php:793
+msgid "Русский / Russian (ru)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:745 inc/pro-player/pro-player.php:794
+msgid "Slovensko / Slovak (sk)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:746 inc/pro-player/pro-player.php:795
+msgid "Svenska / Swedish (sv)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:747 inc/pro-player/pro-player.php:796
+msgid "Turkish (tr)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:748 inc/pro-player/pro-player.php:797
+msgid "Українська / Ukrainian (uk)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:749 inc/pro-player/pro-player.php:798
+msgid "简体中文 / Simplified Chinese (zh-CN)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:750 inc/pro-player/pro-player.php:799
+msgid "繁体中文 / Traditional Chinese (zh-TW)"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:812
+msgid "Display \"Auto Next\" Button"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:824
+msgid "Default \"Auto Next\" Mode"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:866
+msgid "Auto Next"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:1033
+msgid "Close"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:1034
+msgid "Scroll Up"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:1048
+msgid "Main Video"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:1236
+msgid "Main Audio"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:1406
+msgid "Oops, Video link does not exist or has not been updated!!!"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:1407
+msgid "Oops, Audio link does not exist or has not been updated!!!"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:1408
+msgid "No Preview"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:1410
+msgid "Loading advertisement..."
+msgstr ""
+
+#: inc/pro-player/pro-player.php:1411
+msgid "Skip Ad"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:1412
+msgid "Skip Ad in"
+msgstr ""
+
+#: inc/pro-player/pro-player.php:1413
+msgid "Ad"
+msgstr ""
+
+#: inc/pro-player/time-stamp.php:30
+msgid "Untitled"
+msgstr ""
+
+#: inc/pro-player/time-stamp.php:47
+msgid ""
+"Time Stamp - Only works when using the theme's player system, does not "
+"support third-party players."
+msgstr ""
+
+#: inc/pro-player/time-stamp.php:49
+msgid "Time {#}"
+msgstr ""
+
+#: inc/pro-player/time-stamp.php:50
+msgid "Add Time"
+msgstr ""
+
+#: inc/pro-player/time-stamp.php:51
+msgid "Remove Time"
+msgstr ""
+
+#: inc/pro-player/time-stamp.php:60
+msgid "Write a note or description for this time of the video."
+msgstr ""
+
+#: inc/pro-player/time-stamp.php:65
+msgid "Time"
+msgstr ""
+
+#: inc/pro-player/time-stamp.php:67
+msgid "e.g: 1:12, 15:03, 6:36:26 ..."
+msgstr ""
+
+#: inc/sample-data/sample-data.php:205
+msgid "BeeTeam368 Extensions"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:212
+msgid "BeeTeam368 Extensions Pro"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:219
+msgid "CMB2"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:225
+msgid "Redux Framework"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:231
+msgid "Elementor"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:237
+msgid "WP PageNavi"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:243
+msgid "myCred"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:249
+msgid "Theme My Login"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:255
+msgid "Sassy Social Share"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:302 inc/sample-data/sample-data.php:358
+msgid "Purchase Code"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:308
+msgid ""
+"Please activate with your purchase code to get premium features of the theme."
+msgstr ""
+
+#: inc/sample-data/sample-data.php:320 inc/sample-data/sample-data.php:410
+msgid "Thank you for Verifying your PURCHASE CODE"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:335
+msgid "Verification server"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:339
+msgid "Primary"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:340
+msgid "Second"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:342
+msgid ""
+"If you cannot authenticate with the primary server, try with the second "
+"server."
+msgstr ""
+
+#: inc/sample-data/sample-data.php:347
+msgid "Your Envato Account (your Username)"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:350
+msgid ""
+"Please enter both uppercase and lowercase letters correctly. eg: beeteam368"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:352
+msgid ""
+"This is your Envato account name, log in to ThemeForest and you will see it "
+"in your profile."
+msgstr ""
+
+#: inc/sample-data/sample-data.php:361
+msgid "eg: 11b77b20-19e8-4d9f-9878-299923dcd763"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:363
+msgid "Where Is My Purchase Code?"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:371
+msgid "Verify"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:390
+msgid "Please enter a valid purchase code."
+msgstr ""
+
+#: inc/sample-data/sample-data.php:418 inc/sample-data/sample-data.php:537
+#: inc/sample-data/sample-data.php:539
+msgid "An error occurred, please try again later"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:448
+msgid "VidMov Verify Purchase Code"
+msgstr ""
+
+#: inc/sample-data/sample-data.php:502 inc/sample-data/sample-data.php:504
+msgid "The connection to the verification server failed.."
+msgstr ""
+
+#: inc/sample-data/sample-data.php:563
+msgid "Monthly"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:22
+msgid "Trending Settings (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:36
+msgid "API & Fetch Data (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:107
+msgid "Subscription (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:108
+msgid "Turn ON/OFF \"Subscription\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:119
+msgid "Notification (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:120
+msgid "Turn ON/OFF \"Notification\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:132
+msgid "Membership (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:133
+msgid ""
+"Turn ON/OFF \"Membership\" feature for your theme. You need to install "
+"Armember plugin ( https://wordpress.org/plugins/armember-membership/ ) to "
+"use this feature."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:143
+msgid "Membership Plans Page (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:144 inc/settings-pro/settings-pro.php:157
+#: inc/settings-pro/settings-pro.php:217
+msgid ""
+"Use the magnifying glass icon next to the input box to find and select the "
+"appropriate page. \"Remember to save the permalink settings again in "
+"Settings > Permalinks\"."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:156
+msgid "Membership Transactions Page (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:170
+msgid "Member verification (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:171
+msgid "Turn ON/OFF \"Member verification\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:182
+msgid "Virtual Gifts (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:183
+msgid ""
+"Turn ON/OFF \"Virtual Gifts\" feature for your theme. You need to install "
+"the myCred plugin to use this feature."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:193
+msgid "Default Bonus Points (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:194
+msgid ""
+"The number of points displayed for users to choose before giving away. "
+"Separated by commas, eg: 50,100,250..."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:205
+msgid "buyCred (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:206
+msgid ""
+"Turn ON/OFF \"buyCred\" feature for your theme. You need to install the "
+"myCred plugin to use this feature."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:216
+msgid "buyCred Page (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:230
+msgid "myCred Sell Content (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:231
+msgid ""
+"Turn ON/OFF \"myCred Sell Content\" feature for your theme. You need to "
+"install the myCred plugin to use this feature."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:242
+msgid "History (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:243
+msgid "Turn ON/OFF \"History\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:281
+msgid "User Submit Post (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:282
+msgid "Turn ON/OFF \"User Submit Post\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:295
+msgid ""
+"Turn ON/OFF \"FFMPEG\" feature for your theme (Status-shell_exec: Enabled | "
+"Status-FFMPEG: is already installed)."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:297
+msgid ""
+"Turn ON/OFF \"FFMPEG\" feature for your theme (Status-shell_exec: Enabled | "
+"Status-FFMPEG: is not installed yet)."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:300
+msgid ""
+"Turn ON/OFF \"FFMPEG\" feature for your theme (Status-shell_exec: Disabled | "
+"Status-FFMPEG: Please enable PHP \"shell_exec\" function to check)."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:305
+msgid "FFMPEG (Pro)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:317
+msgid "Video Advertising (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:318
+msgid "Turn ON/OFF \"Video Advertising\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:343
+msgid "Multi-Links (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:344
+msgid "Turn ON/OFF \"Multi-Links\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:355
+msgid "Timestamp (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:356
+msgid "Turn ON/OFF \"Timestamp\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:368
+msgid "WooCommerce (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:369
+msgid "Turn ON/OFF \"WooCommerce\" support for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:381
+msgid "Popup Login Form (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:382
+msgid ""
+"Turn ON/OFF \"Popup Login Form\" feature for your theme. Please install "
+"\"Theme My Login\" plugin to use this feature."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:392
+msgid "Popup Login Form - Banner"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:393
+msgid ""
+"Upload an image or enter an URL. The minimum image size is 420(px) x 128(px)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:411
+msgid "Mega Menu (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:412
+msgid "Turn ON/OFF \"Mega Menu\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:423
+msgid "Live Search (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:424
+msgid "Turn ON/OFF \"Live Search\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:435
+msgid "BunnyCDN (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:436
+msgid "Turn ON/OFF \"BunnyCDN\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:447
+msgid "Live Streaming (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:448
+msgid "Turn ON/OFF \"Live Streaming\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:462
+msgid "Trending (PRO)"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:463
+msgid "Turn ON/OFF \"Trending\" feature for your theme."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:474
+msgid "Trending Page"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:475
+msgid ""
+"Use the magnifying glass icon next to the input box to find and select the "
+"appropriate page."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:507
+msgid "Based on Data"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:512
+msgid "Number of Views"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:513
+msgid "Number of reactions"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:514
+msgid "Total number of reactions and views"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:523
+msgid "Statistical Timeline"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:528
+msgid "By Week"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:529
+msgid "By Month"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:530
+msgid "By Year"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:531
+msgid "By Day"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:541
+msgid "Hide or show categories on trending list."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:570
+msgid "[Youtube] Google \"Private\" API key"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:571 inc/settings-pro/settings-pro.php:580
+msgid ""
+"Enter your API key here. You can add multiple API keys, enter one key per "
+"line."
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:579
+msgid "[Youtube] Google \"Public\" API key"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:588
+msgid "[Vimeo] Client Identifier"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:589 inc/settings-pro/settings-pro.php:595
+#: inc/settings-pro/settings-pro.php:601
+msgid ""
+"Enter your API key here. Optional: Only required for accessing private VIMEO "
+"videos"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:594
+msgid "[Vimeo] Client Secrets"
+msgstr ""
+
+#: inc/settings-pro/settings-pro.php:600
+msgid "[Vimeo] Personal Access Tokens"
+msgstr ""
+
+#: inc/subscription/subscription.php:54
+msgid "Subscriptions Tab [Privacy]"
+msgstr ""
+
+#: inc/subscription/subscription.php:92
+msgid "Default . . . . . ."
+msgstr ""
+
+#: inc/subscription/subscription.php:93
+msgid "Most Subscriptions"
+msgstr ""
+
+#: inc/subscription/subscription.php:94
+msgid "Highest Reaction Score"
+msgstr ""
+
+#: inc/subscription/subscription.php:161
+#, php-format
+msgid "Sort by: %s"
+msgstr ""
+
+#: inc/subscription/subscription.php:186
+#, php-format
+msgid "There are %s items in this tab"
+msgstr ""
+
+#: inc/subscription/subscription.php:224 inc/subscription/subscription.php:231
+#: inc/subscription/subscription.php:239 inc/subscription/subscription.php:243
+#: inc/subscription/subscription.php:279 inc/subscription/subscription.php:353
+#: inc/subscription/subscription.php:367
+msgid "Subscriptions"
+msgstr ""
+
+#: inc/subscription/subscription.php:257 inc/subscription/subscription.php:291
+msgid "Display \"Subscriptions\" Item (Pro)"
+msgstr ""
+
+#: inc/subscription/subscription.php:258
+msgid "Hide or show \"Subscriptions\" item on Side Menu."
+msgstr ""
+
+#: inc/subscription/subscription.php:292
+msgid "Hide or show \"Subscriptions\" item on Tab."
+msgstr ""
+
+#: inc/subscription/subscription.php:359
+msgid "Sign in to see your subscriptions."
+msgstr ""
+
+#: inc/subscription/subscription.php:380 inc/subscription/subscription.php:521
+msgid "Subscriber"
+msgstr ""
+
+#: inc/subscription/subscription.php:382 inc/subscription/subscription.php:523
+msgid "Subscribers"
+msgstr ""
+
+#: inc/subscription/subscription.php:425
+msgid "This is one of your items"
+msgstr ""
+
+#: inc/subscription/subscription.php:431
+msgid "This is your channel"
+msgstr ""
+
+#: inc/subscription/subscription.php:442 inc/subscription/subscription.php:516
+msgid "Subscribed"
+msgstr ""
+
+#: inc/subscription/subscription.php:450 inc/subscription/subscription.php:459
+#: inc/subscription/subscription.php:511
+msgid "Subscribe"
+msgstr ""
+
+#: inc/subscription/subscription.php:458
+msgid ""
+"Sign in to subscribe, only logged in users can subscribe to the channel."
+msgstr ""
+
+#: inc/trending/trending.php:106
+msgid "Top Posts"
+msgstr ""
+
+#: inc/trending/trending.php:108 inc/trending/trending.php:189
+msgid "Trending"
+msgstr ""
+
+#: inc/trending/trending.php:141
+msgid "No data to display"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:33
+msgid "Error: You need to login to edit your post."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:47 inc/user-submit-post/edit-post.php:660
+msgid "Error: You do not have permission to edit post."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:63 inc/user-submit-post/edit-post.php:474
+#: inc/user-submit-post/edit-post.php:671
+#: inc/user-submit-post/edit-post.php:1014
+msgid "Error: This post does not exist."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:76 inc/user-submit-post/edit-post.php:487
+#: inc/user-submit-post/edit-post.php:502
+msgid "Error: You cannot delete sources owned by another author."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:103
+#: inc/user-submit-post/post-submit.php:125
+msgid "Error: Please enter the title of the post."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:117
+#: inc/user-submit-post/post-submit.php:141
+msgid "Error: Please upload your video file."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:119
+#: inc/user-submit-post/post-submit.php:143
+msgid ""
+"Error: Please wait until the video file is uploaded before submitting your "
+"form."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:123
+#: inc/user-submit-post/post-submit.php:147
+msgid "Error: Please enter your external video link."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:133
+#: inc/user-submit-post/edit-post.php:168
+#: inc/user-submit-post/post-submit.php:155
+#: inc/user-submit-post/post-submit.php:188
+msgid ""
+"Error: Please wait until the preview/demo file is uploaded before submitting "
+"your form."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:151
+#: inc/user-submit-post/post-submit.php:173
+msgid "Error: Please upload your audio file."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:153
+#: inc/user-submit-post/post-submit.php:175
+msgid ""
+"Error: Please wait until the audio file is uploaded before submitting your "
+"form."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:157
+#: inc/user-submit-post/post-submit.php:179
+msgid "Error: Please enter your external audio link."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:426
+msgid "Your post has been edited successfully."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:426
+#: inc/user-submit-post/post-submit.php:443
+msgid "View Post"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:444
+msgid "Error: You need to login to delete source."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:458
+msgid "Error: You do not have permission to delete source."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:561
+msgid "Source deleted successfully."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:653
+msgid "Error: You need to login to edit post."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:678
+msgid "Error: You cannot edit posts owned by another author."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:704
+#: inc/user-submit-post/post-submit.php:706
+msgid "Primary Source"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:724
+#: inc/user-submit-post/edit-post.php:794
+#: inc/user-submit-post/edit-post.php:916
+msgid "Remove & Replace"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:737
+#: inc/user-submit-post/edit-post.php:806
+#: inc/user-submit-post/post-submit.php:711
+#: inc/user-submit-post/post-submit.php:760
+msgid "Upload"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:741
+#: inc/user-submit-post/edit-post.php:810
+#: inc/user-submit-post/post-submit.php:715
+#: inc/user-submit-post/post-submit.php:764
+msgid "External Link"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:748
+#: inc/user-submit-post/post-submit.php:722
+msgid "Media File Upload"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:754
+#: inc/user-submit-post/edit-post.php:821
+#: inc/user-submit-post/post-submit.php:728
+#: inc/user-submit-post/post-submit.php:775
+msgid "Drag and drop video/audio file to upload"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:755
+#: inc/user-submit-post/edit-post.php:822
+#: inc/user-submit-post/post-submit.php:729
+#: inc/user-submit-post/post-submit.php:776
+msgid "Select File"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:763
+#: inc/user-submit-post/post-submit.php:737
+msgid "Media URL/Embed"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:767
+#: inc/user-submit-post/edit-post.php:829
+#: inc/user-submit-post/post-submit.php:741
+#: inc/user-submit-post/post-submit.php:783
+msgid "Enter the media's external link or embed."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:774
+#: inc/user-submit-post/post-submit.php:747
+msgid "Video Resolution & Aspect Ratio"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:775
+#: inc/user-submit-post/post-submit.php:748
+msgid ""
+"Default: \" 16:9 \" - You can change the aspect ratio of this video to \" "
+"2:3 \", \" 21:9 \", ... or \" auto \""
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:784
+#: inc/user-submit-post/post-submit.php:756
+msgid "Preview/Demo File"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:815
+#: inc/user-submit-post/edit-post.php:817
+#: inc/user-submit-post/post-submit.php:769
+#: inc/user-submit-post/post-submit.php:771
+msgid "Preview/Demo File Upload"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:828
+#: inc/user-submit-post/post-submit.php:782
+msgid "Preview/Demo [URL/Embed]"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:841
+#: inc/user-submit-post/post-submit.php:793
+msgid "Post Title"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:842
+#: inc/user-submit-post/post-submit.php:794
+msgid "Enter the title of the post"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:887
+#: inc/user-submit-post/post-submit.php:822
+msgid "Audio Categories"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:896
+#: inc/user-submit-post/post-submit.php:833
+msgid "Post Categories"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:908
+#: inc/user-submit-post/post-submit.php:844
+msgid "Featured Image"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:932
+#: inc/user-submit-post/post-submit.php:850
+msgid "Drag and drop image file to upload"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:940
+#: inc/user-submit-post/edit-post.php:945
+#: inc/user-submit-post/post-submit.php:858
+#: inc/user-submit-post/post-submit.php:862
+msgid "Post Descriptions"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:951
+#: inc/user-submit-post/post-submit.php:868
+#: inc/user-submit-post/user-submit-post.php:327
+msgid "Privacy"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:961
+#: inc/user-submit-post/edit-post.php:1087
+msgid "Edit Post"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:984
+msgid "Error: You need to login to delete post."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:998
+msgid "Error: You do not have permission to delete post."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:1027
+msgid "Error: You cannot delete posts owned by another author."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:1046
+msgid "Post deleted successfully."
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:1069
+#: inc/video-advertising/video-advertising.php:156
+msgid "Edit"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:1072
+msgid "Delete"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:1085
+#: inc/user-submit-post/post-submit.php:665
+msgid "For Creators"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:1114
+msgid "Are you sure to delete this item?"
+msgstr ""
+
+#: inc/user-submit-post/edit-post.php:1115
+msgid "Are you sure to delete and replace with new source?"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:84
+msgid "Error: You need to login to submit your post."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:98
+msgid "Error: You do not have permission to submit post."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:443
+msgid "Your post has been submitted successfully."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:465
+#: inc/user-submit-post/user-submit-post.php:336
+msgid "Create"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:656
+msgid "You need to login to submit your post."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:667
+msgid "Submit Post"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:683
+#: inc/video-advertising/video-advertising.php:246
+msgid "Video"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:687
+msgid "Audio"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:691
+msgid "Post"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:878
+msgid "Create Post"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:900
+#: inc/user-submit-post/post-submit.php:901
+msgid "User Submit Settings"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:915
+msgid "Submit Videos"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:916
+msgid "Turn ON/OFF \"Submit Videos\" feature for your theme."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:927
+msgid "Submit Audios"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:928
+msgid "Turn ON/OFF \"Submit Audios\" feature for your theme."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:939
+msgid "Submit Posts"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:940
+msgid "Turn ON/OFF \"Submit Posts\" feature for your theme."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:975
+msgid "[Submit Videos] Roles"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:976
+msgid "Permissions can upload videos. Separated by commas. Eg(s): "
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:987
+msgid "[Submit Audios] Roles"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:988
+msgid "Permissions can upload audios. Separated by commas. Eg(s): "
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:999
+msgid "[Submit Posts] Roles"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1000
+msgid "Permissions can upload posts. Separated by commas. Eg(s): "
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1011
+msgid "[Video/Audio] Description"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1018
+msgid "[External Link] Description"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1025
+msgid "Chunk-Size upload (in Megabytes [mb])"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1026
+msgid ""
+"If large media files cannot be uploaded, try increasing this parameter: 20, "
+"30, 50, 90, 110... Default: 30"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1038
+msgid "[Video/Audio] Limit the max file size acceptable"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1039
+msgid ""
+"The maximum filesize (in Megabytes [mb]) that is allowed to be uploaded. "
+"Default: 10"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1051
+msgid "[Video/Audio] Accepted Files"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1052
+msgid ""
+"This is a comma separated list of file extensions. Eg(s): .mp4,.m4v,.mov,."
+"wmv,.avi,.mpg,.3gp,3g2,.webm,.ogg,.ogv,.mpd,.mp3,.oga,.wav"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1059
+msgid "[Featured Image] Field"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1060
+msgid "Do you want to show Featured Image field?"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1071
+msgid "[Featured Image] Description"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1078
+msgid "[Featured Image] Limit the max file size acceptable"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1079
+msgid ""
+"The maximum filesize (in Megabytes [mb]) that is allowed to be uploaded. "
+"Default: 5"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1091
+msgid "Post Moderation"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1111
+msgid "Exclude Audio Categories"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1119
+msgid "Exclude Post Categories"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1127
+msgid "Submit Fields"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1128
+msgid "Choose the right upload mode for your website."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1134
+msgid "Only file uploads are allowed"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1135
+msgid "Only external links are allowed"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1140
+msgid "Preview/Demo Field"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1141
+msgid "Do you want to show preview/Demo field?"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1152
+msgid "[Email Template] For Members"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1153
+msgid "Notify members after successful post submission."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1155
+#: inc/user-submit-post/post-submit.php:1207
+msgid ""
+"Your new post has been submitted successfully. You can view this item here:"
+"<br><br><strong>{post_title}</strong>[ <a href=\"{post_link}\" target="
+"\"_blank\">{post_link}</a> ]<br><br>Thank you very much!<br>Best Regards."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1160
+msgid "[Email Template] For Admin"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1161
+msgid "Notify admin when a new post is submitted."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1163
+#: inc/user-submit-post/post-submit.php:1231
+msgid ""
+"A new post has just been submitted. You can view this item here:"
+"<br><br><strong>{post_title}</strong>[ <a href=\"{post_link}\" target="
+"\"_blank\">{post_link}</a> ]<br><br>Thank you very much!<br>Best Regards."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1168
+msgid "[Email Template (for approval)] For Members"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1169
+msgid "Notify members when their new post is approved."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1171
+#: inc/user-submit-post/post-submit.php:1268
+msgid ""
+"Congratulations! Your post has been approved. You can view your item here:"
+"<br><br><strong>{post_title}</strong>[ <a href=\"{post_link}\" target="
+"\"_blank\">{post_link}</a> ]<br><br>Thank you very much!<br>Best Regards."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1176
+msgid "[Email Template (for approval)] For Admin"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1177
+msgid "Notify admin when a new post is approved."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1179
+#: inc/user-submit-post/post-submit.php:1292
+msgid ""
+"A new post has been approved. You can view this item here:"
+"<br><br><strong>{post_title}</strong>[ <a href=\"{post_link}\" target="
+"\"_blank\">{post_link}</a> ]<br><br>Thank you very much!<br>Best Regards."
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1212
+msgid "Your new post has been submitted successfully"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1236
+msgid "A new post has just been submitted"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1273
+msgid "Your post has been approved"
+msgstr ""
+
+#: inc/user-submit-post/post-submit.php:1297
+msgid "A new post has been approved"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:119
+msgid "You do not have permission to submit playlists."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:131
+#: inc/user-submit-post/user-submit-post.php:1193
+msgid "Please enter the title of the playlist."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:139
+msgid "The playlist image is too big."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:208
+msgid "An error has occurred. Please reload the page and try again!"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:214
+msgid "Thanks, you have successfully submitted the playlist!"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:235
+#: inc/user-submit-post/user-submit-post.php:242
+msgid "Add To Playlist"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:240
+msgid "Please login to view and update your playlists."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:254
+msgid "Save to..."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:306
+msgid "No playlists yet. Let's create a new playlist!"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:318
+#: inc/user-submit-post/user-submit-post.php:319
+msgid "Playlist Title"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:323
+msgid "Playlist Image"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:354
+msgid "Create New Playlist"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:366
+msgid "Videos Tab [Privacy]"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:379
+msgid "Audios Tab [Privacy]"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:395
+msgid "Playlists Tab [Privacy]"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:408
+msgid "Posts Tab [Privacy]"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:455
+#: inc/user-submit-post/user-submit-post.php:1018
+#: inc/user-submit-post/user-submit-post.php:1032
+msgid "Your Videos"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:459
+#: inc/user-submit-post/user-submit-post.php:1064
+#: inc/user-submit-post/user-submit-post.php:1078
+msgid "Your Audios"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:463
+#: inc/user-submit-post/user-submit-post.php:1109
+#: inc/user-submit-post/user-submit-post.php:1123
+msgid "Your Playlists"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:474
+#: inc/user-submit-post/user-submit-post.php:494
+#: inc/user-submit-post/user-submit-post.php:498
+#: inc/user-submit-post/user-submit-post.php:623
+msgid "Videos"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:478
+#: inc/user-submit-post/user-submit-post.php:508
+#: inc/user-submit-post/user-submit-post.php:512
+#: inc/user-submit-post/user-submit-post.php:636
+msgid "Audios"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:482
+#: inc/user-submit-post/user-submit-post.php:522
+#: inc/user-submit-post/user-submit-post.php:526
+#: inc/user-submit-post/user-submit-post.php:650
+msgid "Playlists"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:486
+#: inc/user-submit-post/user-submit-post.php:536
+#: inc/user-submit-post/user-submit-post.php:540
+#: inc/user-submit-post/user-submit-post.php:664
+msgid "Posts"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:557
+msgid "Display \"Your Videos\" Item (Pro)"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:558
+msgid "Hide or show \"Your Videos\" item on Side Menu."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:570
+msgid "Display \"Your Audios\" Item (Pro)"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:571
+msgid "Hide or show \"Your Audios\" item on Side Menu."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:584
+msgid "Display \"Your Playlists\" Item (Pro)"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:585
+msgid "Hide or show \"Your Playlists\" item on Side Menu."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:598
+msgid "Display \"Your Posts\" Item (Pro)"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:599
+msgid "Hide or show \"Your Posts\" item on Side Menu."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:679
+msgid "Display \"Videos\" Item (Pro)"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:680
+msgid "Hide or show \"Videos\" item on Tab."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:738
+#: inc/user-submit-post/user-submit-post.php:816
+#: inc/user-submit-post/user-submit-post.php:897
+#: inc/user-submit-post/user-submit-post.php:975
+msgid "Newest Items"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:739
+#: inc/user-submit-post/user-submit-post.php:817
+#: inc/user-submit-post/user-submit-post.php:898
+#: inc/user-submit-post/user-submit-post.php:976
+msgid "Oldest Items"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:757
+msgid "Display \"Audios\" Item (Pro)"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:758
+msgid "Hide or show \"Audios\" item on Tab."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:836
+msgid "Display \"Playlists\" Item (Pro)"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:837
+msgid "Hide or show \"Playlists\" item on Tab."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:917
+msgid "Display \"Posts\" Item (Pro)"
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:918
+msgid "Hide or show \"Posts\" item on Tab."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:1024
+msgid "Sign in to see your videos."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:1070
+msgid "Sign in to see your audios."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:1115
+msgid "Sign in to see your playlists."
+msgstr ""
+
+#: inc/user-submit-post/user-submit-post.php:1160
+msgid "Sign in to see your posts."
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:151
+msgid "Video Ads"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:152
+msgid "Video Ad"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:153
+#: inc/video-advertising/video-advertising.php:532
+#: inc/video-advertising/video-advertising.php:610
+#: inc/video-advertising/video-advertising.php:633
+msgid "Video Advertising"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:154
+msgid "Add Video Ad"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:155
+msgid "Add New Video Ad"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:157
+msgid "Edit Video Ad"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:158
+msgid "New Video Ad"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:159
+#: inc/video-advertising/video-advertising.php:160
+msgid "View Video Ad"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:161
+msgid "Search Video Ads"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:162
+msgid "No Video Ads found"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:163
+msgid "No Video Ads found in trash"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:164
+msgid "Parent Video Ad"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:165
+msgid "Video Ad Image"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:166
+msgid "Set Video Ad image"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:167
+msgid "Remove Video Ad image"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:168
+msgid "Use as Video Ad image"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:169
+msgid "Insert into Video Ad"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:170
+msgid "Uploaded to this Video Ad"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:171
+msgid "Filter Video Ads"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:172
+msgid "Video Ads navigation"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:173
+msgid "Video Ads list"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:175
+msgid "This is where you can add new Video Ads to your site."
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:203
+#: inc/video-advertising/video-advertising.php:601
+#: inc/video-advertising/video-advertising.php:627
+msgid "Video Ads Settings"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:213
+msgid "Video Ad Type And Format"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:216
+msgid "Mixed Mode"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:221
+msgid "Choose a specific ad type for this group."
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:229
+msgid ""
+"You can mix different types of ads and show them while the user is watching "
+"the video."
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:231
+msgid "Advertisement {#}"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:232
+msgid "Add Advertisement"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:233
+msgid "Remove Advertisement"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:242
+msgid "Type"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:245
+msgid "Image"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:247
+msgid "HTML"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:248
+msgid "VAST"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:255
+msgid "[Image] Source for Desktop"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:266
+msgid "[Image] Source for Mobile"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:276
+#: inc/video-advertising/video-advertising.php:302
+msgid "Link Target"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:279
+msgid "Enter URL if you want this image to have a link."
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:289
+msgid "Video Source"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:290
+msgid ""
+"Recommended Format Solution: *.mp4, *.webm, *.ogg or link to hls format "
+"(*m3u8)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:305
+msgid "Enter URL if you want this video to have a link."
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:315
+msgid "[HTML] Source for Desktop"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:317
+#: inc/video-advertising/video-advertising.php:329
+msgid ""
+"You can also use Google Adsense code here. Or HTML blocks developed by you."
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:327
+msgid "[HTML] Source for Mobile"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:341
+msgid "The url of the VAST XML"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:344
+msgid ""
+"Please note the VAST tag XML response Content-Type must be either "
+"application/xml or text/xml."
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:354
+msgid "Ad Size for Desktop"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:359
+msgid "336x280 (px)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:360
+#: inc/video-advertising/video-advertising.php:377
+msgid "300x250 (px)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:361
+msgid "728x90 (px)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:362
+msgid "468x60 (px)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:363
+#: inc/video-advertising/video-advertising.php:381
+msgid "250x250 (px)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:364
+#: inc/video-advertising/video-advertising.php:382
+msgid "200x200 (px)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:372
+msgid "Ad Size for Mobile"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:378
+msgid "320x50 (px)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:379
+msgid "320x100 (px)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:380
+msgid "300x50 (px)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:390
+msgid "Vertial Align"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:395
+msgid "Bottom"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:396
+msgid "Middle"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:397
+msgid "Top"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:407
+msgid "Time to show ads"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:410
+msgid "Pre-Roll"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:411
+msgid "Post-Roll"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:412
+msgid "Mid-Roll"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:417
+msgid ""
+"If you want to set a specific time, select \"Custom\" and enter the value in "
+"the field below ( <strong>[Custom] Ad shows up after</strong> )"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:423
+msgid "[Custom] Ad shows up after (seconds)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:430
+#: inc/video-advertising/video-advertising.php:445
+msgid "If blank, defaults to: 5"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:437
+msgid "Skip Ad - Clickable After (seconds)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:452
+msgid "Hide Ad After (seconds)"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:460
+msgid ""
+"If blank, defaults to: 20. Enter 0 if you want users to manually skip this "
+"ad."
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:533
+msgid "Choose display ads for videos."
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:540
+msgid "VAST TimeOut"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:541
+msgid ""
+"This parameter lets you set the time, in milliseconds, to wait for the VAST "
+"to load. (Default: 888)."
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:569
+msgid "Hide Ads for Specific Plans"
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:611
+msgid ""
+"Choose display ads for videos. Select \"Default\" to use settings in Theme "
+"Settings > Video Settings > Player Settings."
+msgstr ""
+
+#: inc/video-advertising/video-advertising.php:634
+msgid ""
+"Select \"Default\" to use settings in Theme Settings > Video Settings > "
+"Player Settings."
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:57
+msgid "Transfer History Tab [Privacy]"
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:69
+#: inc/virtual-gifts/virtual-gifts.php:75
+#: inc/virtual-gifts/virtual-gifts.php:144
+#: inc/virtual-gifts/virtual-gifts.php:158
+#: inc/virtual-gifts/virtual-gifts.php:169
+#: inc/virtual-gifts/virtual-gifts.php:173
+#: inc/virtual-gifts/virtual-gifts.php:251
+#: inc/virtual-gifts/virtual-gifts.php:356
+msgid "Transfer History"
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:87
+#: inc/virtual-gifts/virtual-gifts.php:107
+msgid "Display \"Transfer History\" Item (Pro)"
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:88
+msgid "Hide or show \"Transfer History\" item on Side Menu."
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:108
+msgid "Hide or show \"Transfer History\" item on Tab."
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:150
+msgid "Sign in to see your transfer history."
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:203
+msgid "Your Accumulated points"
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:215
+msgid "Withdraw"
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:217
+msgid "Exchange points to cash"
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:229
+msgid "This is a private area, you can only use this feature on your channel."
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:231
+msgid "Go to your channel"
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:236
+msgid "This is a private area. If this is your channel, please login to use."
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:237
+msgid "Please login to view or use this feature."
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:249
+msgid "History of giving and receiving your points"
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:321
+#: inc/virtual-gifts/virtual-gifts.php:339
+msgid "Virtual Gifts"
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:327
+msgid "Give Points"
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:337
+msgid ""
+"Please login to give this member a gift. It's the reward that keeps this "
+"creator going to keep creating compelling new content."
+msgstr ""
+
+#: inc/virtual-gifts/virtual-gifts.php:384
+msgid "%giver% gives %points% points"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:121
+#, php-format
+msgid "Download. Expiration time: %s"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:131 inc/woocommerce/woocommerce.php:445
+msgid "Premium Download"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:163
+msgid "Premium Download:"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:202
+msgid "Want to see the full content?"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:203
+msgid "Buy Now:"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:235
+msgid "Your Dashboard"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:282
+msgid "Home"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:331
+msgid "Cart"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:340
+msgid "Woocommerce Sidebar"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:342
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:413
+#, php-format
+msgid ""
+"You have purchased and can download the videos below. Expiration time: %s"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:482
+#, php-format
+msgid "You have purchased and can watch the videos below. Expiration time: %s"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:514
+msgid "Prime Video/Audio"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:535 inc/woocommerce/woocommerce.php:565
+msgid "WooCommerce Premium Download"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:549 inc/woocommerce/woocommerce.php:579
+msgid "WooCommerce Premium Video"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:597 inc/woocommerce/woocommerce.php:598
+msgid "WooCommerce Settings"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:608
+msgid "Full-Width Mode"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:609
+msgid ""
+"Change Full-Width Mode. Select \"Default\" to use settings in Theme Options "
+"> Styling."
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:621
+msgid "Sidebar"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:622
+msgid "Turn ON/OFF Sidebar for WooCommerce Pages."
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:627
+msgid "Right"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:628
+msgid "Left"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:629
+msgid "Hidden"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:634
+msgid "[Product List] Items Per Page"
+msgstr ""
+
+#: inc/woocommerce/woocommerce.php:635
+msgid "Number of items to show per page. Defaults to: 15"
+msgstr ""

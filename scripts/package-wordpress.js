@@ -8,6 +8,15 @@ const projectRoot = path.resolve(__dirname, '..');
 const plugins = {
   'flickr-mosaic': ['flickr-mosaic.php', 'readme.txt', 'assets/flickr-mosaic.js', 'assets/flickr-mosaic.css', 'assets/flickr-logo.png'],
   'abu-programme-pdf': ['abu-programme-pdf.php', 'readme.txt', 'assets/custom-pdf-reader.js'],
+  'asen-s3-upload': [
+    'asen-s3-upload.php',
+    'readme.txt',
+    'includes/class-asen-s3-client.php',
+    'includes/class-asen-s3-settings.php',
+    'includes/class-asen-s3-ajax.php',
+    'includes/class-asen-s3-media-manager.php',
+    'assets/asen-s3-uploader.js',
+  ],
 };
 const pluginName = process.argv[2] || 'flickr-mosaic';
 if (!plugins[pluginName]) {

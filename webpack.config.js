@@ -6,6 +6,34 @@ module.exports = (env = {}, argv) => {
   const isProduction = argv.mode === 'production';
   const isWordPress = Boolean(env.wordpress);
   const isPdfReader = Boolean(env.pdfreader);
+  const isS3Upload = Boolean(env.s3upload);
+
+  if (isS3Upload) {
+    return {
+      entry: './src/s3-uploader-entry.js',
+      output: {
+        path: path.resolve(__dirname, 'wordpress/asen-s3-upload/assets'),
+        filename: 'asen-s3-uploader.js',
+        clean: false,
+      },
+      mode: 'production',
+      devtool: false,
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                plugins: [['@babel/plugin-proposal-decorators', { version: 'legacy' }]],
+              },
+            },
+          },
+        ],
+      },
+    };
+  }
 
   if (isPdfReader) {
     return {

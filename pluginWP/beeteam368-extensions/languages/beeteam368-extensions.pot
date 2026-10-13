@@ -1,0 +1,3546 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BeeTeam368 Extensions - VidMov Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-13 03:04+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: BeeTeam368 <support@beeteam368.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Loco-Version: 2.5.3; wp-5.7.2\n"
+"X-Domain: beeteam368-extensions\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_html__;esc_attr__;esc_html_e;esc_attr_e;"
+"esc_html_x;esc_attr_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: elementor/addons.php:24
+msgid "BeeTeam368 Widgets"
+msgstr ""
+
+#: elementor/addons.php:232 elementor/addons.php:241 elementor/addons.php:305
+#: elementor/addons.php:314 inc/watch-later/watch-later.php:476
+msgid "View All"
+msgstr ""
+
+#: elementor/addons.php:295
+msgid "Group"
+msgstr ""
+
+#: elementor/block/block.php:10
+msgid "Posts Block"
+msgstr ""
+
+#: elementor/block/block.php:66 elementor/slider/slider.php:65
+msgid "Layouts"
+msgstr ""
+
+#: elementor/block/block.php:72
+msgid "Block Layout"
+msgstr ""
+
+#: elementor/block/block.php:82 elementor/slider/slider.php:95
+msgid "[Grid Settings] Full Width Mode"
+msgstr ""
+
+#: elementor/block/block.php:85 elementor/block/block.php:99
+#: elementor/block/block.php:113 elementor/block/block.php:125
+#: elementor/block/block.php:137 elementor/block/block.php:149
+#: elementor/block/block.php:161 elementor/block/block.php:173
+#: elementor/block/block.php:185 elementor/block/block.php:197
+#: elementor/block/block.php:209 elementor/block/block.php:221
+#: elementor/block/block.php:233 elementor/block/block.php:293
+#: elementor/slider/slider.php:85 elementor/slider/slider.php:98
+#: elementor/slider/slider.php:112 elementor/slider/slider.php:124
+#: elementor/slider/slider.php:136 elementor/slider/slider.php:148
+#: elementor/slider/slider.php:160 elementor/slider/slider.php:172
+#: elementor/slider/slider.php:184 elementor/slider/slider.php:196
+#: elementor/slider/slider.php:208 elementor/slider/slider.php:220
+#: elementor/slider/slider.php:232 elementor/slider/slider.php:277
+msgid "Yes"
+msgstr ""
+
+#: elementor/block/block.php:86 elementor/block/block.php:100
+#: elementor/block/block.php:114 elementor/block/block.php:126
+#: elementor/block/block.php:138 elementor/block/block.php:150
+#: elementor/block/block.php:162 elementor/block/block.php:174
+#: elementor/block/block.php:186 elementor/block/block.php:198
+#: elementor/block/block.php:210 elementor/block/block.php:222
+#: elementor/block/block.php:234 elementor/block/block.php:294
+#: elementor/slider/slider.php:86 elementor/slider/slider.php:99
+#: elementor/slider/slider.php:113 elementor/slider/slider.php:125
+#: elementor/slider/slider.php:137 elementor/slider/slider.php:149
+#: elementor/slider/slider.php:161 elementor/slider/slider.php:173
+#: elementor/slider/slider.php:185 elementor/slider/slider.php:197
+#: elementor/slider/slider.php:209 elementor/slider/slider.php:221
+#: elementor/slider/slider.php:233 elementor/slider/slider.php:278
+msgid "No"
+msgstr ""
+
+#: elementor/block/block.php:89 elementor/slider/slider.php:102
+msgid ""
+"If you enable full-width mode from Theme Options [ Styling: Full-Width "
+"Mode ] and this layout is on one row with Content Width = Full Width. Please "
+"enable this option."
+msgstr ""
+
+#: elementor/block/block.php:96
+msgid "[Grid Settings] Include Sidebar"
+msgstr ""
+
+#: elementor/block/block.php:103
+msgid ""
+"If your grid is on a page or row with a sidebar. Please enable this option."
+msgstr ""
+
+#: elementor/block/block.php:110 elementor/slider/slider.php:109
+#: inc/widget/widget.php:506
+msgid "Display Post Author"
+msgstr ""
+
+#: elementor/block/block.php:122 elementor/slider/slider.php:121
+#: inc/widget/widget.php:514
+msgid "Display Post Excerpt"
+msgstr ""
+
+#: elementor/block/block.php:134 elementor/slider/slider.php:133
+#: inc/widget/widget.php:522
+msgid "Display Post Categories"
+msgstr ""
+
+#: elementor/block/block.php:146 elementor/slider/slider.php:145
+#: inc/widget/widget.php:530
+msgid "Display Post Published Date"
+msgstr ""
+
+#: elementor/block/block.php:158 elementor/slider/slider.php:157
+#: inc/widget/widget.php:538
+msgid "Display Post Last Updated"
+msgstr ""
+
+#: elementor/block/block.php:170 elementor/slider/slider.php:169
+#: inc/widget/widget.php:546
+msgid "Display Post Reactions"
+msgstr ""
+
+#: elementor/block/block.php:182 elementor/slider/slider.php:181
+#: inc/widget/widget.php:554
+msgid "Display Post Comments Count"
+msgstr ""
+
+#: elementor/block/block.php:194 elementor/slider/slider.php:193
+#: inc/widget/widget.php:562
+msgid "Display Post Views Count"
+msgstr ""
+
+#: elementor/block/block.php:206 elementor/slider/slider.php:205
+#: inc/audio/audio.php:537 inc/video/video.php:556 inc/widget/widget.php:570
+msgid "Display Duration"
+msgstr ""
+
+#: elementor/block/block.php:218 elementor/slider/slider.php:217
+#: inc/audio/audio.php:548 inc/video/video.php:568
+msgid "Display Label"
+msgstr ""
+
+#: elementor/block/block.php:230 elementor/slider/slider.php:229
+#: inc/widget/widget.php:586
+msgid "Display Post Read More ( or: Share)"
+msgstr ""
+
+#: elementor/block/block.php:242 inc/widget/widget.php:594
+msgid "Image Ratio"
+msgstr ""
+
+#: elementor/block/block.php:244
+msgid "Change the display aspect ratio of the image."
+msgstr ""
+
+#: elementor/block/block.php:247 inc/audio/audio.php:467
+#: inc/audio/audio.php:490 inc/audio/audio.php:506 inc/audio/audio.php:520
+#: inc/audio/audio.php:530 inc/audio/audio.php:583 inc/audio/audio.php:623
+#: inc/audio/audio.php:633 inc/audio/audio.php:684 inc/audio/audio.php:770
+#: inc/audio/audio.php:783 inc/cast/cast.php:904 inc/cast/cast.php:927
+#: inc/cast/cast.php:943 inc/cast/cast.php:957 inc/cast/cast.php:985
+#: inc/cast/cast.php:1008 inc/cast/cast.php:1037 inc/general/general.php:226
+#: inc/general/general.php:238 inc/general/general.php:248
+#: inc/general/general.php:258 inc/general/general.php:268
+#: inc/general/general.php:278 inc/general/general.php:288
+#: inc/general/general.php:298 inc/general/general.php:308
+#: inc/general/general.php:318 inc/general/general.php:328
+#: inc/general/general.php:338 inc/general/general.php:348
+#: inc/general/general.php:442 inc/general/general.php:455
+#: inc/playlist/playlist.php:1010 inc/playlist/playlist.php:1033
+#: inc/playlist/playlist.php:1049 inc/playlist/playlist.php:1063
+#: inc/playlist/playlist.php:1073 inc/playlist/playlist.php:1104
+#: inc/playlist/playlist.php:1172 inc/playlist/playlist.php:1182
+#: inc/series/series.php:1094 inc/series/series.php:1117
+#: inc/series/series.php:1133 inc/series/series.php:1147
+#: inc/series/series.php:1157 inc/series/series.php:1188
+#: inc/series/series.php:1256 inc/series/series.php:1266
+#: inc/settings/page-settings.php:43 inc/settings/page-settings.php:69
+#: inc/settings/page-settings.php:82 inc/settings/page-settings.php:96
+#: inc/video/video.php:486 inc/video/video.php:509 inc/video/video.php:525
+#: inc/video/video.php:539 inc/video/video.php:549 inc/video/video.php:603
+#: inc/video/video.php:643 inc/video/video.php:653 inc/video/video.php:714
+#: inc/video/video.php:823 inc/video/video.php:836
+#: inc/views-counter/views-counter.php:113 inc/widget/widget.php:596
+msgid "Default"
+msgstr ""
+
+#: elementor/block/block.php:248
+msgid "Ratio [16:9]"
+msgstr ""
+
+#: elementor/block/block.php:249 inc/widget/widget.php:598
+msgid "Ratio [4:3]"
+msgstr ""
+
+#: elementor/block/block.php:250 inc/widget/widget.php:599
+msgid "Ratio [1:1]"
+msgstr ""
+
+#: elementor/block/block.php:251 inc/widget/widget.php:600
+msgid "Ratio [2:3]"
+msgstr ""
+
+#: elementor/block/block.php:259 elementor/slider/slider.php:241
+#: inc/widget/widget.php:54
+msgid "Extra Class Name"
+msgstr ""
+
+#: elementor/block/block.php:268 elementor/slider/slider.php:251
+msgid "Queries"
+msgstr ""
+
+#: elementor/block/block.php:274 elementor/slider/slider.php:258
+msgid "Post Types"
+msgstr ""
+
+#: elementor/block/block.php:278 elementor/slider/slider.php:262
+#: inc/widget/widget.php:404
+msgid "Video Posts"
+msgstr ""
+
+#: elementor/block/block.php:279 elementor/slider/slider.php:263
+#: inc/widget/widget.php:405
+msgid "Audio Posts"
+msgstr ""
+
+#: elementor/block/block.php:280 elementor/slider/slider.php:264
+#: inc/widget/widget.php:406
+msgid "WordPress Posts"
+msgstr ""
+
+#: elementor/block/block.php:289 elementor/slider/slider.php:273
+msgid "Live Streaming Videos"
+msgstr ""
+
+#: elementor/block/block.php:291 elementor/slider/slider.php:275
+msgid "Filter out only live streaming videos."
+msgstr ""
+
+#: elementor/block/block.php:303
+msgid "Filter Mode"
+msgstr ""
+
+#: elementor/block/block.php:306 inc/audio/audio.php:597
+#: inc/audio/audio.php:771 inc/audio/audio.php:784 inc/video/video.php:617
+#: inc/video/video.php:824 inc/video/video.php:837 inc/widget/widget.php:397
+msgid "Classic"
+msgstr ""
+
+#: elementor/block/block.php:307
+msgid "Multi"
+msgstr ""
+
+#: elementor/block/block.php:315 elementor/block/block.php:336
+#: inc/widget/widget.php:423
+msgid "Filter Items"
+msgstr ""
+
+#: elementor/block/block.php:317 elementor/block/block.php:338
+#: inc/widget/widget.php:424
+msgid "Enter categories, tags (id or slug) be shown in the filter list."
+msgstr ""
+
+#: elementor/block/block.php:327
+msgid "Group Default Title"
+msgstr ""
+
+#: elementor/block/block.php:346
+msgid "Filter Groups"
+msgstr ""
+
+#: elementor/block/block.php:359
+msgid "Filter Group"
+msgstr ""
+
+#: elementor/block/block.php:367 elementor/slider/slider.php:287
+#: inc/widget/widget.php:428
+msgid "Include categories"
+msgstr ""
+
+#: elementor/block/block.php:369 elementor/block/block.php:387
+#: elementor/slider/slider.php:289 elementor/slider/slider.php:307
+#: inc/widget/widget.php:429 inc/widget/widget.php:439
+msgid "Enter category id or slug, eg: 245, 126, ..."
+msgstr ""
+
+#: elementor/block/block.php:376 elementor/slider/slider.php:296
+#: inc/widget/widget.php:433
+msgid "Include tags"
+msgstr ""
+
+#: elementor/block/block.php:378 elementor/slider/slider.php:298
+#: inc/widget/widget.php:434
+msgid "Enter tag id or slug, eg: 19, 368, ..."
+msgstr ""
+
+#: elementor/block/block.php:385 elementor/slider/slider.php:305
+#: inc/widget/widget.php:438
+msgid "Exclude categories"
+msgstr ""
+
+#: elementor/block/block.php:394 elementor/slider/slider.php:314
+#: inc/widget/widget.php:443
+msgid "Include Posts"
+msgstr ""
+
+#: elementor/block/block.php:396 elementor/slider/slider.php:316
+#: inc/widget/widget.php:444
+msgid "Enter post id, eg: 1136, 2251, ..."
+msgstr ""
+
+#: elementor/block/block.php:403 elementor/slider/slider.php:323
+#: inc/widget/widget.php:448
+msgid "Offset"
+msgstr ""
+
+#: elementor/block/block.php:405 inc/widget/widget.php:449
+msgid ""
+"Number of post to displace or pass over. Warning: Setting the offset "
+"parameter overrides/ignores the paged parameter and breaks pagination. "
+"Therefore, the Pagination button will be hidden when you use this parameter."
+msgstr ""
+
+#: elementor/block/block.php:412 elementor/slider/slider.php:332
+#: inc/channel/channel.php:1640 inc/widget/widget.php:467
+msgid "Order By"
+msgstr ""
+
+#: elementor/block/block.php:414 elementor/slider/slider.php:334
+msgid "Select order type."
+msgstr ""
+
+#: elementor/block/block.php:417 elementor/slider/slider.php:337
+#: inc/playlist/playlist.php:1118 inc/series/series.php:1202
+#: inc/widget/widget.php:454
+msgid "Date"
+msgstr ""
+
+#: elementor/block/block.php:418 elementor/slider/slider.php:338
+#: inc/playlist/playlist.php:1119 inc/series/series.php:1203
+#: inc/widget/widget.php:455
+msgid "Order by post ID"
+msgstr ""
+
+#: elementor/block/block.php:419 elementor/slider/slider.php:339
+#: inc/playlist/playlist.php:1120 inc/series/series.php:1204
+#: inc/widget/widget.php:456
+msgid "Author"
+msgstr ""
+
+#: elementor/block/block.php:420 elementor/slider/slider.php:340
+#: inc/channel/channel.php:1635 inc/playlist/playlist.php:1121
+#: inc/series/series.php:1205 inc/widget/widget.php:390
+#: inc/widget/widget.php:457
+msgid "Title"
+msgstr ""
+
+#: elementor/block/block.php:421 elementor/slider/slider.php:341
+#: inc/playlist/playlist.php:1122 inc/series/series.php:1206
+#: inc/widget/widget.php:458
+msgid "Last modified date"
+msgstr ""
+
+#: elementor/block/block.php:422 elementor/slider/slider.php:342
+#: inc/playlist/playlist.php:1123 inc/series/series.php:1207
+#: inc/widget/widget.php:459
+msgid "Post/page parent ID"
+msgstr ""
+
+#: elementor/block/block.php:423 elementor/slider/slider.php:343
+#: inc/playlist/playlist.php:1124 inc/series/series.php:1208
+#: inc/widget/widget.php:460
+msgid "Number of comments"
+msgstr ""
+
+#: elementor/block/block.php:424 elementor/slider/slider.php:344
+#: inc/playlist/playlist.php:1125 inc/series/series.php:1209
+#: inc/widget/widget.php:461
+msgid "Menu order/Page Order"
+msgstr ""
+
+#: elementor/block/block.php:425 elementor/slider/slider.php:345
+#: inc/playlist/playlist.php:1126 inc/series/series.php:1210
+#: inc/widget/widget.php:462
+msgid "Random order"
+msgstr ""
+
+#: elementor/block/block.php:426 elementor/slider/slider.php:346
+#: inc/playlist/playlist.php:1127 inc/series/series.php:1211
+#: inc/widget/widget.php:463
+msgid "Preserve post ID order"
+msgstr ""
+
+#: elementor/block/block.php:434 elementor/slider/slider.php:354
+#: inc/playlist/playlist.php:1132 inc/series/series.php:1216
+msgid "Sort Order"
+msgstr ""
+
+#: elementor/block/block.php:436 elementor/slider/slider.php:356
+msgid "Select sorting order."
+msgstr ""
+
+#: elementor/block/block.php:439 elementor/slider/slider.php:359
+#: inc/playlist/playlist.php:1137 inc/series/series.php:1221
+msgid "Descending"
+msgstr ""
+
+#: elementor/block/block.php:440 elementor/slider/slider.php:360
+#: inc/playlist/playlist.php:1138 inc/series/series.php:1222
+msgid "Ascending"
+msgstr ""
+
+#: elementor/block/block.php:448 inc/audio/audio.php:474 inc/cast/cast.php:911
+#: inc/cast/cast.php:992 inc/channel/channel.php:1648
+#: inc/like-dislike/like-dislike.php:364 inc/playlist/playlist.php:1017
+#: inc/playlist/playlist.php:1143 inc/review/review.php:287
+#: inc/series/series.php:1101 inc/series/series.php:1227
+#: inc/video/video.php:493 inc/watch-later/watch-later.php:350
+#: inc/widget/widget.php:488
+msgid "Items Per Page"
+msgstr ""
+
+#: elementor/block/block.php:450 inc/channel/channel.php:1649
+#: inc/widget/widget.php:489
+msgid "Number of items to show per page."
+msgstr ""
+
+#: elementor/block/block.php:461 elementor/slider/slider.php:368
+#: inc/channel/channel.php:1653 inc/widget/widget.php:493
+msgid "Posts Count"
+msgstr ""
+
+#: elementor/block/block.php:463 elementor/slider/slider.php:370
+#: inc/channel/channel.php:1654 inc/widget/widget.php:494
+msgid "Set max limit for items in grid or enter -1 to display all."
+msgstr ""
+
+#: elementor/block/block.php:474 inc/audio/audio.php:484 inc/cast/cast.php:921
+#: inc/cast/cast.php:1002 inc/channel/channel.php:1658
+#: inc/like-dislike/like-dislike.php:374 inc/playlist/playlist.php:1027
+#: inc/playlist/playlist.php:1153 inc/review/review.php:297
+#: inc/series/series.php:1111 inc/series/series.php:1237
+#: inc/video/video.php:503 inc/watch-later/watch-later.php:360
+#: inc/widget/widget.php:498
+msgid "Pagination"
+msgstr ""
+
+#: elementor/block/block.php:478 inc/audio/audio.php:492 inc/cast/cast.php:929
+#: inc/cast/cast.php:1010 inc/channel/channel.php:195
+#: inc/channel/channel.php:1660 inc/like-dislike/like-dislike.php:381
+#: inc/playlist/playlist.php:1035 inc/review/review.php:304
+#: inc/series/series.php:1119 inc/video/video.php:511
+#: inc/watch-later/watch-later.php:367 inc/widget/widget.php:500
+msgid "Load More Button (Ajax)"
+msgstr ""
+
+#: elementor/block/block.php:479 inc/audio/audio.php:493 inc/cast/cast.php:930
+#: inc/cast/cast.php:1011 inc/channel/channel.php:196
+#: inc/channel/channel.php:1661 inc/like-dislike/like-dislike.php:382
+#: inc/playlist/playlist.php:1036 inc/review/review.php:305
+#: inc/series/series.php:1120 inc/video/video.php:512
+#: inc/watch-later/watch-later.php:368 inc/widget/widget.php:501
+msgid "Infinite Scroll (Ajax)"
+msgstr ""
+
+#: elementor/block/block.php:488 elementor/slider/slider.php:383
+msgid "Heading"
+msgstr ""
+
+#: elementor/block/block.php:494
+msgid "Block Title"
+msgstr ""
+
+#: elementor/block/block.php:496 elementor/slider/slider.php:391
+msgid "Enter section title ( optional )."
+msgstr ""
+
+#: elementor/block/block.php:502
+msgid "Block Title [Color]"
+msgstr ""
+
+#: elementor/block/block.php:509
+msgid "Block Title Line [Color]"
+msgstr ""
+
+#: elementor/block/block.php:517 elementor/slider/slider.php:412
+msgid "Icon for Title"
+msgstr ""
+
+#: elementor/block/block.php:526
+msgid "Block Title Icon [Color]"
+msgstr ""
+
+#: elementor/block/block.php:533
+msgid "Block Title Icon [Background Color]"
+msgstr ""
+
+#: elementor/block/block.php:540
+msgid "Block Title Icon [Border Color]"
+msgstr ""
+
+#: elementor/block/block.php:548
+msgid "Block Sub-Title"
+msgstr ""
+
+#: elementor/block/block.php:550 elementor/slider/slider.php:445
+msgid "Enter section sub-title ( optional )."
+msgstr ""
+
+#: elementor/block/block.php:556
+msgid "Block Sub-Title [Color]"
+msgstr ""
+
+#: elementor/block/block.php:564
+msgid "Block Sub-Title URL"
+msgstr ""
+
+#: elementor/block/block.php:566 elementor/slider/slider.php:461
+msgid "Enter section sub-title URL ( optional )."
+msgstr ""
+
+#: elementor/slider/slider.php:10
+msgid "Posts Slider"
+msgstr ""
+
+#: elementor/slider/slider.php:71
+msgid "Slider Layout"
+msgstr ""
+
+#: elementor/slider/slider.php:81
+msgid "AutoPlay Video"
+msgstr ""
+
+#: elementor/slider/slider.php:83
+msgid "Only works with style Daffodil."
+msgstr ""
+
+#: elementor/slider/slider.php:325
+msgid "Number of post to displace or pass over."
+msgstr ""
+
+#: elementor/slider/slider.php:389
+msgid "Slider Title"
+msgstr ""
+
+#: elementor/slider/slider.php:397
+msgid "Slider Title [Color]"
+msgstr ""
+
+#: elementor/slider/slider.php:404
+msgid "Slider Title Line [Color]"
+msgstr ""
+
+#: elementor/slider/slider.php:421
+msgid "Slider Title Icon [Color]"
+msgstr ""
+
+#: elementor/slider/slider.php:428
+msgid "Slider Title Icon [Background Color]"
+msgstr ""
+
+#: elementor/slider/slider.php:435
+msgid "Slider Title Icon [Border Color]"
+msgstr ""
+
+#: elementor/slider/slider.php:443
+msgid "Slider Sub-Title"
+msgstr ""
+
+#: elementor/slider/slider.php:451
+msgid "Slider Sub-Title [Color]"
+msgstr ""
+
+#: elementor/slider/slider.php:459
+msgid "Slider Sub-Title URL"
+msgstr ""
+
+#: inc/audio/audio.php:85
+msgid "Listen NOW"
+msgstr ""
+
+#: inc/audio/audio.php:259 inc/audio/audio.php:261
+msgid "Audios"
+msgstr ""
+
+#: inc/audio/audio.php:260
+msgid "Audio"
+msgstr ""
+
+#: inc/audio/audio.php:262
+msgid "Add Audio"
+msgstr ""
+
+#: inc/audio/audio.php:263
+msgid "Add New Audio"
+msgstr ""
+
+#: inc/audio/audio.php:264 inc/cast/cast.php:740 inc/channel/channel.php:41
+#: inc/playlist/playlist.php:820 inc/report/report.php:280
+#: inc/series/series.php:903 inc/settings/cmb2/cmb2-attached-posts/init.php:290
+#: inc/video/video.php:283
+msgid "Edit"
+msgstr ""
+
+#: inc/audio/audio.php:265
+msgid "Edit Audio"
+msgstr ""
+
+#: inc/audio/audio.php:266
+msgid "New Audio"
+msgstr ""
+
+#: inc/audio/audio.php:267 inc/audio/audio.php:268
+msgid "View Audio"
+msgstr ""
+
+#: inc/audio/audio.php:269
+msgid "Search Audios"
+msgstr ""
+
+#: inc/audio/audio.php:270
+msgid "No Audios found"
+msgstr ""
+
+#: inc/audio/audio.php:271
+msgid "No Audios found in trash"
+msgstr ""
+
+#: inc/audio/audio.php:272
+msgid "Parent Audio"
+msgstr ""
+
+#: inc/audio/audio.php:273
+msgid "Audio Image"
+msgstr ""
+
+#: inc/audio/audio.php:274
+msgid "Set Audio image"
+msgstr ""
+
+#: inc/audio/audio.php:275
+msgid "Remove Audio image"
+msgstr ""
+
+#: inc/audio/audio.php:276
+msgid "Use as Audio image"
+msgstr ""
+
+#: inc/audio/audio.php:277
+msgid "Insert into Audio"
+msgstr ""
+
+#: inc/audio/audio.php:278
+msgid "Uploaded to this Audio"
+msgstr ""
+
+#: inc/audio/audio.php:279
+msgid "Filter Audios"
+msgstr ""
+
+#: inc/audio/audio.php:280
+msgid "Audios navigation"
+msgstr ""
+
+#: inc/audio/audio.php:281
+msgid "Audios list"
+msgstr ""
+
+#: inc/audio/audio.php:283
+msgid "This is where you can add new audios to your site."
+msgstr ""
+
+#: inc/audio/audio.php:311 inc/playlist/playlist.php:867
+#: inc/series/series.php:950 inc/video/video.php:330
+msgid "Categories"
+msgstr ""
+
+#: inc/audio/audio.php:313 inc/audio/audio.php:315
+msgid "Audio Categories"
+msgstr ""
+
+#: inc/audio/audio.php:314 inc/playlist/playlist.php:870
+#: inc/series/series.php:953 inc/video/video.php:333
+msgid "Category"
+msgstr ""
+
+#: inc/audio/audio.php:316 inc/playlist/playlist.php:872
+#: inc/series/series.php:955 inc/video/video.php:335
+msgid "Search Categories"
+msgstr ""
+
+#: inc/audio/audio.php:317 inc/playlist/playlist.php:873
+#: inc/series/series.php:956 inc/video/video.php:336
+msgid "All Categories"
+msgstr ""
+
+#: inc/audio/audio.php:318 inc/playlist/playlist.php:874
+#: inc/series/series.php:957 inc/video/video.php:337
+msgid "Parent Category"
+msgstr ""
+
+#: inc/audio/audio.php:319 inc/playlist/playlist.php:875
+#: inc/series/series.php:958 inc/video/video.php:338
+msgid "Parent Category:"
+msgstr ""
+
+#: inc/audio/audio.php:320 inc/playlist/playlist.php:876
+#: inc/series/series.php:959 inc/video/video.php:339
+msgid "Edit Category"
+msgstr ""
+
+#: inc/audio/audio.php:321 inc/playlist/playlist.php:877
+#: inc/series/series.php:960 inc/video/video.php:340
+msgid "Update Category"
+msgstr ""
+
+#: inc/audio/audio.php:322 inc/playlist/playlist.php:878
+#: inc/series/series.php:961 inc/video/video.php:341
+msgid "Add new Category"
+msgstr ""
+
+#: inc/audio/audio.php:323 inc/playlist/playlist.php:879
+#: inc/series/series.php:962 inc/video/video.php:342
+msgid "New Category name"
+msgstr ""
+
+#: inc/audio/audio.php:324 inc/playlist/playlist.php:880
+#: inc/series/series.php:963 inc/video/video.php:343
+msgid "No Categories found"
+msgstr ""
+
+#: inc/audio/audio.php:345 inc/cast/cast.php:796 inc/channel/channel.php:101
+#: inc/playlist/playlist.php:901 inc/series/series.php:984
+#: inc/video/video.php:364
+msgid "General Settings"
+msgstr ""
+
+#: inc/audio/audio.php:356 inc/cast/cast.php:806 inc/playlist/playlist.php:912
+#: inc/series/series.php:995 inc/video/video.php:375
+msgid "Archive Page Settings"
+msgstr ""
+
+#: inc/audio/audio.php:373 inc/cast/cast.php:820 inc/playlist/playlist.php:927
+#: inc/series/series.php:1010 inc/video/video.php:392
+msgid "Single Settings"
+msgstr ""
+
+#: inc/audio/audio.php:388
+msgid "Audio Main-Toolbar Settings"
+msgstr ""
+
+#: inc/audio/audio.php:400 inc/audio/audio.php:401 inc/audio/audio.php:704
+msgid "Audio Settings"
+msgstr ""
+
+#: inc/audio/audio.php:414
+msgid "Audio Slug"
+msgstr ""
+
+#: inc/audio/audio.php:415
+msgid ""
+"Change single Audio slug. Remember to save the permalink settings again in "
+"Settings > Permalinks."
+msgstr ""
+
+#: inc/audio/audio.php:421
+msgid "Audio Category Base"
+msgstr ""
+
+#: inc/audio/audio.php:422
+msgid ""
+"Change Audio Category Base. Remember to save the permalink settings again in "
+"Settings > Permalinks."
+msgstr ""
+
+#: inc/audio/audio.php:447 inc/cast/cast.php:884 inc/cast/cast.php:964
+#: inc/general/general.php:396 inc/like-dislike/like-dislike.php:350
+#: inc/playlist/playlist.php:990 inc/review/review.php:273
+#: inc/series/series.php:1074 inc/video/video.php:466
+#: inc/watch-later/watch-later.php:336 inc/widget/widget.php:395
+msgid "Layout"
+msgstr ""
+
+#: inc/audio/audio.php:453 inc/cast/cast.php:890 inc/cast/cast.php:970
+#: inc/general/general.php:402 inc/like-dislike/like-dislike.php:356
+#: inc/playlist/playlist.php:996 inc/review/review.php:279
+#: inc/series/series.php:1080 inc/settings/page-settings.php:41
+#: inc/video/video.php:472 inc/watch-later/watch-later.php:342
+msgid "Theme Options"
+msgstr ""
+
+#: inc/audio/audio.php:458 inc/cast/cast.php:895 inc/playlist/playlist.php:1001
+#: inc/series/series.php:1085 inc/video/video.php:477
+msgid ""
+"Change Archive Page Layout. Select \"Theme Options\" to use settings in "
+"Theme Options > Blog Settings."
+msgstr ""
+
+#: inc/audio/audio.php:461 inc/audio/audio.php:577 inc/cast/cast.php:898
+#: inc/cast/cast.php:979 inc/general/general.php:436
+#: inc/playlist/playlist.php:1004 inc/playlist/playlist.php:1098
+#: inc/series/series.php:1088 inc/series/series.php:1182
+#: inc/settings/page-settings.php:63 inc/video/video.php:480
+#: inc/video/video.php:597
+msgid "Full-Width Mode"
+msgstr ""
+
+#: inc/audio/audio.php:462 inc/cast/cast.php:899 inc/playlist/playlist.php:1005
+#: inc/series/series.php:1089 inc/video/video.php:481
+msgid ""
+"Change Full-Width Mode. Select \"Default\" to use settings in Theme Options "
+"> Blog Settings."
+msgstr ""
+
+#: inc/audio/audio.php:468 inc/audio/audio.php:531 inc/audio/audio.php:543
+#: inc/audio/audio.php:554 inc/audio/audio.php:584 inc/audio/audio.php:634
+#: inc/audio/audio.php:647 inc/audio/audio.php:660 inc/audio/audio.php:672
+#: inc/cast/cast.php:905 inc/cast/cast.php:986 inc/cast/cast.php:1047
+#: inc/channel/channel.php:164 inc/channel/channel.php:226
+#: inc/channel/channel.php:238 inc/like-dislike/like-dislike.php:307
+#: inc/like-dislike/like-dislike.php:344 inc/like-dislike/like-dislike.php:408
+#: inc/playlist/playlist.php:684 inc/playlist/playlist.php:703
+#: inc/playlist/playlist.php:1011 inc/playlist/playlist.php:1074
+#: inc/playlist/playlist.php:1105 inc/playlist/playlist.php:1183
+#: inc/report/report.php:244 inc/report/report.php:262
+#: inc/review/review.php:230 inc/review/review.php:267
+#: inc/review/review.php:331 inc/series/series.php:1095
+#: inc/series/series.php:1158 inc/series/series.php:1189
+#: inc/series/series.php:1267 inc/social/social.php:138
+#: inc/social/social.php:157 inc/video/video.php:487 inc/video/video.php:550
+#: inc/video/video.php:562 inc/video/video.php:574 inc/video/video.php:604
+#: inc/video/video.php:654 inc/video/video.php:668 inc/video/video.php:681
+#: inc/video/video.php:692 inc/video/video.php:703
+#: inc/watch-later/watch-later.php:61 inc/watch-later/watch-later.php:80
+#: inc/watch-later/watch-later.php:292 inc/watch-later/watch-later.php:329
+#: inc/watch-later/watch-later.php:394 inc/widget/widget.php:508
+#: inc/widget/widget.php:516 inc/widget/widget.php:524
+#: inc/widget/widget.php:532 inc/widget/widget.php:540
+#: inc/widget/widget.php:548 inc/widget/widget.php:556
+#: inc/widget/widget.php:564 inc/widget/widget.php:572
+#: inc/widget/widget.php:580 inc/widget/widget.php:588
+msgid "YES"
+msgstr ""
+
+#: inc/audio/audio.php:469 inc/audio/audio.php:532 inc/audio/audio.php:544
+#: inc/audio/audio.php:555 inc/audio/audio.php:585 inc/audio/audio.php:635
+#: inc/audio/audio.php:646 inc/audio/audio.php:661 inc/audio/audio.php:673
+#: inc/cast/cast.php:906 inc/cast/cast.php:987 inc/cast/cast.php:1048
+#: inc/channel/channel.php:163 inc/channel/channel.php:227
+#: inc/channel/channel.php:239 inc/like-dislike/like-dislike.php:308
+#: inc/like-dislike/like-dislike.php:345 inc/like-dislike/like-dislike.php:409
+#: inc/playlist/playlist.php:685 inc/playlist/playlist.php:704
+#: inc/playlist/playlist.php:1012 inc/playlist/playlist.php:1075
+#: inc/playlist/playlist.php:1106 inc/playlist/playlist.php:1184
+#: inc/report/report.php:245 inc/report/report.php:263
+#: inc/review/review.php:231 inc/review/review.php:268
+#: inc/review/review.php:332 inc/series/series.php:1096
+#: inc/series/series.php:1159 inc/series/series.php:1190
+#: inc/series/series.php:1268 inc/social/social.php:139
+#: inc/social/social.php:158 inc/video/video.php:488 inc/video/video.php:551
+#: inc/video/video.php:563 inc/video/video.php:575 inc/video/video.php:605
+#: inc/video/video.php:655 inc/video/video.php:667 inc/video/video.php:682
+#: inc/video/video.php:693 inc/video/video.php:704
+#: inc/watch-later/watch-later.php:62 inc/watch-later/watch-later.php:81
+#: inc/watch-later/watch-later.php:293 inc/watch-later/watch-later.php:330
+#: inc/watch-later/watch-later.php:395 inc/widget/widget.php:509
+#: inc/widget/widget.php:517 inc/widget/widget.php:525
+#: inc/widget/widget.php:533 inc/widget/widget.php:541
+#: inc/widget/widget.php:549 inc/widget/widget.php:557
+#: inc/widget/widget.php:565 inc/widget/widget.php:573
+#: inc/widget/widget.php:581 inc/widget/widget.php:589
+msgid "NO"
+msgstr ""
+
+#: inc/audio/audio.php:475 inc/cast/cast.php:912 inc/cast/cast.php:993
+#: inc/channel/channel.php:179 inc/like-dislike/like-dislike.php:365
+#: inc/playlist/playlist.php:1018 inc/playlist/playlist.php:1144
+#: inc/review/review.php:288 inc/series/series.php:1102
+#: inc/series/series.php:1228 inc/video/video.php:494
+#: inc/watch-later/watch-later.php:351
+msgid "Number of items to show per page. Defaults to: 10"
+msgstr ""
+
+#: inc/audio/audio.php:485
+msgid ""
+"Choose type of navigation for Audio page. For WP PageNavi, you will need to "
+"install WP PageNavi plugin."
+msgstr ""
+
+#: inc/audio/audio.php:491 inc/cast/cast.php:928 inc/cast/cast.php:1009
+#: inc/channel/channel.php:194 inc/like-dislike/like-dislike.php:380
+#: inc/playlist/playlist.php:1034 inc/review/review.php:303
+#: inc/series/series.php:1118 inc/video/video.php:510
+#: inc/watch-later/watch-later.php:366
+msgid "WordPress Default"
+msgstr ""
+
+#: inc/audio/audio.php:500 inc/cast/cast.php:937 inc/cast/cast.php:1018
+#: inc/like-dislike/like-dislike.php:389 inc/playlist/playlist.php:1043
+#: inc/review/review.php:312 inc/series/series.php:1127 inc/video/video.php:519
+#: inc/watch-later/watch-later.php:375
+msgid "Default Ordering"
+msgstr ""
+
+#: inc/audio/audio.php:501
+msgid "Arrange display for Audio posts in Archive Page."
+msgstr ""
+
+#: inc/audio/audio.php:507 inc/cast/cast.php:324 inc/cast/cast.php:944
+#: inc/cast/cast.php:1024 inc/channel/channel.php:1286
+#: inc/like-dislike/like-dislike.php:395 inc/playlist/playlist.php:1050
+#: inc/review/review.php:318 inc/series/series.php:1134 inc/video/video.php:526
+#: inc/watch-later/watch-later.php:381
+msgid "Newest Items"
+msgstr ""
+
+#: inc/audio/audio.php:508 inc/cast/cast.php:325 inc/cast/cast.php:945
+#: inc/cast/cast.php:1025 inc/channel/channel.php:1287
+#: inc/like-dislike/like-dislike.php:396 inc/playlist/playlist.php:1051
+#: inc/review/review.php:319 inc/series/series.php:1135 inc/video/video.php:527
+#: inc/watch-later/watch-later.php:382
+msgid "Oldest Items"
+msgstr ""
+
+#: inc/audio/audio.php:509 inc/cast/cast.php:326 inc/cast/cast.php:946
+#: inc/cast/cast.php:1026 inc/channel/channel.php:369
+#: inc/channel/channel.php:1288 inc/like-dislike/like-dislike.php:397
+#: inc/playlist/playlist.php:1052 inc/review/review.php:320
+#: inc/series/series.php:1136 inc/video/video.php:528
+#: inc/watch-later/watch-later.php:383
+msgid "Alphabetical (A-Z)"
+msgstr ""
+
+#: inc/audio/audio.php:510 inc/cast/cast.php:327 inc/cast/cast.php:947
+#: inc/cast/cast.php:1027 inc/channel/channel.php:370
+#: inc/channel/channel.php:1289 inc/like-dislike/like-dislike.php:398
+#: inc/playlist/playlist.php:1053 inc/review/review.php:321
+#: inc/series/series.php:1137 inc/video/video.php:529
+#: inc/watch-later/watch-later.php:384
+msgid "Alphabetical (Z-A)"
+msgstr ""
+
+#: inc/audio/audio.php:514 inc/audio/audio.php:617 inc/cast/cast.php:951
+#: inc/cast/cast.php:1031 inc/general/general.php:449
+#: inc/playlist/playlist.php:1057 inc/playlist/playlist.php:1166
+#: inc/series/series.php:1141 inc/series/series.php:1250
+#: inc/settings/page-settings.php:76 inc/video/video.php:533
+#: inc/video/video.php:637
+msgid "Sidebar"
+msgstr ""
+
+#: inc/audio/audio.php:515 inc/cast/cast.php:952 inc/playlist/playlist.php:1058
+#: inc/series/series.php:1142 inc/video/video.php:534
+msgid ""
+"Change Archive Page Sidebar. Select \"Default\" to use settings in Theme "
+"Options > Blog Settings."
+msgstr ""
+
+#: inc/audio/audio.php:524 inc/audio/audio.php:627
+msgid "Display Audio Categories"
+msgstr ""
+
+#: inc/audio/audio.php:525
+msgid "Hide or show audio categories on Archive Page."
+msgstr ""
+
+#: inc/audio/audio.php:538
+msgid "Hide or show audio duration on Archive Page."
+msgstr ""
+
+#: inc/audio/audio.php:549
+msgid "Hide or show audio label on Archive Page."
+msgstr ""
+
+#: inc/audio/audio.php:578 inc/cast/cast.php:980 inc/playlist/playlist.php:1099
+#: inc/series/series.php:1183 inc/video/video.php:598
+msgid ""
+"Change Full-Width Mode. Select \"Default\" to use settings in Theme Options "
+"> Single Post Settings."
+msgstr ""
+
+#: inc/audio/audio.php:591
+msgid "Audio Player Position"
+msgstr ""
+
+#: inc/audio/audio.php:592
+msgid "Select default audio player position for audio posts."
+msgstr ""
+
+#: inc/audio/audio.php:598 inc/audio/audio.php:772 inc/audio/audio.php:785
+#: inc/video/video.php:618 inc/video/video.php:825 inc/video/video.php:838
+#: inc/widget/widget.php:398
+msgid "Special"
+msgstr ""
+
+#: inc/audio/audio.php:618
+msgid ""
+"Change Single Audio Sidebar. Select \"Default\" to use settings in Theme "
+"Options > Blog Settings."
+msgstr ""
+
+#: inc/audio/audio.php:628
+msgid "Hide or show audio categories on Single Audio."
+msgstr ""
+
+#: inc/audio/audio.php:640 inc/video/video.php:661
+msgid "Collapse Content"
+msgstr ""
+
+#: inc/audio/audio.php:641 inc/video/video.php:662
+msgid "Use this option to collapse content if it is too long."
+msgstr ""
+
+#: inc/audio/audio.php:655
+msgid "Display \"Previous Audio\" Button"
+msgstr ""
+
+#: inc/audio/audio.php:667
+msgid "Display \"Next Audio\" Button"
+msgstr ""
+
+#: inc/audio/audio.php:679 inc/video/video.php:709
+msgid "Prev/Next Button Query"
+msgstr ""
+
+#: inc/audio/audio.php:685 inc/video/video.php:715
+msgid "Querying posts from same Categories"
+msgstr ""
+
+#: inc/audio/audio.php:686 inc/video/video.php:716
+msgid "Querying posts from same Tags"
+msgstr ""
+
+#: inc/audio/audio.php:714 inc/video/video.php:744
+msgid "Mode"
+msgstr ""
+
+#: inc/audio/audio.php:717 inc/video/video.php:747
+msgid "Embed (iFrame)"
+msgstr ""
+
+#: inc/audio/audio.php:721
+msgid ""
+"With embed mode, you will use a 3rd party player. It will only display "
+"audios and will not inherit all advertising features (or some other "
+"features) from the theme."
+msgstr ""
+
+#: inc/audio/audio.php:730
+msgid "Audio URL ( url from audio sites or embed [ iframe, shortcode... ] )"
+msgstr ""
+
+#: inc/audio/audio.php:735
+msgid ""
+"<strong>For self-hosted audios</strong>:<br>\t\t\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t Recommended Format Solution: [audio/mp3]<strong>*.mp3</strong>, "
+"[audio/oga]<strong>*.oga</strong>, [audio/ogg]<strong>*.ogg</strong>, [audio/"
+"wav]<strong>*.wav</strong>"
+msgstr ""
+
+#: inc/audio/audio.php:743 inc/video/video.php:796
+msgid "Duration"
+msgstr ""
+
+#: inc/audio/audio.php:746
+msgid "Enter the duration of the audio."
+msgstr ""
+
+#: inc/audio/audio.php:754
+msgid "Audio Tags (short label)"
+msgstr ""
+
+#: inc/audio/audio.php:757 inc/video/video.php:810
+msgid ""
+"Additional labels to display on thumbnails. Each label is separated by a "
+"comma. Eg(s): HD, 4K, SHD..."
+msgstr ""
+
+#: inc/audio/audio.php:764 inc/video/video.php:817
+msgid "Style"
+msgstr ""
+
+#: inc/audio/audio.php:765
+msgid "Change Single Audio Style."
+msgstr ""
+
+#: inc/audio/audio.php:777 inc/video/video.php:830
+msgid "Player Position"
+msgstr ""
+
+#: inc/audio/audio.php:778
+msgid "Select default audio player position for this audio post."
+msgstr ""
+
+#: inc/audio/audio.php:905
+msgid "Previous Audio"
+msgstr ""
+
+#: inc/audio/audio.php:919
+msgid "Next Audio"
+msgstr ""
+
+#: inc/cast/cast.php:190
+#, php-format
+msgid "%d Items"
+msgstr ""
+
+#: inc/cast/cast.php:192
+#, php-format
+msgid "%d Item"
+msgstr ""
+
+#: inc/cast/cast.php:222
+msgid "Load More"
+msgstr ""
+
+#: inc/cast/cast.php:418
+msgid "Work History"
+msgstr ""
+
+#: inc/cast/cast.php:420
+msgid "Have Joined In"
+msgstr ""
+
+#: inc/cast/cast.php:432 inc/channel/channel.php:428
+#: inc/channel/channel.php:1371
+#, php-format
+msgid "Sort by: %s"
+msgstr ""
+
+#: inc/cast/cast.php:457 inc/channel/channel.php:453
+#: inc/channel/channel.php:1396
+#, php-format
+msgid "There are %s items in this tab"
+msgstr ""
+
+#: inc/cast/cast.php:646 inc/general/general.php:390
+msgid "Settings"
+msgstr ""
+
+#: inc/cast/cast.php:655
+msgid "Short Biography"
+msgstr ""
+
+#: inc/cast/cast.php:675
+#, php-format
+msgid "Start typing %s name"
+msgstr ""
+
+#: inc/cast/cast.php:699 inc/settings/settings.php:143
+msgid "Cast"
+msgstr ""
+
+#: inc/cast/cast.php:699
+msgid "Casts"
+msgstr ""
+
+#: inc/cast/cast.php:738
+#, php-format
+msgid "Add %s"
+msgstr ""
+
+#: inc/cast/cast.php:739
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: inc/cast/cast.php:741
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: inc/cast/cast.php:742
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: inc/cast/cast.php:743 inc/cast/cast.php:744
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: inc/cast/cast.php:745
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: inc/cast/cast.php:746
+#, php-format
+msgid "No %s found"
+msgstr ""
+
+#: inc/cast/cast.php:747
+#, php-format
+msgid "No %s found in trash"
+msgstr ""
+
+#: inc/cast/cast.php:748
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: inc/cast/cast.php:749
+#, php-format
+msgid "%s Image"
+msgstr ""
+
+#: inc/cast/cast.php:750
+#, php-format
+msgid "Set %s image"
+msgstr ""
+
+#: inc/cast/cast.php:751
+#, php-format
+msgid "Remove %s image"
+msgstr ""
+
+#: inc/cast/cast.php:752
+#, php-format
+msgid "Use as %s image"
+msgstr ""
+
+#: inc/cast/cast.php:753
+#, php-format
+msgid "Insert into %s"
+msgstr ""
+
+#: inc/cast/cast.php:754
+#, php-format
+msgid "Uploaded to this %s"
+msgstr ""
+
+#: inc/cast/cast.php:755 inc/settings/cmb2/cmb2-attached-posts/init.php:124
+#, php-format
+msgid "Filter %s"
+msgstr ""
+
+#: inc/cast/cast.php:756
+#, php-format
+msgid "%s navigation"
+msgstr ""
+
+#: inc/cast/cast.php:757
+#, php-format
+msgid "%s list"
+msgstr ""
+
+#: inc/cast/cast.php:759
+#, php-format
+msgid "This is where you can add new %s to your site."
+msgstr ""
+
+#: inc/cast/cast.php:835
+msgid "Clone Settings"
+msgstr ""
+
+#: inc/cast/cast.php:844 inc/cast/cast.php:845
+msgid "Cast Settings"
+msgstr ""
+
+#: inc/cast/cast.php:858
+msgid "Cast Slug"
+msgstr ""
+
+#: inc/cast/cast.php:859
+msgid ""
+"Change single cast slug. Remember to save the permalink settings again in "
+"Settings > Permalinks."
+msgstr ""
+
+#: inc/cast/cast.php:922
+msgid ""
+"Choose type of navigation for cast page. For WP PageNavi, you will need to "
+"install WP PageNavi plugin."
+msgstr ""
+
+#: inc/cast/cast.php:938
+msgid "Arrange display for cast posts in Archive Page."
+msgstr ""
+
+#: inc/cast/cast.php:975 inc/like-dislike/like-dislike.php:361
+#: inc/review/review.php:284 inc/watch-later/watch-later.php:347
+msgid ""
+"Change display layout for posts. Select \"Theme Options\" to use settings in "
+"Theme Options > Blog Settings."
+msgstr ""
+
+#: inc/cast/cast.php:1003
+msgid ""
+"Choose type of navigation for single cast. For WP PageNavi, you will need to "
+"install WP PageNavi plugin."
+msgstr ""
+
+#: inc/cast/cast.php:1019
+msgid "Arrange display for media in Single."
+msgstr ""
+
+#: inc/cast/cast.php:1032
+msgid ""
+"Change Single cast Sidebar. Select \"Default\" to use settings in Theme "
+"Options > Blog Settings."
+msgstr ""
+
+#: inc/cast/cast.php:1041 inc/like-dislike/like-dislike.php:402
+#: inc/review/review.php:325 inc/watch-later/watch-later.php:388
+msgid "Display Categories"
+msgstr ""
+
+#: inc/cast/cast.php:1042 inc/like-dislike/like-dislike.php:403
+#: inc/review/review.php:326 inc/watch-later/watch-later.php:389
+msgid "Hide or show categories on post list."
+msgstr ""
+
+#: inc/cast/cast.php:1057
+msgid ""
+"Through this tool, you can create many different variations and use it for "
+"other purposes. After creating variations, remember to save the permalink "
+"settings again in Settings > Permalinks."
+msgstr ""
+
+#: inc/cast/cast.php:1059
+msgid "Variant {#}"
+msgstr ""
+
+#: inc/cast/cast.php:1060
+msgid "Add Variant"
+msgstr ""
+
+#: inc/cast/cast.php:1061
+msgid "Remove Variant"
+msgstr ""
+
+#: inc/cast/cast.php:1069 inc/widget/widget.php:410
+msgid "Post Type"
+msgstr ""
+
+#: inc/cast/cast.php:1071
+msgid ""
+"Unique type, do not have the same name as the existing post types. Maximum "
+"20 characters."
+msgstr ""
+
+#: inc/cast/cast.php:1081
+msgid "Slug"
+msgstr ""
+
+#: inc/cast/cast.php:1088
+msgid "Singular Name"
+msgstr ""
+
+#: inc/cast/cast.php:1094
+msgid "Plural Name"
+msgstr ""
+
+#: inc/cast/cast.php:1100
+msgid "Icon"
+msgstr ""
+
+#: inc/cast/cast.php:1102
+msgid ""
+"Using FontAwesome, just add the name of the CSS class. E.g: \"<i class=\"fas "
+"fa-home\"></i>\", \"<i class=\"fas fa-heart\"></i>\"."
+msgstr ""
+
+#: inc/channel/channel.php:31
+msgid "fake_user_profile"
+msgstr ""
+
+#: inc/channel/channel.php:36 inc/channel/channel.php:38
+msgid "Profiles"
+msgstr ""
+
+#: inc/channel/channel.php:37
+msgid "Profile"
+msgstr ""
+
+#: inc/channel/channel.php:39
+msgid "Add Profile"
+msgstr ""
+
+#: inc/channel/channel.php:40
+msgid "Add New Profile"
+msgstr ""
+
+#: inc/channel/channel.php:42
+msgid "Edit Profile"
+msgstr ""
+
+#: inc/channel/channel.php:43
+msgid "New Profile"
+msgstr ""
+
+#: inc/channel/channel.php:44 inc/channel/channel.php:45
+msgid "View Profile"
+msgstr ""
+
+#: inc/channel/channel.php:46
+msgid "Search Profiles"
+msgstr ""
+
+#: inc/channel/channel.php:47
+msgid "No Profiles found"
+msgstr ""
+
+#: inc/channel/channel.php:48
+msgid "No Profiles found in trash"
+msgstr ""
+
+#: inc/channel/channel.php:49
+msgid "Parent Profile"
+msgstr ""
+
+#: inc/channel/channel.php:50
+msgid "Profile Image"
+msgstr ""
+
+#: inc/channel/channel.php:51
+msgid "Set Profile image"
+msgstr ""
+
+#: inc/channel/channel.php:52
+msgid "Remove Profile image"
+msgstr ""
+
+#: inc/channel/channel.php:53
+msgid "Use as Profile image"
+msgstr ""
+
+#: inc/channel/channel.php:54
+msgid "Insert into Profile"
+msgstr ""
+
+#: inc/channel/channel.php:55
+msgid "Uploaded to this Profile"
+msgstr ""
+
+#: inc/channel/channel.php:56
+msgid "Filter Profiles"
+msgstr ""
+
+#: inc/channel/channel.php:57
+msgid "Profiles navigation"
+msgstr ""
+
+#: inc/channel/channel.php:58
+msgid "Profiles list"
+msgstr ""
+
+#: inc/channel/channel.php:60
+msgid "This is where you can add new Profiles to your site."
+msgstr ""
+
+#: inc/channel/channel.php:85 inc/channel/channel.php:493
+#: inc/channel/channel.php:687 inc/channel/channel.php:866
+#: inc/channel/channel.php:870
+msgid "About"
+msgstr ""
+
+#: inc/channel/channel.php:89 inc/channel/channel.php:880
+#: inc/channel/channel.php:884
+msgid "Discussion"
+msgstr ""
+
+#: inc/channel/channel.php:114
+msgid "Side Menu Settings"
+msgstr ""
+
+#: inc/channel/channel.php:123
+msgid "Tab Settings"
+msgstr ""
+
+#: inc/channel/channel.php:134 inc/channel/channel.php:135
+msgid "Channel Settings"
+msgstr ""
+
+#: inc/channel/channel.php:147
+msgid "Channel Page"
+msgstr ""
+
+#: inc/channel/channel.php:148 inc/channel/channel.php:170
+msgid ""
+"Use the magnifying glass icon next to the input box to find and select the "
+"appropriate page. \"Remember to save the permalink settings again in "
+"Settings > Permalinks\"."
+msgstr ""
+
+#: inc/channel/channel.php:157
+msgid "Replace Author Page With Channel Page"
+msgstr ""
+
+#: inc/channel/channel.php:158
+msgid ""
+"This option will assign the default author page to a channel. \"Before "
+"enabling this option, please declare the page for the channel first\"."
+msgstr ""
+
+#: inc/channel/channel.php:169 inc/channel/channel.php:343
+msgid "Member Page"
+msgstr ""
+
+#: inc/channel/channel.php:178
+msgid "[Member Page] Items Per Page"
+msgstr ""
+
+#: inc/channel/channel.php:188
+msgid "[Member Page] Pagination"
+msgstr ""
+
+#: inc/channel/channel.php:189 inc/like-dislike/like-dislike.php:375
+#: inc/review/review.php:298 inc/watch-later/watch-later.php:361
+msgid ""
+"Choose type of navigation. For WP PageNavi, you will need to install WP "
+"PageNavi plugin."
+msgstr ""
+
+#: inc/channel/channel.php:208
+msgid "Side Menu Order"
+msgstr ""
+
+#: inc/channel/channel.php:209 inc/channel/channel.php:248
+msgid ""
+"Arrange the display order of items on the user interface. Drag and drop to "
+"change the display position of items."
+msgstr ""
+
+#: inc/channel/channel.php:220
+msgid "Display \"About\" Item"
+msgstr ""
+
+#: inc/channel/channel.php:221
+msgid "Hide or show \"About\" item on Tab."
+msgstr ""
+
+#: inc/channel/channel.php:232
+msgid "Display \"Discussion\" Item"
+msgstr ""
+
+#: inc/channel/channel.php:233
+msgid "Hide or show \"Discussion\" item on Tab."
+msgstr ""
+
+#: inc/channel/channel.php:247
+msgid "Tab Order"
+msgstr ""
+
+#: inc/channel/channel.php:345
+msgid "All Members"
+msgstr ""
+
+#: inc/channel/channel.php:366
+msgid "Default . . . . . ."
+msgstr ""
+
+#: inc/channel/channel.php:367 inc/channel/channel.php:1642
+msgid "Most Subscriptions"
+msgstr ""
+
+#: inc/channel/channel.php:368 inc/channel/channel.php:1643
+msgid "Highest Reaction Score"
+msgstr ""
+
+#: inc/channel/channel.php:504
+msgid "Discussions"
+msgstr ""
+
+#: inc/channel/channel.php:638
+msgid "About Tab [Privacy]"
+msgstr ""
+
+#: inc/channel/channel.php:640 inc/channel/channel.php:653
+#: inc/like-dislike/like-dislike.php:81 inc/review/review.php:62
+#: inc/watch-later/watch-later.php:138
+msgid "Public"
+msgstr ""
+
+#: inc/channel/channel.php:641 inc/channel/channel.php:654
+#: inc/like-dislike/like-dislike.php:82 inc/review/review.php:63
+#: inc/watch-later/watch-later.php:139
+msgid "Private"
+msgstr ""
+
+#: inc/channel/channel.php:651
+msgid "Discussion Tab [Privacy]"
+msgstr ""
+
+#: inc/channel/channel.php:676
+msgid "Channel Banner"
+msgstr ""
+
+#: inc/channel/channel.php:728 inc/channel/channel.php:732
+#: inc/channel/channel.php:736 inc/channel/channel.php:740
+#: inc/channel/channel.php:744 inc/channel/channel.php:748
+#: inc/channel/channel.php:752 inc/channel/channel.php:756
+#: inc/channel/channel.php:760 inc/channel/channel.php:764
+#: inc/channel/channel.php:768 inc/channel/channel.php:772
+msgid "No data to display"
+msgstr ""
+
+#: inc/channel/channel.php:776
+msgid "This is private data, you cannot view this member's data"
+msgstr ""
+
+#: inc/channel/channel.php:1481
+msgid "VidMov - Channel Extensions"
+msgstr ""
+
+#: inc/channel/channel.php:1617
+msgid "Channels"
+msgstr ""
+
+#: inc/general/general.php:164 inc/general/general.php:165
+msgid "Image Settings"
+msgstr ""
+
+#: inc/general/general.php:176
+msgid "Big Image [1600x900] [ratio 16:9]"
+msgstr ""
+
+#: inc/general/general.php:177
+msgid ""
+"Turn ON/OFF \"Big Image [1600x900]\" for your theme. Enable this option so "
+"users with retina screens can view smoother images."
+msgstr ""
+
+#: inc/general/general.php:182 inc/general/general.php:194
+#: inc/general/general.php:206 inc/general/general.php:218
+#: inc/settings/page-settings.php:97 inc/settings/page-settings.php:138
+#: inc/settings/settings.php:101 inc/settings/settings.php:113
+#: inc/settings/settings.php:125 inc/settings/settings.php:137
+#: inc/settings/settings.php:149 inc/settings/settings.php:161
+#: inc/settings/settings.php:172 inc/settings/settings.php:183
+#: inc/settings/settings.php:225 inc/settings/settings.php:250
+#: inc/settings/settings.php:261 inc/settings/settings.php:276
+#: inc/settings/settings.php:291 inc/settings/settings.php:306
+#: inc/settings/settings.php:339
+msgid "ON"
+msgstr ""
+
+#: inc/general/general.php:183 inc/general/general.php:195
+#: inc/general/general.php:207 inc/general/general.php:219
+#: inc/settings/page-settings.php:98 inc/settings/page-settings.php:139
+#: inc/settings/settings.php:102 inc/settings/settings.php:114
+#: inc/settings/settings.php:126 inc/settings/settings.php:138
+#: inc/settings/settings.php:150 inc/settings/settings.php:162
+#: inc/settings/settings.php:173 inc/settings/settings.php:184
+#: inc/settings/settings.php:226 inc/settings/settings.php:251
+#: inc/settings/settings.php:262 inc/settings/settings.php:277
+#: inc/settings/settings.php:292 inc/settings/settings.php:307
+#: inc/settings/settings.php:340
+msgid "OFF"
+msgstr ""
+
+#: inc/general/general.php:188
+msgid "Big Image [1600x1200] [ratio 4:3]"
+msgstr ""
+
+#: inc/general/general.php:189 inc/general/general.php:201
+msgid ""
+"Turn ON/OFF \"Big Image [1600x1200]\" for your theme. Enable this option so "
+"users with retina screens can view smoother images."
+msgstr ""
+
+#: inc/general/general.php:200
+msgid "Big Image [1600x1600] [ratio 1:1]"
+msgstr ""
+
+#: inc/general/general.php:212
+msgid "Big Image [1600x2400] [ratio 2:3]"
+msgstr ""
+
+#: inc/general/general.php:213
+msgid ""
+"Turn ON/OFF \"Big Image [1600x2400]\" for your theme. Enable this option so "
+"users with retina screens can view smoother images."
+msgstr ""
+
+#: inc/general/general.php:227 inc/general/general.php:239
+#: inc/general/general.php:249 inc/general/general.php:259
+#: inc/general/general.php:269 inc/general/general.php:279
+#: inc/general/general.php:289 inc/general/general.php:299
+#: inc/general/general.php:309 inc/general/general.php:319
+#: inc/general/general.php:329 inc/general/general.php:339
+#: inc/general/general.php:349
+msgid "Ratio 16:9"
+msgstr ""
+
+#: inc/general/general.php:228 inc/general/general.php:240
+#: inc/general/general.php:250 inc/general/general.php:260
+#: inc/general/general.php:270 inc/general/general.php:280
+#: inc/general/general.php:290 inc/general/general.php:300
+#: inc/general/general.php:310 inc/general/general.php:320
+#: inc/general/general.php:330 inc/general/general.php:340
+#: inc/general/general.php:350
+msgid "Ratio 4:3"
+msgstr ""
+
+#: inc/general/general.php:229 inc/general/general.php:241
+#: inc/general/general.php:251 inc/general/general.php:261
+#: inc/general/general.php:271 inc/general/general.php:281
+#: inc/general/general.php:291 inc/general/general.php:301
+#: inc/general/general.php:311 inc/general/general.php:321
+#: inc/general/general.php:331 inc/general/general.php:341
+#: inc/general/general.php:351
+msgid "Ratio 1:1"
+msgstr ""
+
+#: inc/general/general.php:230 inc/general/general.php:242
+#: inc/general/general.php:252 inc/general/general.php:262
+#: inc/general/general.php:272 inc/general/general.php:282
+#: inc/general/general.php:292 inc/general/general.php:302
+#: inc/general/general.php:312 inc/general/general.php:322
+#: inc/general/general.php:332 inc/general/general.php:342
+#: inc/general/general.php:352
+msgid "Ratio 2:3"
+msgstr ""
+
+#: inc/general/general.php:358
+#, php-format
+msgid "[Layout: %s] - Image Ratio"
+msgstr ""
+
+#: inc/general/general.php:372
+msgid "No Image Available"
+msgstr ""
+
+#: inc/general/general.php:407
+msgid ""
+"Change Category Page Layout. Select \"Theme Options\" to use settings in "
+"Theme Options > Blog Settings."
+msgstr ""
+
+#: inc/general/general.php:411
+msgid "Color"
+msgstr ""
+
+#: inc/general/general.php:437 inc/settings/page-settings.php:64
+msgid ""
+"Enable/Disable Full-Width Mode. Select \"Default\" to use settings in Theme "
+"Options > Styling."
+msgstr ""
+
+#: inc/general/general.php:443 inc/settings/page-settings.php:70
+msgid "Enable"
+msgstr ""
+
+#: inc/general/general.php:444 inc/settings/page-settings.php:71
+msgid "Disable"
+msgstr ""
+
+#: inc/general/general.php:450 inc/settings/page-settings.php:77
+msgid ""
+"Select Sidebar Appearance. Select \"Default\" to use settings in Theme "
+"Options > Styling."
+msgstr ""
+
+#: inc/general/general.php:688 inc/general/general.php:795
+msgid "Error: You do not have permission to upload media."
+msgstr ""
+
+#: inc/general/general.php:710
+msgid "Error: Invalid file."
+msgstr ""
+
+#: inc/general/general.php:730
+msgid "Error: The temporary directory could not be created."
+msgstr ""
+
+#: inc/general/general.php:751
+msgid "Error: The file could not be uploaded."
+msgstr ""
+
+#: inc/general/general.php:761
+msgid "File has been uploaded."
+msgstr ""
+
+#: inc/general/general.php:781
+msgid "Error: You need to login to submit your post."
+msgstr ""
+
+#: inc/general/general.php:837
+msgid "Error: Chunks are uploading as empty strings."
+msgstr ""
+
+#: inc/general/general.php:852
+msgid "Error: Your temp files could not be deleted."
+msgstr ""
+
+#: inc/general/general.php:863
+msgid "Upload Successful!!!"
+msgstr ""
+
+#: inc/general/general.php:881
+msgid "Error: You need to login to delete temporaty files."
+msgstr ""
+
+#: inc/general/general.php:895
+msgid "Error: You do not have permission to delete temporaty files."
+msgstr ""
+
+#: inc/general/general.php:934
+msgid "All temporary files have been deleted."
+msgstr ""
+
+#: inc/general/general.php:995
+msgid "Show More"
+msgstr ""
+
+#: inc/general/general.php:996
+msgid "Show Less"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:70 inc/like-dislike/like-dislike.php:175
+msgid "Reaction score"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:79
+msgid "Reacted Tab [Privacy]"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:93
+msgid "Number of Likes"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:98
+msgid "Number of Dislikes"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:103
+msgid "Number of Laughs"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:108
+msgid "Number of Crying"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:113
+msgid "Number of Reactions"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:122 inc/like-dislike/like-dislike.php:239
+msgid "Most Liked"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:126 inc/like-dislike/like-dislike.php:243
+msgid "Most Disliked"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:130 inc/like-dislike/like-dislike.php:247
+msgid "Most Laughed"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:134 inc/like-dislike/like-dislike.php:251
+msgid "Most Cried"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:268 inc/like-dislike/like-dislike.php:275
+#: inc/like-dislike/like-dislike.php:283 inc/like-dislike/like-dislike.php:287
+msgid "Reacted"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:301 inc/like-dislike/like-dislike.php:338
+msgid "Display \"Reacted Posts\" Item"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:302
+msgid "Hide or show \"Reacted Posts\" item on Side Menu."
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:323 inc/like-dislike/like-dislike.php:461
+#: inc/like-dislike/like-dislike.php:475
+msgid "Reacted Posts"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:339
+msgid "Hide or show \"Reacted Posts\" item on Tab."
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:390 inc/review/review.php:313
+#: inc/watch-later/watch-later.php:376
+msgid "Default display order for posts."
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:419 inc/settings/settings.php:255
+msgid "Like"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:423 inc/settings/settings.php:270
+msgid "Dislike"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:427 inc/settings/settings.php:285
+msgid "Squint Tears"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:431 inc/settings/settings.php:300
+msgid "Cry"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:467
+msgid "Sign in to see posts you've reacted to in the past."
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:489 inc/like-dislike/like-dislike.php:754
+msgid "reactions"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:491 inc/like-dislike/like-dislike.php:756
+msgid "reaction"
+msgstr ""
+
+#: inc/like-dislike/like-dislike.php:815
+msgid "Processing..."
+msgstr ""
+
+#: inc/performance/performance.php:65
+msgid "Google Fonts"
+msgstr ""
+
+#: inc/performance/performance.php:72
+msgid "Disable Google Fonts"
+msgstr ""
+
+#: inc/performance/performance.php:74
+msgid ""
+"This is the option to optimize font loading when using VidMov. If you are "
+"only using Custom Fonts, you can enable this option."
+msgstr ""
+
+#: inc/performance/performance.php:90
+msgid "Custom Font Settings"
+msgstr ""
+
+#: inc/performance/performance.php:97
+msgid "Custom Font"
+msgstr ""
+
+#: inc/performance/performance.php:103
+msgid ""
+"This is an option that helps you to use your own fonts. To optimize for this "
+"feature, the theme will use preload mode. Format support \"woff2\"."
+msgstr ""
+
+#: inc/performance/performance.php:109
+msgid "Custom Font Name"
+msgstr ""
+
+#: inc/performance/performance.php:110
+msgid "Font Name ( font-family ), eg: play, roboto, Hanalei Fill..."
+msgstr ""
+
+#: inc/performance/performance.php:116
+msgid "Custom Font Style"
+msgstr ""
+
+#: inc/performance/performance.php:117
+msgid "Font Style ( font-style ), eg: italic, normal..."
+msgstr ""
+
+#: inc/performance/performance.php:123
+msgid "Custom Font Weight"
+msgstr ""
+
+#: inc/performance/performance.php:124
+msgid "Font Weight ( font-weight ), eg: 400, 600, 700..."
+msgstr ""
+
+#: inc/performance/performance.php:130
+msgid "Custom Font Unicode"
+msgstr ""
+
+#: inc/performance/performance.php:131
+msgid "Optional"
+msgstr ""
+
+#: inc/performance/performance.php:132
+msgid "Unicode Range ( unicode-range )"
+msgstr ""
+
+#: inc/performance/performance.php:150
+msgid "Custom Font Family"
+msgstr ""
+
+#: inc/performance/performance.php:151
+msgid ""
+"This field is used for custom fonts - You need to upload your fonts ( Scroll "
+"down to the bottom of this settings group to see the upload boxes ) before "
+"using this option - This option will have a higher priority than using "
+"Google Fonts (If you are using Google Font from the font properties area, "
+"you can ignore this field)."
+msgstr ""
+
+#: inc/performance/performance.php:152
+msgid "Font Family"
+msgstr ""
+
+#: inc/performance/performance.php:233 inc/performance/performance.php:250
+msgid "Refresh data for Like/Dislike/View/Reaction"
+msgstr ""
+
+#: inc/performance/performance.php:234
+msgid "Refresh Data"
+msgstr ""
+
+#: inc/performance/performance.php:253
+msgid "Perform"
+msgstr ""
+
+#: inc/performance/performance.php:285
+msgid "Completed..."
+msgstr ""
+
+#: inc/performance/performance.php:297
+msgid "Processing data, please wait patiently."
+msgstr ""
+
+#: inc/playlist/playlist.php:140 inc/playlist/playlist.php:156
+#: inc/playlist/playlist.php:815 inc/playlist/playlist.php:817
+msgid "Playlists"
+msgstr ""
+
+#: inc/playlist/playlist.php:143 inc/playlist/playlist.php:159
+msgid "Start typing playlist name"
+msgstr ""
+
+#: inc/playlist/playlist.php:172 inc/playlist/playlist.php:179
+#: inc/playlist/playlist.php:816
+msgid "Playlist"
+msgstr ""
+
+#: inc/playlist/playlist.php:270 inc/series/series.php:283
+msgid "Original Source"
+msgstr ""
+
+#: inc/playlist/playlist.php:652 inc/series/series.php:771
+msgid "Order:"
+msgstr ""
+
+#: inc/playlist/playlist.php:655 inc/series/series.php:774
+msgid "Media Items"
+msgstr ""
+
+#: inc/playlist/playlist.php:679 inc/playlist/playlist.php:698
+msgid "Display \"Add To Playlist\" Button"
+msgstr ""
+
+#: inc/playlist/playlist.php:818
+msgid "Add Playlist"
+msgstr ""
+
+#: inc/playlist/playlist.php:819
+msgid "Add New Playlist"
+msgstr ""
+
+#: inc/playlist/playlist.php:821
+msgid "Edit Playlist"
+msgstr ""
+
+#: inc/playlist/playlist.php:822
+msgid "New Playlist"
+msgstr ""
+
+#: inc/playlist/playlist.php:823 inc/playlist/playlist.php:824
+msgid "View Playlist"
+msgstr ""
+
+#: inc/playlist/playlist.php:825
+msgid "Search Playlists"
+msgstr ""
+
+#: inc/playlist/playlist.php:826
+msgid "No Playlists found"
+msgstr ""
+
+#: inc/playlist/playlist.php:827
+msgid "No Playlists found in trash"
+msgstr ""
+
+#: inc/playlist/playlist.php:828
+msgid "Parent Playlist"
+msgstr ""
+
+#: inc/playlist/playlist.php:829
+msgid "Playlist Image"
+msgstr ""
+
+#: inc/playlist/playlist.php:830
+msgid "Set Playlist image"
+msgstr ""
+
+#: inc/playlist/playlist.php:831
+msgid "Remove Playlist image"
+msgstr ""
+
+#: inc/playlist/playlist.php:832
+msgid "Use as Playlist image"
+msgstr ""
+
+#: inc/playlist/playlist.php:833
+msgid "Insert into Playlist"
+msgstr ""
+
+#: inc/playlist/playlist.php:834
+msgid "Uploaded to this Playlist"
+msgstr ""
+
+#: inc/playlist/playlist.php:835
+msgid "Filter Playlists"
+msgstr ""
+
+#: inc/playlist/playlist.php:836
+msgid "Playlists navigation"
+msgstr ""
+
+#: inc/playlist/playlist.php:837
+msgid "Playlists list"
+msgstr ""
+
+#: inc/playlist/playlist.php:839
+msgid "This is where you can add new playlists to your site."
+msgstr ""
+
+#: inc/playlist/playlist.php:869 inc/playlist/playlist.php:871
+msgid "Playlist Categories"
+msgstr ""
+
+#: inc/playlist/playlist.php:943 inc/playlist/playlist.php:944
+msgid "Playlist Settings"
+msgstr ""
+
+#: inc/playlist/playlist.php:957
+msgid "Playlist Slug"
+msgstr ""
+
+#: inc/playlist/playlist.php:958
+msgid ""
+"Change single Playlist slug. Remember to save the permalink settings again "
+"in Settings > Permalinks."
+msgstr ""
+
+#: inc/playlist/playlist.php:964
+msgid "Playlist Category Base"
+msgstr ""
+
+#: inc/playlist/playlist.php:965
+msgid ""
+"Change Playlist Category Base. Remember to save the permalink settings again "
+"in Settings > Permalinks."
+msgstr ""
+
+#: inc/playlist/playlist.php:1028
+msgid ""
+"Choose type of navigation for playlist page. For WP PageNavi, you will need "
+"to install WP PageNavi plugin."
+msgstr ""
+
+#: inc/playlist/playlist.php:1044
+msgid "Arrange display for Playlist posts in Archive Page."
+msgstr ""
+
+#: inc/playlist/playlist.php:1067 inc/playlist/playlist.php:1176
+msgid "Display Playlist Categories"
+msgstr ""
+
+#: inc/playlist/playlist.php:1068
+msgid "Hide or show playlist categories on Archive Page."
+msgstr ""
+
+#: inc/playlist/playlist.php:1112 inc/series/series.php:1196
+#: inc/widget/widget.php:480
+msgid "Order"
+msgstr ""
+
+#: inc/playlist/playlist.php:1113
+msgid ""
+"Arrange display for video posts in playlist. Please note, some queries "
+"regarding views, likes, dislikes, reactions and ratings are only used when "
+"absolutely necessary. It may give incorrect results on your playlist."
+msgstr ""
+
+#: inc/playlist/playlist.php:1154
+msgid ""
+"Choose type of navigation for single playlist. For WP PageNavi, you will "
+"need to install WP PageNavi plugin."
+msgstr ""
+
+#: inc/playlist/playlist.php:1159 inc/series/series.php:1243
+#: inc/settings/page-settings.php:85
+msgid "Hidden"
+msgstr ""
+
+#: inc/playlist/playlist.php:1167
+msgid ""
+"Change Single Playlist Sidebar. Select \"Default\" to use settings in Theme "
+"Options > Blog Settings."
+msgstr ""
+
+#: inc/playlist/playlist.php:1177
+msgid "Hide or show playlist categories on Single Playlist."
+msgstr ""
+
+#: inc/report/report.php:33
+msgid "Reasons"
+msgstr ""
+
+#: inc/report/report.php:34
+msgid "Actions"
+msgstr ""
+
+#: inc/report/report.php:35
+msgid "User Report"
+msgstr ""
+
+#: inc/report/report.php:49
+msgid "<a href=\""
+msgstr ""
+
+#: inc/report/report.php:59
+msgid "Unknown"
+msgstr ""
+
+#: inc/report/report.php:63
+msgid "User Name: <strong>"
+msgstr ""
+
+#: inc/report/report.php:94
+msgid "You do not have permission to submit reports."
+msgstr ""
+
+#: inc/report/report.php:104 inc/report/report.php:340
+msgid "Choose one from the suggested issues below."
+msgstr ""
+
+#: inc/report/report.php:135
+msgid "This content is under review and processing. Please wait patiently!"
+msgstr ""
+
+#: inc/report/report.php:143 inc/report/report.php:173
+#: inc/report/report.php:182 inc/report/report.php:218
+#: inc/report/report.php:276
+msgid "Report"
+msgstr ""
+
+#: inc/report/report.php:153
+msgid "An error has occurred. Please reload the page and try again!"
+msgstr ""
+
+#: inc/report/report.php:159
+msgid ""
+"Thanks, you have successfully submitted the report! We will review and "
+"resolve."
+msgstr ""
+
+#: inc/report/report.php:189
+msgid "Inappropriate content"
+msgstr ""
+
+#: inc/report/report.php:193
+msgid "Media is broken, can't watch..."
+msgstr ""
+
+#: inc/report/report.php:197
+msgid "Captions issue"
+msgstr ""
+
+#: inc/report/report.php:201
+msgid "Spam or misleading"
+msgstr ""
+
+#: inc/report/report.php:205
+msgid "Infringes my rights"
+msgstr ""
+
+#: inc/report/report.php:209
+msgid "Others"
+msgstr ""
+
+#: inc/report/report.php:213
+msgid "More reports..."
+msgstr ""
+
+#: inc/report/report.php:239 inc/report/report.php:257
+msgid "Display \"Report\" Button"
+msgstr ""
+
+#: inc/report/report.php:270
+msgid "report"
+msgstr ""
+
+#: inc/report/report.php:275 inc/report/report.php:277
+msgid "Reports"
+msgstr ""
+
+#: inc/report/report.php:278
+msgid "Add Report"
+msgstr ""
+
+#: inc/report/report.php:279
+msgid "Add New Report"
+msgstr ""
+
+#: inc/report/report.php:281
+msgid "Edit Report"
+msgstr ""
+
+#: inc/report/report.php:282
+msgid "New Report"
+msgstr ""
+
+#: inc/report/report.php:283 inc/report/report.php:284
+msgid "View Report"
+msgstr ""
+
+#: inc/report/report.php:285
+msgid "Search Reports"
+msgstr ""
+
+#: inc/report/report.php:286
+msgid "No Reports found"
+msgstr ""
+
+#: inc/report/report.php:287
+msgid "No Reports found in trash"
+msgstr ""
+
+#: inc/report/report.php:288
+msgid "Parent Report"
+msgstr ""
+
+#: inc/report/report.php:289
+msgid "Report Image"
+msgstr ""
+
+#: inc/report/report.php:290
+msgid "Set report image"
+msgstr ""
+
+#: inc/report/report.php:291
+msgid "Remove report image"
+msgstr ""
+
+#: inc/report/report.php:292
+msgid "Use as report image"
+msgstr ""
+
+#: inc/report/report.php:293
+msgid "Insert into report"
+msgstr ""
+
+#: inc/report/report.php:294
+msgid "Uploaded to this report"
+msgstr ""
+
+#: inc/report/report.php:295
+msgid "Filter reports"
+msgstr ""
+
+#: inc/report/report.php:296
+msgid "Reports navigation"
+msgstr ""
+
+#: inc/report/report.php:297
+msgid "Reports list"
+msgstr ""
+
+#: inc/report/report.php:299
+msgid "This is where you can add new reports to your site."
+msgstr ""
+
+#: inc/review/review.php:60
+msgid "Rated Tab [Privacy]"
+msgstr ""
+
+#: inc/review/review.php:71
+msgid "Rating"
+msgstr ""
+
+#: inc/review/review.php:78 inc/review/review.php:174
+msgid "Highest Rating"
+msgstr ""
+
+#: inc/review/review.php:79 inc/review/review.php:175
+msgid "Lowest Rating"
+msgstr ""
+
+#: inc/review/review.php:191 inc/review/review.php:198
+#: inc/review/review.php:206 inc/review/review.php:210
+msgid "Rated"
+msgstr ""
+
+#: inc/review/review.php:224 inc/review/review.php:261
+msgid "Display \"Rated Posts\" Item"
+msgstr ""
+
+#: inc/review/review.php:225
+msgid "Hide or show \"Rated Posts\" item on Side Menu."
+msgstr ""
+
+#: inc/review/review.php:246 inc/review/review.php:361
+#: inc/review/review.php:375
+msgid "Rated Posts"
+msgstr ""
+
+#: inc/review/review.php:262
+msgid "Hide or show \"Rated Posts\" item on Tab."
+msgstr ""
+
+#: inc/review/review.php:367
+msgid "Sign in to see posts you've rated in the past."
+msgstr ""
+
+#: inc/review/review.php:468 inc/review/review.php:557
+msgid "rating"
+msgstr ""
+
+#: inc/review/review.php:470 inc/review/review.php:555
+msgid "ratings"
+msgstr ""
+
+#: inc/review/review.php:574 inc/review/review.php:580
+msgid "You have rated"
+msgstr ""
+
+#: inc/review/review.php:595
+msgid "Reviews"
+msgstr ""
+
+#: inc/review/review.php:614
+msgid "User Score"
+msgstr ""
+
+#: inc/review/review.php:630
+msgid "Rate This"
+msgstr ""
+
+#: inc/review/review.php:665
+msgid "Very Poor"
+msgstr ""
+
+#: inc/review/review.php:666
+msgid "Poor"
+msgstr ""
+
+#: inc/review/review.php:667
+msgid "Ok"
+msgstr ""
+
+#: inc/review/review.php:668
+msgid "Good"
+msgstr ""
+
+#: inc/review/review.php:669
+msgid "Very Good"
+msgstr ""
+
+#: inc/review/review.php:670
+msgid "Thanks for rating"
+msgstr ""
+
+#: inc/review/review.php:672 inc/review/review.php:679
+msgid "Clear"
+msgstr ""
+
+#: inc/review/review.php:673
+msgid "Not Rated"
+msgstr ""
+
+#: inc/review/review.php:675
+msgid "Half Star"
+msgstr ""
+
+#: inc/review/review.php:676
+msgid "One Star"
+msgstr ""
+
+#: inc/review/review.php:677
+msgid "One & Half Star"
+msgstr ""
+
+#: inc/review/review.php:678
+msgid "Two Stars"
+msgstr ""
+
+#: inc/review/review.php:680
+msgid "Three Stars"
+msgstr ""
+
+#: inc/review/review.php:681
+msgid "Three & Half Stars"
+msgstr ""
+
+#: inc/review/review.php:682
+msgid "Four Stars"
+msgstr ""
+
+#: inc/review/review.php:683
+msgid "Four & Half Stars"
+msgstr ""
+
+#: inc/review/review.php:684
+msgid "Five Stars"
+msgstr ""
+
+#: inc/review/review.php:685
+msgid "Five & Half Stars"
+msgstr ""
+
+#: inc/review/review.php:686
+msgid "Six Stars"
+msgstr ""
+
+#: inc/review/review.php:687
+msgid "Six & Half Stars"
+msgstr ""
+
+#: inc/review/review.php:688
+msgid "Seven Stars"
+msgstr ""
+
+#: inc/review/review.php:689
+msgid "Seven & Half Stars"
+msgstr ""
+
+#: inc/review/review.php:690
+msgid "Eight Stars"
+msgstr ""
+
+#: inc/review/review.php:691
+msgid "Eight & Half Stars"
+msgstr ""
+
+#: inc/review/review.php:692
+msgid "Nine Stars"
+msgstr ""
+
+#: inc/review/review.php:693
+msgid "Nine & Half Stars"
+msgstr ""
+
+#: inc/review/review.php:694
+msgid "Ten Stars"
+msgstr ""
+
+#: inc/series/series.php:141 inc/series/series.php:148
+#: inc/series/series.php:898 inc/series/series.php:899
+#: inc/series/series.php:900
+msgid "Series"
+msgstr ""
+
+#: inc/series/series.php:659
+msgid "List"
+msgstr ""
+
+#: inc/series/series.php:672
+msgid "Seasons"
+msgstr ""
+
+#: inc/series/series.php:901
+msgid "Add Series"
+msgstr ""
+
+#: inc/series/series.php:902
+msgid "Add New Series"
+msgstr ""
+
+#: inc/series/series.php:904
+msgid "Edit Series"
+msgstr ""
+
+#: inc/series/series.php:905
+msgid "New Series"
+msgstr ""
+
+#: inc/series/series.php:906 inc/series/series.php:907
+msgid "View Series"
+msgstr ""
+
+#: inc/series/series.php:908
+msgid "Search Series"
+msgstr ""
+
+#: inc/series/series.php:909
+msgid "No Series found"
+msgstr ""
+
+#: inc/series/series.php:910
+msgid "No Series found in trash"
+msgstr ""
+
+#: inc/series/series.php:911
+msgid "Parent Series"
+msgstr ""
+
+#: inc/series/series.php:912
+msgid "Series Image"
+msgstr ""
+
+#: inc/series/series.php:913
+msgid "Set Series image"
+msgstr ""
+
+#: inc/series/series.php:914
+msgid "Remove Series image"
+msgstr ""
+
+#: inc/series/series.php:915
+msgid "Use as Series image"
+msgstr ""
+
+#: inc/series/series.php:916
+msgid "Insert into Series"
+msgstr ""
+
+#: inc/series/series.php:917
+msgid "Uploaded to this Series"
+msgstr ""
+
+#: inc/series/series.php:918
+msgid "Filter Series"
+msgstr ""
+
+#: inc/series/series.php:919
+msgid "Series navigation"
+msgstr ""
+
+#: inc/series/series.php:920
+msgid "Series list"
+msgstr ""
+
+#: inc/series/series.php:922
+msgid "This is where you can add new Series to your site."
+msgstr ""
+
+#: inc/series/series.php:952 inc/series/series.php:954
+msgid "Series Categories"
+msgstr ""
+
+#: inc/series/series.php:1027 inc/series/series.php:1028
+msgid "Series Settings"
+msgstr ""
+
+#: inc/series/series.php:1041
+msgid "Series Slug"
+msgstr ""
+
+#: inc/series/series.php:1042
+msgid ""
+"Change single Series slug. Remember to save the permalink settings again in "
+"Settings > Permalinks."
+msgstr ""
+
+#: inc/series/series.php:1048
+msgid "Series Category Base"
+msgstr ""
+
+#: inc/series/series.php:1049
+msgid ""
+"Change Series Category Base. Remember to save the permalink settings again "
+"in Settings > Permalinks."
+msgstr ""
+
+#: inc/series/series.php:1112
+msgid ""
+"Choose type of navigation for series page. For WP PageNavi, you will need to "
+"install WP PageNavi plugin."
+msgstr ""
+
+#: inc/series/series.php:1128
+msgid "Arrange display for Series posts in Archive Page."
+msgstr ""
+
+#: inc/series/series.php:1151 inc/series/series.php:1260
+msgid "Display Series Categories"
+msgstr ""
+
+#: inc/series/series.php:1152
+msgid "Hide or show series categories on Archive Page."
+msgstr ""
+
+#: inc/series/series.php:1197
+msgid ""
+"Arrange display for video posts in Series. Please note, some queries "
+"regarding views, likes, dislikes, reactions and ratings are only used when "
+"absolutely necessary. It may give incorrect results on your series."
+msgstr ""
+
+#: inc/series/series.php:1238
+msgid ""
+"Choose type of navigation for single series. For WP PageNavi, you will need "
+"to install WP PageNavi plugin."
+msgstr ""
+
+#: inc/series/series.php:1251
+msgid ""
+"Change Single Series Sidebar. Select \"Default\" to use settings in Theme "
+"Options > Blog Settings."
+msgstr ""
+
+#: inc/series/series.php:1261
+msgid "Hide or show series categories on Single Series."
+msgstr ""
+
+#: inc/series/series.php:1324
+msgid "Video Series Settings"
+msgstr ""
+
+#: inc/series/series.php:1338
+msgid "Video Series {#}"
+msgstr ""
+
+#: inc/series/series.php:1339
+msgid "Add More Series"
+msgstr ""
+
+#: inc/series/series.php:1340
+msgid "Remove Series"
+msgstr ""
+
+#: inc/series/series.php:1349
+msgid "Group Name"
+msgstr ""
+
+#: inc/series/series.php:1362 inc/video/video.php:278 inc/video/video.php:280
+msgid "Videos"
+msgstr ""
+
+#: inc/settings/cmb2/cmb2-attached-posts/init.php:118
+msgid "Users"
+msgstr ""
+
+#: inc/settings/cmb2/cmb2-attached-posts/init.php:142
+#, php-format
+msgid "Available %s"
+msgstr ""
+
+#: inc/settings/cmb2/cmb2-attached-posts/init.php:162
+msgid "Search"
+msgstr ""
+
+#: inc/settings/cmb2/cmb2-attached-posts/init.php:168
+#: inc/settings/cmb2/cmb2-post-search-field/lib/init.php:47
+msgid "An error has occurred. Please reload the page and try again."
+msgstr ""
+
+#: inc/settings/cmb2/cmb2-attached-posts/init.php:169
+#: inc/settings/cmb2/cmb2-post-search-field/lib/init.php:48
+msgid "Find Posts or Pages"
+msgstr ""
+
+#: inc/settings/cmb2/cmb2-attached-posts/init.php:182
+#, php-format
+msgid "Attached %s"
+msgstr ""
+
+#: inc/settings/cmb2/cmb2-field-post-search-ajax/cmb-field-post-search-ajax.php:165
+msgid "Error : Unauthorized action"
+msgstr ""
+
+#: inc/settings/page-settings.php:24
+msgid "Post/Page Settings"
+msgstr ""
+
+#: inc/settings/page-settings.php:34
+msgid "Main Navigation Layout"
+msgstr ""
+
+#: inc/settings/page-settings.php:35
+msgid "Select \"Default\" to use settings in Theme Options > Header."
+msgstr ""
+
+#: inc/settings/page-settings.php:42
+msgid "Poppy"
+msgstr ""
+
+#: inc/settings/page-settings.php:44
+msgid "Alyssa"
+msgstr ""
+
+#: inc/settings/page-settings.php:45
+msgid "Leilani"
+msgstr ""
+
+#: inc/settings/page-settings.php:47
+msgid "Marguerite"
+msgstr ""
+
+#: inc/settings/page-settings.php:48
+msgid "Rose"
+msgstr ""
+
+#: inc/settings/page-settings.php:83 inc/settings/page-settings.php:124
+msgid "Right"
+msgstr ""
+
+#: inc/settings/page-settings.php:84 inc/settings/page-settings.php:123
+msgid "Left"
+msgstr ""
+
+#: inc/settings/page-settings.php:90
+msgid "Side Menu"
+msgstr ""
+
+#: inc/settings/page-settings.php:91
+msgid ""
+"Enable/Disable Side Menu. Select \"Default\" to use settings in Theme "
+"Options > Header."
+msgstr ""
+
+#: inc/settings/page-settings.php:102
+msgid "Default Status for Side Menu"
+msgstr ""
+
+#: inc/settings/page-settings.php:103
+msgid ""
+"Choose a default status for the side menu. Applicable to minimum width "
+"screens: 1366px."
+msgstr ""
+
+#: inc/settings/page-settings.php:108
+msgid "Close"
+msgstr ""
+
+#: inc/settings/page-settings.php:109
+msgid "Open"
+msgstr ""
+
+#: inc/settings/page-settings.php:117
+msgid "Default Position for Side Menu"
+msgstr ""
+
+#: inc/settings/page-settings.php:118
+msgid "Choose a default position for the side menu."
+msgstr ""
+
+#: inc/settings/page-settings.php:132
+msgid "Side Menu Navigation"
+msgstr ""
+
+#: inc/settings/page-settings.php:133
+msgid "Enable/Disable Side Menu Navigation."
+msgstr ""
+
+#: inc/settings/settings.php:31
+msgid "Functional Options"
+msgstr ""
+
+#: inc/settings/settings.php:48
+msgid "Like/Dislike/Reaction Settings"
+msgstr ""
+
+#: inc/settings/settings.php:62
+msgid "Review Settings"
+msgstr ""
+
+#: inc/settings/settings.php:73
+msgid "View Settings"
+msgstr ""
+
+#: inc/settings/settings.php:83 inc/settings/settings.php:84
+msgid "Theme Settings"
+msgstr ""
+
+#: inc/settings/settings.php:95
+msgid "Video Channel"
+msgstr ""
+
+#: inc/settings/settings.php:96
+msgid ""
+"Turn ON/OFF \"Channel\" feature for your theme. Each user account will own a "
+"channel corresponding to their account."
+msgstr ""
+
+#: inc/settings/settings.php:107
+msgid "Video Playlist"
+msgstr ""
+
+#: inc/settings/settings.php:108
+msgid ""
+"Turn ON/OFF \"Playlist\" feature for your theme. Remember to save the "
+"permalink settings again in Settings > Permalinks."
+msgstr ""
+
+#: inc/settings/settings.php:119
+msgid "Video Series"
+msgstr ""
+
+#: inc/settings/settings.php:120
+msgid ""
+"Turn ON/OFF \"Series\" feature for your theme. Remember to save the "
+"permalink settings again in Settings > Permalinks."
+msgstr ""
+
+#: inc/settings/settings.php:131
+msgid "Video Report"
+msgstr ""
+
+#: inc/settings/settings.php:132
+msgid "Turn ON/OFF \"Video Report\" feature for your theme."
+msgstr ""
+
+#: inc/settings/settings.php:144
+msgid "Turn ON/OFF \"Cast\" feature for your theme."
+msgstr ""
+
+#: inc/settings/settings.php:155 inc/watch-later/watch-later.php:110
+#: inc/watch-later/watch-later.php:122 inc/watch-later/watch-later.php:253
+#: inc/watch-later/watch-later.php:260 inc/watch-later/watch-later.php:268
+#: inc/watch-later/watch-later.php:272 inc/watch-later/watch-later.php:308
+#: inc/watch-later/watch-later.php:409 inc/watch-later/watch-later.php:413
+#: inc/watch-later/watch-later.php:488 inc/watch-later/watch-later.php:518
+#: inc/watch-later/watch-later.php:532
+msgid "Watch Later"
+msgstr ""
+
+#: inc/settings/settings.php:156
+msgid "Turn ON/OFF \"Watch Later\" feature for your theme."
+msgstr ""
+
+#: inc/settings/settings.php:166
+msgid "Social Network Account"
+msgstr ""
+
+#: inc/settings/settings.php:167
+msgid "Turn ON/OFF \"Social Network Account\" feature for your theme."
+msgstr ""
+
+#: inc/settings/settings.php:177
+msgid "Review"
+msgstr ""
+
+#: inc/settings/settings.php:178
+msgid "Turn ON/OFF \"Review\" feature for your theme."
+msgstr ""
+
+#: inc/settings/settings.php:188
+msgid "Display Review"
+msgstr ""
+
+#: inc/settings/settings.php:189
+msgid "Conditions for displaying scores on lists or on content blocks..."
+msgstr ""
+
+#: inc/settings/settings.php:194
+msgid "Always Show"
+msgstr ""
+
+#: inc/settings/settings.php:195
+msgid "Displayed only when score is greater than zero"
+msgstr ""
+
+#: inc/settings/settings.php:196
+msgid "Don't show"
+msgstr ""
+
+#: inc/settings/settings.php:204
+msgid "Rating Unit"
+msgstr ""
+
+#: inc/settings/settings.php:205
+msgid "Choose a display mode for ratings."
+msgstr ""
+
+#: inc/settings/settings.php:210
+msgid "Percent Unit"
+msgstr ""
+
+#: inc/settings/settings.php:211
+msgid "Decimal Unit"
+msgstr ""
+
+#: inc/settings/settings.php:219
+msgid "WordPress Nonces"
+msgstr ""
+
+#: inc/settings/settings.php:220
+msgid ""
+"Turn ON/OFF \"WordPress Nonces\" feature for your theme. A nonce is a "
+"\"number used once\" to help protect URLs and forms from certain types of "
+"misuse, malicious or otherwise."
+msgstr ""
+
+#: inc/settings/settings.php:230
+msgid "Number of Custom Fonts"
+msgstr ""
+
+#: inc/settings/settings.php:231
+msgid ""
+"Limit the number of custom fonts that can be used. You can see these fields "
+"at Theme Options -> Typography -> scroll to: Bottom"
+msgstr ""
+
+#: inc/settings/settings.php:244
+msgid "Like/Dislike/Reaction"
+msgstr ""
+
+#: inc/settings/settings.php:245
+msgid "Turn ON/OFF \"Like/Dislike/Reaction\" feature for your theme."
+msgstr ""
+
+#: inc/settings/settings.php:256
+msgid "Turn ON/OFF \"Like\" feature for your theme."
+msgstr ""
+
+#: inc/settings/settings.php:271
+msgid "Turn ON/OFF \"Dislike\" feature for your theme."
+msgstr ""
+
+#: inc/settings/settings.php:286
+msgid "Turn ON/OFF \"Squint Tears\" feature for your theme."
+msgstr ""
+
+#: inc/settings/settings.php:301
+msgid "Turn ON/OFF \"Cry\" feature for your theme."
+msgstr ""
+
+#: inc/settings/settings.php:333
+msgid "Views Counter"
+msgstr ""
+
+#: inc/settings/settings.php:334
+msgid "Turn ON/OFF \"Views Counter\" feature for your theme."
+msgstr ""
+
+#: inc/social/social.php:97
+msgid "Display Sharing Block"
+msgstr ""
+
+#: inc/social/social.php:116
+msgid "Sharing"
+msgstr ""
+
+#: inc/social/social.php:133 inc/social/social.php:152
+msgid "Display \"Share\" Button"
+msgstr ""
+
+#: inc/social/social.php:173
+msgid "Share"
+msgstr ""
+
+#: inc/video/video.php:99
+msgid "Ads - Bellow Player in Single Series/Playlist"
+msgstr ""
+
+#: inc/video/video.php:101
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/video/video.php:279
+msgid "Video"
+msgstr ""
+
+#: inc/video/video.php:281
+msgid "Add Video"
+msgstr ""
+
+#: inc/video/video.php:282
+msgid "Add New Video"
+msgstr ""
+
+#: inc/video/video.php:284
+msgid "Edit Video"
+msgstr ""
+
+#: inc/video/video.php:285
+msgid "New Video"
+msgstr ""
+
+#: inc/video/video.php:286 inc/video/video.php:287
+msgid "View Video"
+msgstr ""
+
+#: inc/video/video.php:288
+msgid "Search Videos"
+msgstr ""
+
+#: inc/video/video.php:289
+msgid "No Videos found"
+msgstr ""
+
+#: inc/video/video.php:290
+msgid "No Videos found in trash"
+msgstr ""
+
+#: inc/video/video.php:291
+msgid "Parent Video"
+msgstr ""
+
+#: inc/video/video.php:292
+msgid "Video Image"
+msgstr ""
+
+#: inc/video/video.php:293
+msgid "Set Video image"
+msgstr ""
+
+#: inc/video/video.php:294
+msgid "Remove Video image"
+msgstr ""
+
+#: inc/video/video.php:295
+msgid "Use as Video image"
+msgstr ""
+
+#: inc/video/video.php:296
+msgid "Insert into Video"
+msgstr ""
+
+#: inc/video/video.php:297
+msgid "Uploaded to this Video"
+msgstr ""
+
+#: inc/video/video.php:298
+msgid "Filter Videos"
+msgstr ""
+
+#: inc/video/video.php:299
+msgid "Videos navigation"
+msgstr ""
+
+#: inc/video/video.php:300
+msgid "Videos list"
+msgstr ""
+
+#: inc/video/video.php:302
+msgid "This is where you can add new videos to your site."
+msgstr ""
+
+#: inc/video/video.php:332 inc/video/video.php:334
+msgid "Video Categories"
+msgstr ""
+
+#: inc/video/video.php:407
+msgid "Video Main-Toolbar Settings"
+msgstr ""
+
+#: inc/video/video.php:419 inc/video/video.php:420 inc/video/video.php:734
+msgid "Video Settings"
+msgstr ""
+
+#: inc/video/video.php:433
+msgid "Video Slug"
+msgstr ""
+
+#: inc/video/video.php:434
+msgid ""
+"Change single Video slug. Remember to save the permalink settings again in "
+"Settings > Permalinks."
+msgstr ""
+
+#: inc/video/video.php:440
+msgid "Video Category Base"
+msgstr ""
+
+#: inc/video/video.php:441
+msgid ""
+"Change Video Category Base. Remember to save the permalink settings again in "
+"Settings > Permalinks."
+msgstr ""
+
+#: inc/video/video.php:504
+msgid ""
+"Choose type of navigation for video page. For WP PageNavi, you will need to "
+"install WP PageNavi plugin."
+msgstr ""
+
+#: inc/video/video.php:520
+msgid "Arrange display for video posts in Archive Page."
+msgstr ""
+
+#: inc/video/video.php:543 inc/video/video.php:647
+msgid "Display Video Categories"
+msgstr ""
+
+#: inc/video/video.php:544
+msgid "Hide or show video categories on Archive Page."
+msgstr ""
+
+#: inc/video/video.php:557
+msgid "Hide or show video duration on Archive Page."
+msgstr ""
+
+#: inc/video/video.php:569
+msgid "Hide or show video label on Archive Page."
+msgstr ""
+
+#: inc/video/video.php:611
+msgid "Video Player Position"
+msgstr ""
+
+#: inc/video/video.php:612
+msgid "Select default video player position for video posts."
+msgstr ""
+
+#: inc/video/video.php:638
+msgid ""
+"Change Single Video Sidebar. Select \"Default\" to use settings in Theme "
+"Options > Blog Settings."
+msgstr ""
+
+#: inc/video/video.php:648
+msgid "Hide or show video categories on Single Video."
+msgstr ""
+
+#: inc/video/video.php:676
+msgid "Display \"Turn Off Light\" Button"
+msgstr ""
+
+#: inc/video/video.php:687
+msgid "Display \"Previous Video\" Button"
+msgstr ""
+
+#: inc/video/video.php:698
+msgid "Display \"Next Video\" Button"
+msgstr ""
+
+#: inc/video/video.php:751
+msgid ""
+"With embed mode, you will use a 3rd party player. It will only display "
+"videos and will not inherit all advertising features (or some other "
+"features) from the theme."
+msgstr ""
+
+#: inc/video/video.php:760
+msgid "Video Label"
+msgstr ""
+
+#: inc/video/video.php:767
+msgid "Video Resolution & Aspect Ratio"
+msgstr ""
+
+#: inc/video/video.php:771
+msgid ""
+"Default: <strong>\" 16:9 \"</strong> - You can change the aspect ratio of "
+"this video to <strong>\" 2:3 \", \" 21:9 \"</strong>, ... or <strong>\" auto "
+"\"</strong>.<br>\n"
+"                    With \"auto\" mode, the display frame will depend on the "
+"height of the player inside the container."
+msgstr ""
+
+#: inc/video/video.php:780
+msgid "Video URL ( url from video sites or embed [ iframe, shortcode... ] )"
+msgstr ""
+
+#: inc/video/video.php:785
+msgid ""
+"Enter url from video sites ( or &#x3C;object&#x3E;, &#x3C;embed&#x3E;, &#x3C;"
+"iframe&#x3E; ) like YouTube, Vimeo, Dailymotion, Facebook, Twitch, Google "
+"Drive or your file upload (*.mp4, *.webm, *.ogg, .ogv).                   \n"
+"                    <br><br><strong>For Video Support:</strong> [video/"
+"mp4]<strong>*.mp4</strong>, [video/webm]<strong>*.webm</strong>, [video/"
+"ogg]<strong>*.ogg</strong>, [video/ogv]<strong>*.ogv</strong>\n"
+"                    <br><strong>For HLS Support:</strong> [application/x-"
+"mpegURL]<strong>*.m3u8</strong>, [vnd.apple.mpegURL]<strong>*.m3u8</strong>, "
+"[video/MP2T]<strong>*.ts</strong>\n"
+"                    <br><strong>For M(PEG)-DASH Support:</strong> "
+"[application/dash+xml]<strong>*.mpd</strong>\n"
+"                    <br><strong>For Subtitles Support:</strong> [text/"
+"vtt]<strong>*.vtt</strong>, [text/srt]<strong>*.srt</strong>"
+msgstr ""
+
+#: inc/video/video.php:799
+msgid "Enter the duration of the video."
+msgstr ""
+
+#: inc/video/video.php:807
+msgid "Video Tags (short label)"
+msgstr ""
+
+#: inc/video/video.php:818
+msgid "Change Single Video Style."
+msgstr ""
+
+#: inc/video/video.php:831
+msgid "Select default video player position for this video post."
+msgstr ""
+
+#: inc/video/video.php:976
+msgid "Turn Off Light"
+msgstr ""
+
+#: inc/video/video.php:992
+msgid "Previous Video"
+msgstr ""
+
+#: inc/video/video.php:1006
+msgid "Next Video"
+msgstr ""
+
+#: inc/video/video.php:1026
+msgid "More"
+msgstr ""
+
+#: inc/views-counter/views-counter.php:107
+msgid "Calculation Method"
+msgstr ""
+
+#: inc/views-counter/views-counter.php:108
+msgid "Choose a method of counting views for video and audio posts."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:114
+#, php-format
+msgid ""
+"When the viewer has watched 5% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:115
+#, php-format
+msgid ""
+"When the viewer has watched 10% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:116
+#, php-format
+msgid ""
+"When the viewer has watched 15% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:117
+#, php-format
+msgid ""
+"When the viewer has watched 20% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:118
+#, php-format
+msgid ""
+"When the viewer has watched 25% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:119
+#, php-format
+msgid ""
+"When the viewer has watched 30% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:120
+#, php-format
+msgid ""
+"When the viewer has watched 35% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:121
+#, php-format
+msgid ""
+"When the viewer has watched 40% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:122
+#, php-format
+msgid ""
+"When the viewer has watched 45% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:123
+#, php-format
+msgid ""
+"When the viewer has watched 50% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:124
+#, php-format
+msgid ""
+"When the viewer has watched 55% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:125
+#, php-format
+msgid ""
+"When the viewer has watched 60% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:126
+#, php-format
+msgid ""
+"When the viewer has watched 65% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:127
+#, php-format
+msgid ""
+"When the viewer has watched 70% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:128
+#, php-format
+msgid ""
+"When the viewer has watched 75% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:129
+#, php-format
+msgid ""
+"When the viewer has watched 80% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:130
+#, php-format
+msgid ""
+"When the viewer has watched 85% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:131
+#, php-format
+msgid ""
+"When the viewer has watched 90% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:132
+#, php-format
+msgid ""
+"When the viewer has watched 95% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:133
+#, php-format
+msgid ""
+"When the viewer has watched 100% of the video's length (or audio's length)."
+msgstr ""
+
+#: inc/views-counter/views-counter.php:144
+msgid "Most Viewed (by this week)"
+msgstr ""
+
+#: inc/views-counter/views-counter.php:145
+msgid "Most Viewed (by this month)"
+msgstr ""
+
+#: inc/views-counter/views-counter.php:146
+msgid "Most Viewed (by this year)"
+msgstr ""
+
+#: inc/views-counter/views-counter.php:147
+#: inc/views-counter/views-counter.php:169
+#: inc/views-counter/views-counter.php:176
+msgid "Most Viewed"
+msgstr ""
+
+#: inc/views-counter/views-counter.php:183
+msgid "views"
+msgstr ""
+
+#: inc/views-counter/views-counter.php:186
+msgid "view"
+msgstr ""
+
+#: inc/watch-later/watch-later.php:56 inc/watch-later/watch-later.php:75
+msgid "Display \"Watch Later\" Button"
+msgstr ""
+
+#: inc/watch-later/watch-later.php:108 inc/watch-later/watch-later.php:201
+#: inc/watch-later/watch-later.php:233
+msgid "Added"
+msgstr ""
+
+#: inc/watch-later/watch-later.php:120 inc/watch-later/watch-later.php:243
+msgid "Sign in to add posts to watch later."
+msgstr ""
+
+#: inc/watch-later/watch-later.php:136
+msgid "Watch Later Tab [Privacy]"
+msgstr ""
+
+#: inc/watch-later/watch-later.php:286 inc/watch-later/watch-later.php:323
+msgid "Display \"Watch Later\" Item"
+msgstr ""
+
+#: inc/watch-later/watch-later.php:287
+msgid "Hide or show \"Watch Later\" item on Side Menu."
+msgstr ""
+
+#: inc/watch-later/watch-later.php:324
+msgid "Hide or show \"Watch Later\" item on Tab."
+msgstr ""
+
+#: inc/watch-later/watch-later.php:469
+msgid "Choose any video/audio post to add to your watch later list."
+msgstr ""
+
+#: inc/watch-later/watch-later.php:486 inc/watch-later/watch-later.php:524
+msgid "Sign in to see posts you've added to your watch later list."
+msgstr ""
+
+#: inc/widget/widget.php:26
+msgid "Widget Icon"
+msgstr ""
+
+#: inc/widget/widget.php:27
+msgid "e.g: fas fa-mitten"
+msgstr ""
+
+#: inc/widget/widget.php:33
+msgid "Widget Icon Color"
+msgstr ""
+
+#: inc/widget/widget.php:34
+msgid "e.g: #FF0000"
+msgstr ""
+
+#: inc/widget/widget.php:40
+msgid "Widget Icon Background Color"
+msgstr ""
+
+#: inc/widget/widget.php:41
+msgid "e.g: #F2F2F2"
+msgstr ""
+
+#: inc/widget/widget.php:47
+msgid "Widget Title Line Color"
+msgstr ""
+
+#: inc/widget/widget.php:48
+msgid "e.g: rgba(52, 199, 89, 1.0)"
+msgstr ""
+
+#: inc/widget/widget.php:185
+msgid "VidMov - Post Extensions"
+msgstr ""
+
+#: inc/widget/widget.php:326
+msgid "Posts"
+msgstr ""
+
+#: inc/widget/widget.php:482
+msgid "DESC"
+msgstr ""
+
+#: inc/widget/widget.php:483
+msgid "ASC"
+msgstr ""
+
+#: inc/widget/widget.php:578
+msgid "Display Tag Label"
+msgstr ""
+
+#: inc/widget/widget.php:597
+msgid "Ratio [16:9"
+msgstr ""

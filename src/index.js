@@ -7,3 +7,4 @@
 
 export * from './components/flickr-mosaic.js';
 export * from './components/custom-pdf-reader.js';
+export * from './components/asen-s3-uploader.js';

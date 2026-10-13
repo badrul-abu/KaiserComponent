@@ -10,6 +10,8 @@
     "package:wordpress": "npm run build:wordpress && node scripts/package-wordpress.js",
     "build:pdfreader": "webpack --env pdfreader",
     "package:pdfreader": "npm run build:pdfreader && node scripts/package-wordpress.js abu-programme-pdf",
+    "build:s3upload": "webpack --env s3upload",
+    "package:s3upload": "npm run build:s3upload && node scripts/package-wordpress.js asen-s3-upload",
     "test": "web-test-runner"
   },
   "repository": {
