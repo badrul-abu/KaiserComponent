@@ -44,7 +44,11 @@ class ASEN_S3_Client
         $this->secret_key = trim((string) $secret_key);
         $this->region = trim((string) $region) ?: 'us-east-1';
         $this->bucket = trim((string) $bucket);
-        $this->custom_domain = rtrim(trim((string) $custom_domain), '/');
+        $domain = rtrim(trim((string) $custom_domain), '/');
+        if (!empty($domain) && strpos($domain, 'http') !== 0) {
+            $domain = 'https://' . $domain;
+        }
+        $this->custom_domain = $domain;
     }
 
     /**

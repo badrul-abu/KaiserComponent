@@ -43,7 +43,11 @@ class ASEN_S3_Ajax
     }
 
     /**
-     * Generate S3 object key.
+     * Generate S3 object key matching WP Offload Media structure.
+     *
+     * Example structure:
+     * wp-content/uploads/{year}/{month}/{object_version}/{filename}
+     * e.g.: wp-content/uploads/2026/10/13135825/my-video.mp4
      *
      * @param string $original_filename
      * @return string
@@ -51,27 +55,61 @@ class ASEN_S3_Ajax
     public static function generate_s3_key($original_filename)
     {
         $settings = ASEN_S3_Settings::get_settings();
-        $prefix = trim($settings['s3_prefix']);
+        $prefix = isset($settings['s3_prefix']) ? trim($settings['s3_prefix']) : 'wp-content/uploads/';
         if (empty($prefix)) {
-            $prefix = 'asen-uploads/{year}/{month}/';
+            $prefix = 'wp-content/uploads/';
         }
 
-        // Replace tags
         $now = current_time('timestamp');
-        $replacements = array(
-            '{year}'  => gmdate('Y', $now),
-            '{month}' => gmdate('m', $now),
-            '{day}'   => gmdate('d', $now),
-        );
-        $prefix = str_replace(array_keys($replacements), array_values($replacements), $prefix);
-        $prefix = trim($prefix, '/') . '/';
+        $has_dynamic_tags = (strpos($prefix, '{') !== false);
+
+        if ($has_dynamic_tags) {
+            $replacements = array(
+                '{year}'           => gmdate('Y', $now),
+                '{month}'          => gmdate('m', $now),
+                '{day}'            => gmdate('d', $now),
+                '{object_version}' => gmdate('dHis', $now),
+            );
+            $full_prefix = str_replace(array_keys($replacements), array_values($replacements), $prefix);
+            $full_prefix = trim($full_prefix, '/') . '/';
+        } else {
+            $parts = array();
+            $clean_prefix = trim($prefix, '/');
+            if (!empty($clean_prefix)) {
+                $parts[] = $clean_prefix;
+            }
+
+            // Add Year & Month (e.g. 2026/10)
+            $add_year_month = !isset($settings['add_year_month']) || !empty($settings['add_year_month']);
+            if ($add_year_month) {
+                $parts[] = gmdate('Y/m', $now);
+            }
+
+            // Add Object Version (e.g. 13135825/)
+            $add_object_version = !isset($settings['add_object_version']) || !empty($settings['add_object_version']);
+            if ($add_object_version) {
+                $parts[] = gmdate('dHis', $now);
+            }
+
+            $full_prefix = implode('/', $parts) . '/';
+        }
 
         $info = pathinfo($original_filename);
         $ext = !empty($info['extension']) ? '.' . strtolower($info['extension']) : '';
-        $base = sanitize_title_with_dashes(!empty($info['filename']) ? $info['filename'] : 'file');
+        $base = sanitize_file_name(!empty($info['filename']) ? $info['filename'] : 'file');
+        $clean_base = preg_replace('/[^a-zA-Z0-9_\-\.]/', '-', $base);
+        $clean_base = trim(preg_replace('/-+/', '-', $clean_base), '-');
+        if (empty($clean_base)) {
+            $clean_base = 'file';
+        }
 
-        $unique = wp_generate_uuid4();
-        return $prefix . $unique . '-' . $base . $ext;
+        // If object version is NOT used and no timestamp in prefix, prepend unique string to prevent collision
+        $has_version = (!empty($settings['add_object_version']) || strpos($prefix, '{object_version}') !== false);
+        if (!$has_version) {
+            $clean_base = wp_generate_uuid4() . '-' . $clean_base;
+        }
+
+        return $full_prefix . $clean_base . $ext;
     }
 
     /**

@@ -36,6 +36,12 @@ class ASEN_S3_Media_Manager
         add_action('delete_attachment', array(__CLASS__, 'handle_attachment_deletion'));
         add_action('before_delete_post', array(__CLASS__, 'handle_post_deletion'));
         add_action('wp_ajax_asen_s3_delete_item', array(__CLASS__, 'ajax_delete_item'));
+
+        // Delivery / URL Rewriting for S3 & CloudFront (serves ASEN & WP Offload Media items)
+        add_filter('wp_get_attachment_url', array(__CLASS__, 'filter_attachment_url'), 99, 2);
+        add_filter('image_downsize', array(__CLASS__, 'filter_image_downsize'), 99, 3);
+        add_filter('wp_calculate_image_srcset', array(__CLASS__, 'filter_calculate_image_srcset'), 99, 5);
+        add_filter('the_content', array(__CLASS__, 'filter_the_content'), 99);
     }
 
     /**
@@ -53,7 +59,7 @@ class ASEN_S3_Media_Manager
                 'edit_item'     => 'Edit Category',
                 'update_item'   => 'Update Category',
                 'add_new_item'  => 'Add New Category',
-                'menu_name'     => 'Categories',
+                'menu_name'     => 'ASEN Categories',
             ),
             'hierarchical'      => true,
             'show_ui'           => true,
@@ -86,7 +92,7 @@ class ASEN_S3_Media_Manager
             'menu_icon'          => 'dashicons-video-alt3',
             'show_in_rest'       => true,
             'supports'           => array('title', 'editor', 'thumbnail', 'custom-fields', 'author'),
-            'taxonomies'         => array(self::TAXONOMY, 'category', 'post_tag'),
+            'taxonomies'         => array(self::TAXONOMY, 'post_tag'), // Removed default 'category' taxonomy
             'rewrite'            => array('slug' => 'video-posts'),
         ));
     }
@@ -128,6 +134,259 @@ class ASEN_S3_Media_Manager
                 array('ASEN_S3_Settings', 'render_settings_page')
             );
         }
+    }
+
+    /**
+     * Retrieve S3 information for an attachment.
+     * Supports ASEN metadata, WP Offload Media legacy metadata (amazonS3_info),
+     * and WP Offload Media items database table (as3cf_items).
+     *
+     * @param int $attachment_id
+     * @return array|null Array with keys bucket, key, region, or null if not offloaded.
+     */
+    public static function get_attachment_s3_info($attachment_id)
+    {
+        $attachment_id = (int) $attachment_id;
+        if (!$attachment_id) {
+            return null;
+        }
+
+        // 1. Check ASEN metadata
+        $asen_info = get_post_meta($attachment_id, '_asen_s3_info', true);
+        if (!empty($asen_info) && is_array($asen_info) && !empty($asen_info['key'])) {
+            return array(
+                'bucket' => !empty($asen_info['bucket']) ? $asen_info['bucket'] : '',
+                'key'    => $asen_info['key'],
+                'region' => !empty($asen_info['region']) ? $asen_info['region'] : '',
+            );
+        }
+
+        // 2. Check WP Offload Media legacy metadata (amazonS3_info)
+        $s3_info = get_post_meta($attachment_id, 'amazonS3_info', true);
+        if (!empty($s3_info) && is_array($s3_info) && !empty($s3_info['key'])) {
+            return array(
+                'bucket' => !empty($s3_info['bucket']) ? $s3_info['bucket'] : '',
+                'key'    => $s3_info['key'],
+                'region' => !empty($s3_info['region']) ? $s3_info['region'] : '',
+            );
+        }
+
+        // 3. Check WP Offload Media items database table (as3cf_items) if present
+        global $wpdb;
+        if (!empty($wpdb)) {
+            static $has_as3cf_table = null;
+            $table_name = $wpdb->prefix . 'as3cf_items';
+            if ($has_as3cf_table === null) {
+                $has_as3cf_table = ($wpdb->get_var("SHOW TABLES LIKE '{$table_name}'") === $table_name);
+            }
+            if ($has_as3cf_table) {
+                $row = $wpdb->get_row($wpdb->prepare(
+                    "SELECT bucket, path, region FROM {$table_name} WHERE source_id = %d LIMIT 1",
+                    $attachment_id
+                ), ARRAY_A);
+                if (!empty($row) && !empty($row['path'])) {
+                    return array(
+                        'bucket' => !empty($row['bucket']) ? $row['bucket'] : '',
+                        'key'    => $row['path'],
+                        'region' => !empty($row['region']) ? $row['region'] : '',
+                    );
+                }
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Generate canonical delivery URL for an S3 object key.
+     * Uses CloudFront custom domain / CNAME if configured, falling back to S3 direct URL.
+     *
+     * @param string $key
+     * @param string $bucket
+     * @param string $region
+     * @return string
+     */
+    public static function get_s3_delivery_url($key, $bucket = '', $region = '')
+    {
+        if (empty($key)) {
+            return '';
+        }
+
+        $settings = ASEN_S3_Settings::get_settings();
+        $custom_domain = !empty($settings['custom_domain']) ? trim($settings['custom_domain']) : '';
+        $force_https = !isset($settings['force_https']) || !empty($settings['force_https']);
+        $scheme = $force_https ? 'https://' : (is_ssl() ? 'https://' : 'http://');
+
+        $clean_key = ltrim($key, '/');
+
+        if (!empty($custom_domain)) {
+            $domain = preg_replace('#^https?://#i', '', rtrim($custom_domain, '/'));
+            return $scheme . $domain . '/' . $clean_key;
+        }
+
+        $bucket = $bucket ?: (!empty($settings['s3_bucket']) ? $settings['s3_bucket'] : '');
+        $region = $region ?: (!empty($settings['aws_region']) ? $settings['aws_region'] : 'ap-southeast-1');
+
+        if (!empty($bucket)) {
+            return sprintf('%s%s.s3.%s.amazonaws.com/%s', $scheme, $bucket, $region, $clean_key);
+        }
+
+        return '';
+    }
+
+    /**
+     * Filter wp_get_attachment_url to deliver offloaded files via CloudFront / S3.
+     *
+     * @param string $url
+     * @param int $post_id
+     * @return string
+     */
+    public static function filter_attachment_url($url, $post_id)
+    {
+        $settings = ASEN_S3_Settings::get_settings();
+        if (isset($settings['deliver_media']) && empty($settings['deliver_media'])) {
+            return $url;
+        }
+
+        $info = self::get_attachment_s3_info($post_id);
+        if (!$info) {
+            return $url;
+        }
+
+        $delivery_url = self::get_s3_delivery_url($info['key'], $info['bucket'], $info['region']);
+        return !empty($delivery_url) ? $delivery_url : $url;
+    }
+
+    /**
+     * Filter image_downsize to serve thumbnails and scaled images from CloudFront / S3.
+     *
+     * @param array|bool $downsize
+     * @param int $post_id
+     * @param string|array $size
+     * @return array|bool
+     */
+    public static function filter_image_downsize($downsize, $post_id, $size)
+    {
+        $settings = ASEN_S3_Settings::get_settings();
+        if (isset($settings['deliver_media']) && empty($settings['deliver_media'])) {
+            return false;
+        }
+
+        $info = self::get_attachment_s3_info($post_id);
+        if (!$info) {
+            return false;
+        }
+
+        $key = $info['key'];
+        $meta = wp_get_attachment_metadata($post_id);
+        $width = 0;
+        $height = 0;
+        $is_intermediate = false;
+
+        if (is_array($meta)) {
+            if ($size === 'full') {
+                $width = isset($meta['width']) ? (int) $meta['width'] : 0;
+                $height = isset($meta['height']) ? (int) $meta['height'] : 0;
+            } elseif (is_string($size) && isset($meta['sizes']) && is_array($meta['sizes']) && isset($meta['sizes'][$size])) {
+                $size_data = $meta['sizes'][$size];
+                $dir = dirname($key);
+                $key = ($dir === '.' || $dir === '') ? $size_data['file'] : $dir . '/' . $size_data['file'];
+                $width = isset($size_data['width']) ? (int) $size_data['width'] : 0;
+                $height = isset($size_data['height']) ? (int) $size_data['height'] : 0;
+                $is_intermediate = true;
+            }
+        }
+
+        $url = self::get_s3_delivery_url($key, $info['bucket'], $info['region']);
+        if (!empty($url)) {
+            return array($url, $width, $height, $is_intermediate);
+        }
+
+        return false;
+    }
+
+    /**
+     * Filter wp_calculate_image_srcset to serve all responsive image sources from CloudFront / S3.
+     *
+     * @param array $sources
+     * @param array $size_array
+     * @param string $image_src
+     * @param array $image_meta
+     * @param int $attachment_id
+     * @return array
+     */
+    public static function filter_calculate_image_srcset($sources, $size_array, $image_src, $image_meta, $attachment_id)
+    {
+        if (empty($sources) || !is_array($sources)) {
+            return $sources;
+        }
+
+        $settings = ASEN_S3_Settings::get_settings();
+        if (isset($settings['deliver_media']) && empty($settings['deliver_media'])) {
+            return $sources;
+        }
+
+        $info = self::get_attachment_s3_info($attachment_id);
+        if (!$info) {
+            return $sources;
+        }
+
+        $dir = dirname($info['key']);
+        $base_dir = ($dir === '.' || $dir === '') ? '' : $dir . '/';
+
+        foreach ($sources as $width => &$data) {
+            $filename = basename($data['url']);
+            $size_key = $base_dir . $filename;
+            $cdn_url = self::get_s3_delivery_url($size_key, $info['bucket'], $info['region']);
+            if (!empty($cdn_url)) {
+                $data['url'] = $cdn_url;
+            }
+        }
+
+        return $sources;
+    }
+
+    /**
+     * Filter the_content to rewrite local upload URLs to CloudFront.
+     *
+     * @param string $content
+     * @return string
+     */
+    public static function filter_the_content($content)
+    {
+        if (empty($content) || !is_string($content)) {
+            return $content;
+        }
+
+        $settings = ASEN_S3_Settings::get_settings();
+        if (isset($settings['deliver_media']) && empty($settings['deliver_media'])) {
+            return $content;
+        }
+
+        $custom_domain = !empty($settings['custom_domain']) ? trim($settings['custom_domain']) : '';
+        if (empty($custom_domain)) {
+            return $content;
+        }
+
+        $domain = preg_replace('#^https?://#i', '', rtrim($custom_domain, '/'));
+        $force_https = !isset($settings['force_https']) || !empty($settings['force_https']);
+        $scheme = $force_https ? 'https://' : (is_ssl() ? 'https://' : 'http://');
+        $cdn_base = $scheme . $domain;
+
+        if (function_exists('wp_upload_dir')) {
+            $upload_dir = wp_upload_dir();
+            $local_base = isset($upload_dir['baseurl']) ? $upload_dir['baseurl'] : '';
+            if (!empty($local_base)) {
+                $parsed = parse_url($local_base);
+                if (!empty($parsed['host'])) {
+                    $path = !empty($parsed['path']) ? $parsed['path'] : '';
+                    $content = str_replace('https://' . $parsed['host'] . $path, $cdn_base . $path, $content);
+                    $content = str_replace('http://' . $parsed['host'] . $path, $cdn_base . $path, $content);
+                }
+            }
+        }
+
+        return $content;
     }
 
     /**

@@ -25,13 +25,18 @@ class ASEN_S3_Settings
             'aws_secret_access_key' => '',
             'aws_region'            => 'ap-southeast-1',
             's3_bucket'             => '',
-            's3_prefix'             => 'asen-uploads/{year}/{month}/',
+            's3_prefix'             => 'wp-content/uploads/',
+            'add_year_month'        => 1,
+            'add_object_version'    => 1,
+            'deliver_media'         => 1,
             'custom_domain'         => '',
+            'force_https'           => 1,
+            'enable_legacy_compat'  => 1,
             'storage_class'         => 'STANDARD',
             'chunk_size_mb'         => 10,
             'max_file_size_gb'      => 50,
             'url_expiry_minutes'    => 30,
-            'post_type'             => 'asen_video_post',
+            'post_type'             => 'vidmov_video',
             'allowed_extensions'    => 'mp4, mov, mxf, wav, mkv, avi, mp3, aac, pdf, doc, docx, csv, xlsx, txt',
         );
     }
@@ -46,10 +51,13 @@ class ASEN_S3_Settings
      *        'secret-access-key' => 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY',
      *        'region'            => 'ap-southeast-1', // optional
      *        'bucket'            => 'my-bucket-name', // optional
+     *        'domain'            => 'EXAMPLE.cloudfront.net', // optional CDN/CNAME
+     *        'prefix'            => 'wp-content/uploads/', // optional
      *    ) ) );
      * Or a raw array if passed directly in PHP.
      * 2. Also supports individual constants:
-     *    ASEN_AWS_ACCESS_KEY_ID, ASEN_AWS_SECRET_ACCESS_KEY, ASEN_AWS_REGION, ASEN_AWS_BUCKET.
+     *    ASEN_AWS_ACCESS_KEY_ID, ASEN_AWS_SECRET_ACCESS_KEY, ASEN_AWS_REGION, ASEN_AWS_BUCKET,
+     *    ASEN_S3_CUSTOM_DOMAIN, ASEN_S3_PREFIX.
      *
      * @return array Array of defined settings keyed by plugin setting names.
      */
@@ -95,6 +103,45 @@ class ASEN_S3_Settings
                 } elseif (!empty($data['s3_bucket'])) {
                     $defined['s3_bucket'] = trim($data['s3_bucket']);
                 }
+
+                // Delivery / CloudFront Domain
+                if (!empty($data['domain'])) {
+                    $defined['custom_domain'] = trim($data['domain']);
+                } elseif (!empty($data['custom-domain'])) {
+                    $defined['custom_domain'] = trim($data['custom-domain']);
+                } elseif (!empty($data['cname'])) {
+                    $defined['custom_domain'] = trim($data['cname']);
+                } elseif (!empty($data['cloudfront'])) {
+                    $defined['custom_domain'] = trim($data['cloudfront']);
+                }
+
+                // Bucket prefix
+                if (isset($data['prefix'])) {
+                    $defined['s3_prefix'] = trim($data['prefix']);
+                } elseif (isset($data['s3_prefix'])) {
+                    $defined['s3_prefix'] = trim($data['s3_prefix']);
+                }
+
+                // Year & Month toggle
+                if (isset($data['add-year-month'])) {
+                    $defined['add_year_month'] = !empty($data['add-year-month']) ? 1 : 0;
+                } elseif (isset($data['add_year_month'])) {
+                    $defined['add_year_month'] = !empty($data['add_year_month']) ? 1 : 0;
+                }
+
+                // Object Version toggle
+                if (isset($data['add-object-version'])) {
+                    $defined['add_object_version'] = !empty($data['add-object-version']) ? 1 : 0;
+                } elseif (isset($data['add_object_version'])) {
+                    $defined['add_object_version'] = !empty($data['add_object_version']) ? 1 : 0;
+                }
+
+                // Deliver offloaded media toggle
+                if (isset($data['deliver-media'])) {
+                    $defined['deliver_media'] = !empty($data['deliver-media']) ? 1 : 0;
+                } elseif (isset($data['deliver_media'])) {
+                    $defined['deliver_media'] = !empty($data['deliver_media']) ? 1 : 0;
+                }
             }
         }
 
@@ -110,6 +157,12 @@ class ASEN_S3_Settings
         }
         if (!isset($defined['s3_bucket']) && defined('ASEN_AWS_BUCKET')) {
             $defined['s3_bucket'] = ASEN_AWS_BUCKET;
+        }
+        if (!isset($defined['custom_domain']) && defined('ASEN_S3_CUSTOM_DOMAIN')) {
+            $defined['custom_domain'] = ASEN_S3_CUSTOM_DOMAIN;
+        }
+        if (!isset($defined['s3_prefix']) && defined('ASEN_S3_PREFIX')) {
+            $defined['s3_prefix'] = ASEN_S3_PREFIX;
         }
 
         return $defined;
@@ -273,14 +326,53 @@ class ASEN_S3_Settings
         }
 
         // S3 Prefix
-        $output['s3_prefix'] = isset($input['s3_prefix'])
-            ? sanitize_text_field(trim($input['s3_prefix']))
-            : $defaults['s3_prefix'];
+        if (isset($constant_settings['s3_prefix'])) {
+            $output['s3_prefix'] = $constant_settings['s3_prefix'];
+        } else {
+            $prefix = isset($input['s3_prefix']) ? sanitize_text_field(trim($input['s3_prefix'])) : $defaults['s3_prefix'];
+            $output['s3_prefix'] = !empty($prefix) ? $prefix : 'wp-content/uploads/';
+        }
 
-        // Custom Domain
-        $output['custom_domain'] = isset($input['custom_domain'])
-            ? esc_url_raw(rtrim(trim($input['custom_domain']), '/'))
-            : '';
+        // Add Year & Month to Bucket Path
+        if (isset($constant_settings['add_year_month'])) {
+            $output['add_year_month'] = $constant_settings['add_year_month'];
+        } else {
+            $output['add_year_month'] = !empty($input['add_year_month']) ? 1 : 0;
+        }
+
+        // Add Object Version to Bucket Path
+        if (isset($constant_settings['add_object_version'])) {
+            $output['add_object_version'] = $constant_settings['add_object_version'];
+        } else {
+            $output['add_object_version'] = !empty($input['add_object_version']) ? 1 : 0;
+        }
+
+        // Deliver Offloaded Media (URL Rewriter)
+        if (isset($constant_settings['deliver_media'])) {
+            $output['deliver_media'] = $constant_settings['deliver_media'];
+        } else {
+            $output['deliver_media'] = !empty($input['deliver_media']) ? 1 : 0;
+        }
+
+        // Custom Domain / CloudFront CNAME
+        if (isset($constant_settings['custom_domain'])) {
+            $output['custom_domain'] = $constant_settings['custom_domain'];
+        } else {
+            $domain = isset($input['custom_domain']) ? sanitize_text_field(trim($input['custom_domain'])) : '';
+            // Strip any protocol if entered as https://domain
+            $clean_domain = preg_replace('#^https?://#i', '', rtrim($domain, '/'));
+            $output['custom_domain'] = $clean_domain;
+        }
+
+        // Force HTTPS
+        if (isset($constant_settings['force_https'])) {
+            $output['force_https'] = $constant_settings['force_https'];
+        } else {
+            $output['force_https'] = !empty($input['force_https']) ? 1 : 0;
+        }
+
+        // Enable Legacy WP Offload Media Compatibility
+        $output['enable_legacy_compat'] = !empty($input['enable_legacy_compat']) ? 1 : 0;
 
         // Storage Class
         $allowed_classes = array('STANDARD', 'INTELLIGENT_TIERING', 'STANDARD_IA');
@@ -493,31 +585,48 @@ class ASEN_S3_Settings
                             </table>
                         </div>
 
-                        <!-- Card: Storage & Delivery Settings -->
+                        <!-- Card: Storage Settings -->
                         <div class="postbox" style="padding:18px 24px;">
-                            <h2 class="hndle" style="margin-top:0;padding-bottom:10px;border-bottom:1px solid #e2e8f0;">
-                                <span class="dashicons dashicons-database" style="color:#4f46e5;margin-right:6px;"></span>
-                                S3 Paths & Delivery Options
+                            <h2 class="hndle" style="margin-top:0;padding-bottom:10px;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;justify-content:space-between;">
+                                <span>
+                                    <span class="dashicons dashicons-database" style="color:#4f46e5;margin-right:6px;"></span>
+                                    Storage Settings (Bucket Path)
+                                </span>
+                                <span style="font-size:12px;font-weight:600;color:#16a34a;background:#dcfce7;padding:3px 10px;border-radius:12px;">WP Offload Media Schema</span>
                             </h2>
                             <table class="form-table" role="presentation">
                                 <tr>
                                     <th scope="row">
-                                        <label for="s3_prefix">Upload Path Prefix</label>
+                                        <label for="s3_prefix">Add Prefix to Bucket Path</label>
                                     </th>
                                     <td>
                                         <input type="text" id="s3_prefix" name="<?php echo esc_attr(self::OPTION_KEY); ?>[s3_prefix]"
-                                            value="<?php echo esc_attr($settings['s3_prefix']); ?>" class="regular-text" />
-                                        <p class="description">Supports dynamic tags: <code>{year}</code>, <code>{month}</code>, <code>{day}</code>. E.g. <code>asen-uploads/{year}/{month}/</code>.</p>
+                                            value="<?php echo esc_attr($settings['s3_prefix']); ?>" class="regular-text" placeholder="wp-content/uploads/" />
+                                        <p class="description">Groups media together by using a common prefix in the bucket path. Default: <code>wp-content/uploads/</code></p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <label for="custom_domain">CloudFront CDN / Custom Domain</label>
+                                        <label for="add_year_month">Add Year &amp; Month to Bucket Path</label>
                                     </th>
                                     <td>
-                                        <input type="url" id="custom_domain" name="<?php echo esc_attr(self::OPTION_KEY); ?>[custom_domain]"
-                                            value="<?php echo esc_attr($settings['custom_domain']); ?>" class="regular-text" placeholder="https://cdn.example.com" />
-                                        <p class="description">Optional CloudFront or CDN domain URL to serve uploaded media with lower egress costs and caching.</p>
+                                        <label style="display:flex;align-items:center;gap:8px;font-weight:600;cursor:pointer;">
+                                            <input type="checkbox" id="add_year_month" name="<?php echo esc_attr(self::OPTION_KEY); ?>[add_year_month]" value="1" <?php checked(!empty($settings['add_year_month'])); ?> />
+                                            Organize files by Year &amp; Month (e.g. <code><?php echo gmdate('Y/m'); ?>/</code>)
+                                        </label>
+                                        <p class="description">Provides organization within the bucket by including the year and month in which the file was uploaded.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="add_object_version">Add Object Version to Bucket Path</label>
+                                    </th>
+                                    <td>
+                                        <label style="display:flex;align-items:center;gap:8px;font-weight:600;cursor:pointer;">
+                                            <input type="checkbox" id="add_object_version" name="<?php echo esc_attr(self::OPTION_KEY); ?>[add_object_version]" value="1" <?php checked(!empty($settings['add_object_version'])); ?> />
+                                            Add unique timestamp version folder (e.g. <code><?php echo gmdate('dHis'); ?>/</code>)
+                                        </label>
+                                        <p class="description">Ensures clean original filenames and prevents naming collisions by placing each upload in a version timestamp folder, matching WP Offload Media.</p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -533,6 +642,107 @@ class ASEN_S3_Settings
                                     </td>
                                 </tr>
                             </table>
+                        </div>
+
+                        <!-- Card: Delivery Settings -->
+                        <div class="postbox" style="padding:18px 24px;">
+                            <h2 class="hndle" style="margin-top:0;padding-bottom:10px;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;justify-content:space-between;">
+                                <span>
+                                    <span class="dashicons dashicons-cloud" style="color:#0284c7;margin-right:6px;"></span>
+                                    Delivery Settings (CloudFront / CDN)
+                                </span>
+                                <span style="font-size:12px;font-weight:600;color:#0369a1;background:#e0f2fe;padding:3px 10px;border-radius:12px;">URL Rewriter</span>
+                            </h2>
+                            <table class="form-table" role="presentation">
+                                <tr>
+                                    <th scope="row">
+                                        <label for="deliver_media">Deliver Offloaded Media</label>
+                                    </th>
+                                    <td>
+                                        <label style="display:flex;align-items:center;gap:8px;font-weight:600;cursor:pointer;">
+                                            <input type="checkbox" id="deliver_media" name="<?php echo esc_attr(self::OPTION_KEY); ?>[deliver_media]" value="1" <?php checked(!empty($settings['deliver_media'])); ?> />
+                                            Rewrite local URLs to serve media from Amazon CloudFront / S3
+                                        </label>
+                                        <p class="description">Serves offloaded media files by rewriting local attachment and content URLs so they point directly to CloudFront or S3.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="custom_domain">Custom Domain Name (CNAME / CloudFront)</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="custom_domain" name="<?php echo esc_attr(self::OPTION_KEY); ?>[custom_domain]"
+                                            value="<?php echo esc_attr($settings['custom_domain']); ?>" class="regular-text" placeholder="EXAMPLE.cloudfront.net" />
+                                        <p class="description">Serves media from a CloudFront distribution or custom CNAME pointing to your bucket (e.g. <code>EXAMPLE.cloudfront.net</code>).</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="force_https">Force HTTPS</label>
+                                    </th>
+                                    <td>
+                                        <label style="display:flex;align-items:center;gap:8px;font-weight:600;cursor:pointer;">
+                                            <input type="checkbox" id="force_https" name="<?php echo esc_attr(self::OPTION_KEY); ?>[force_https]" value="1" <?php checked(!empty($settings['force_https'])); ?> />
+                                            Always use HTTPS for delivery URLs
+                                        </label>
+                                        <p class="description">Uses <code>https://</code> for every offloaded media item instead of using the scheme of the current page.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="enable_legacy_compat">Legacy WP Offload Media Compatibility</label>
+                                    </th>
+                                    <td>
+                                        <label style="display:flex;align-items:center;gap:8px;font-weight:600;cursor:pointer;">
+                                            <input type="checkbox" id="enable_legacy_compat" name="<?php echo esc_attr(self::OPTION_KEY); ?>[enable_legacy_compat]" value="1" <?php checked(!empty($settings['enable_legacy_compat'])); ?> />
+                                            Deliver existing attachments previously offloaded by WP Offload Media
+                                        </label>
+                                        <p class="description" style="color:#0369a1;font-weight:500;">
+                                            CRITICAL: Automatically serves your 115,000+ existing offloaded attachments via CloudFront/S3 by reading <code>amazonS3_info</code> and <code>as3cf_items</code> metadata. Keeps older media 100% accessible even when local files were removed and WP Offload Media license is exceeded.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- Card: URL Preview (Matching WP Offload Media UI) -->
+                        <div class="postbox" style="padding:18px 24px;background:#f8fafc;border:1px solid #cbd5e1;">
+                            <h2 class="hndle" style="margin-top:0;padding-bottom:10px;border-bottom:1px solid #e2e8f0;">
+                                <span class="dashicons dashicons-admin-links" style="color:#4f46e5;margin-right:6px;"></span>
+                                URL Preview
+                            </h2>
+                            <p style="font-size:13px;color:#475569;margin-top:4px;margin-bottom:14px;">
+                                When a media URL is rewritten, it will use the following structure based on your current Storage and Delivery settings:
+                            </p>
+                            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;">
+                                <div style="background:#e2e8f0;padding:8px 12px;border-radius:6px;min-width:70px;text-align:center;">
+                                    <div style="font-size:11px;color:#64748b;font-weight:600;margin-bottom:3px;">Scheme</div>
+                                    <div id="preview-scheme" style="font-size:13px;font-weight:600;font-family:monospace;color:#1e293b;">https://</div>
+                                </div>
+                                <div style="background:#e2e8f0;padding:8px 12px;border-radius:6px;min-width:140px;text-align:center;">
+                                    <div style="font-size:11px;color:#64748b;font-weight:600;margin-bottom:3px;">Domain</div>
+                                    <div id="preview-domain" style="font-size:13px;font-weight:600;font-family:monospace;color:#1e293b;"><?php echo esc_html($settings['custom_domain'] ?: ($settings['s3_bucket'] ? $settings['s3_bucket'] . '.s3.' . $settings['aws_region'] . '.amazonaws.com' : 'bucket.s3.amazonaws.com')); ?>/</div>
+                                </div>
+                                <div style="background:#e2e8f0;padding:8px 12px;border-radius:6px;min-width:120px;text-align:center;">
+                                    <div style="font-size:11px;color:#64748b;font-weight:600;margin-bottom:3px;">Prefix</div>
+                                    <div id="preview-prefix" style="font-size:13px;font-weight:600;font-family:monospace;color:#1e293b;"><?php echo esc_html(trim($settings['s3_prefix'], '/') . '/'); ?></div>
+                                </div>
+                                <div id="preview-ym-wrap" style="background:#e2e8f0;padding:8px 12px;border-radius:6px;min-width:90px;text-align:center;">
+                                    <div style="font-size:11px;color:#64748b;font-weight:600;margin-bottom:3px;">Year &amp; Month</div>
+                                    <div id="preview-ym" style="font-size:13px;font-weight:600;font-family:monospace;color:#1e293b;"><?php echo gmdate('Y/m'); ?>/</div>
+                                </div>
+                                <div id="preview-ver-wrap" style="background:#e2e8f0;padding:8px 12px;border-radius:6px;min-width:80px;text-align:center;">
+                                    <div style="font-size:11px;color:#64748b;font-weight:600;margin-bottom:3px;">Version</div>
+                                    <div id="preview-ver" style="font-size:13px;font-weight:600;font-family:monospace;color:#1e293b;"><?php echo gmdate('dHis'); ?>/</div>
+                                </div>
+                                <div style="background:#e2e8f0;padding:8px 12px;border-radius:6px;min-width:90px;text-align:center;">
+                                    <div style="font-size:11px;color:#64748b;font-weight:600;margin-bottom:3px;">Filename</div>
+                                    <div style="font-size:13px;font-weight:600;font-family:monospace;color:#1e293b;">example.jpg</div>
+                                </div>
+                            </div>
+                            <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:6px;padding:10px 14px;font-family:monospace;font-size:13px;color:#2563eb;word-break:break-all;">
+                                <strong>Result URL:</strong> <span id="preview-full-url">https://<?php echo esc_html($settings['custom_domain'] ?: ($settings['s3_bucket'] ? $settings['s3_bucket'] . '.s3.' . $settings['aws_region'] . '.amazonaws.com' : 'bucket.s3.amazonaws.com')); ?>/<?php echo esc_html(trim($settings['s3_prefix'], '/')); ?>/<?php echo gmdate('Y/m'); ?>/<?php echo gmdate('dHis'); ?>/example.jpg</span>
+                            </div>
                         </div>
 
                         <!-- Card: Upload & Chunking Configuration -->
@@ -625,12 +835,14 @@ class ASEN_S3_Settings
                             Add this code above <em>/* That's all, stop editing! */</em> in <code>wp-config.php</code>:
                         </p>
                         <div style="position:relative;">
-                            <textarea id="asen-config-code" readonly rows="9" class="large-text code" style="font-size:11px;background:#f8fafc;font-family:monospace;"><?php echo esc_textarea("define( 'ASEN_S3_SETTINGS', serialize( array(
+                            <textarea id="asen-config-code" readonly rows="11" class="large-text code" style="font-size:11px;background:#f8fafc;font-family:monospace;"><?php echo esc_textarea("define( 'ASEN_S3_SETTINGS', serialize( array(
     'provider'          => 'aws',
     'access-key-id'     => 'YOUR_AWS_ACCESS_KEY_ID',
     'secret-access-key' => 'YOUR_AWS_SECRET_ACCESS_KEY',
     'region'            => '" . esc_html($settings['aws_region']) . "',
-    'bucket'            => '" . esc_html($settings['s3_bucket'] ?: 'your-bucket-name') . "',
+    'bucket'            => '" . esc_html($settings['s3_bucket'] ?: 'bucket-name') . "',
+    'domain'            => '" . esc_html($settings['custom_domain'] ?: 'EXAMPLE.cloudfront.net') . "', // optional CloudFront CNAME
+    'prefix'            => '" . esc_html($settings['s3_prefix'] ?: 'wp-content/uploads/') . "', // optional
 ) ) );"); ?></textarea>
                             <button type="button" class="button button-small" id="copy-config-btn" style="position:absolute;top:6px;right:6px;">
                                 <span class="dashicons dashicons-clipboard" style="vertical-align:middle;font-size:14px;"></span> Copy
@@ -814,6 +1026,60 @@ class ASEN_S3_Settings
                     });
                 });
             }
+
+            // Live URL Preview updater
+            function updateUrlPreview() {
+                var domainInput = document.getElementById('custom_domain');
+                var bucketInput = document.getElementById('s3_bucket');
+                var regionInput = document.getElementById('aws_region');
+                var prefixInput = document.getElementById('s3_prefix');
+                var ymCheckbox = document.getElementById('add_year_month');
+                var verCheckbox = document.getElementById('add_object_version');
+                var httpsCheckbox = document.getElementById('force_https');
+
+                var scheme = (httpsCheckbox && !httpsCheckbox.checked) ? 'http://' : 'https://';
+                var domain = (domainInput && domainInput.value.trim()) ? domainInput.value.trim().replace(/^https?:\/\//i, '').replace(/\/+$/, '') : '';
+                if (!domain) {
+                    var b = (bucketInput && bucketInput.value.trim()) ? bucketInput.value.trim() : 'bucket';
+                    var r = (regionInput && regionInput.value.trim()) ? regionInput.value.trim() : 'ap-southeast-1';
+                    domain = b + '.s3.' + r + '.amazonaws.com';
+                }
+
+                var prefix = (prefixInput && prefixInput.value.trim()) ? prefixInput.value.trim().replace(/^\/+|\/+$/g, '') : 'wp-content/uploads';
+                var hasYm = ymCheckbox ? ymCheckbox.checked : true;
+                var hasVer = verCheckbox ? verCheckbox.checked : true;
+
+                var ymEl = document.getElementById('preview-ym-wrap');
+                var verEl = document.getElementById('preview-ver-wrap');
+                if (ymEl) ymEl.style.display = hasYm ? 'block' : 'none';
+                if (verEl) verEl.style.display = hasVer ? 'block' : 'none';
+
+                var pScheme = document.getElementById('preview-scheme');
+                var pDomain = document.getElementById('preview-domain');
+                var pPrefix = document.getElementById('preview-prefix');
+                var pFull = document.getElementById('preview-full-url');
+
+                if (pScheme) pScheme.textContent = scheme;
+                if (pDomain) pDomain.textContent = domain + '/';
+                if (pPrefix) pPrefix.textContent = prefix ? prefix + '/' : '';
+
+                var ymStr = hasYm ? '<?php echo gmdate("Y/m"); ?>/' : '';
+                var verStr = hasVer ? '<?php echo gmdate("dHis"); ?>/' : '';
+                var prefixStr = prefix ? prefix + '/' : '';
+
+                if (pFull) {
+                    pFull.textContent = scheme + domain + '/' + prefixStr + ymStr + verStr + 'example.jpg';
+                }
+            }
+
+            ['custom_domain', 's3_bucket', 'aws_region', 's3_prefix'].forEach(function(id) {
+                var el = document.getElementById(id);
+                if (el) el.addEventListener('input', updateUrlPreview);
+            });
+            ['add_year_month', 'add_object_version', 'force_https'].forEach(function(id) {
+                var el = document.getElementById(id);
+                if (el) el.addEventListener('change', updateUrlPreview);
+            });
         })();
         </script>
         <?php
