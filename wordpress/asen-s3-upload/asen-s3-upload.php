@@ -42,6 +42,30 @@ function asen_s3_plugin_action_links($links)
 add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'asen_s3_plugin_action_links');
 
 /**
+ * Category terms from the theme taxonomy (vidmov_video_category, or "category" for plain posts).
+ *
+ * @return array<int, array{id:int,name:string}>
+ */
+function asen_s3_get_category_options()
+{
+    $taxonomy = ASEN_S3_Media_Manager::get_target_post_type() === 'post' ? 'category' : 'vidmov_video_category';
+    if (!taxonomy_exists($taxonomy)) {
+        return array();
+    }
+
+    $terms = get_terms(array('taxonomy' => $taxonomy, 'hide_empty' => false));
+    if (is_wp_error($terms)) {
+        return array();
+    }
+
+    $options = array();
+    foreach ($terms as $term) {
+        $options[] = array('id' => (int) $term->term_id, 'name' => html_entity_decode($term->name));
+    }
+    return $options;
+}
+
+/**
  * Enqueue frontend web component assets.
  */
 function asen_s3_enqueue_uploader_assets()
@@ -58,6 +82,7 @@ function asen_s3_enqueue_uploader_assets()
         'maxFileSizeGb'     => (int) $settings['max_file_size_gb'],
         'allowedExtensions' => $settings['allowed_extensions'],
         'homeUrl'           => home_url('/'),
+        'categories'        => asen_s3_get_category_options(),
         'user'              => array(
             'isLoggedIn' => is_user_logged_in(),
             'name'       => $current_user->exists() ? $current_user->display_name : 'Guest',

@@ -105,7 +105,7 @@ export class AsenS3Uploader extends LitElement {
       gap: 6px;
       padding: 6px 12px;
       border-radius: var(--radius-full);
-      font-size: 12.5px;
+      font-size: 0.78125rem;
       font-weight: 600;
       background: #f1f5f9;
       color: var(--text-muted);
@@ -172,7 +172,7 @@ export class AsenS3Uploader extends LitElement {
       border-radius: 50%;
       background: #4338ca;
       color: #ffffff;
-      font-size: 12px;
+      font-size: 0.75rem;
       font-weight: 700;
       display: flex;
       align-items: center;
@@ -186,7 +186,7 @@ export class AsenS3Uploader extends LitElement {
     }
 
     .step-title-text {
-      font-size: 14.5px;
+      font-size: 0.90625rem;
       font-weight: 700;
       color: #0f172a;
       display: flex;
@@ -199,7 +199,7 @@ export class AsenS3Uploader extends LitElement {
     }
 
     .step-subtitle-text {
-      font-size: 12px;
+      font-size: 0.75rem;
       color: var(--text-muted);
       margin-top: 1px;
     }
@@ -237,14 +237,14 @@ export class AsenS3Uploader extends LitElement {
     }
 
     .dropzone-main-text {
-      font-size: 13.5px;
+      font-size: 0.84375rem;
       font-weight: 600;
       color: #334155;
       margin-bottom: 2px;
     }
 
     .dropzone-or-text {
-      font-size: 12px;
+      font-size: 0.75rem;
       color: var(--text-light);
       margin-bottom: 8px;
     }
@@ -256,7 +256,7 @@ export class AsenS3Uploader extends LitElement {
       background: var(--primary);
       color: #ffffff;
       padding: 7px 18px;
-      font-size: 12px;
+      font-size: 0.75rem;
       font-weight: 600;
       letter-spacing: 0.3px;
       border-radius: 6px;
@@ -273,7 +273,7 @@ export class AsenS3Uploader extends LitElement {
 
     .dropzone-footer-hint {
       margin-top: 10px;
-      font-size: 11px;
+      font-size: 0.6875rem;
       color: var(--text-muted);
     }
 
@@ -310,7 +310,7 @@ export class AsenS3Uploader extends LitElement {
 
     .file-selected-name {
       font-weight: 600;
-      font-size: 12.5px;
+      font-size: 0.78125rem;
       color: #1e293b;
       white-space: nowrap;
       overflow: hidden;
@@ -319,7 +319,7 @@ export class AsenS3Uploader extends LitElement {
     }
 
     .file-selected-size {
-      font-size: 11px;
+      font-size: 0.6875rem;
       color: var(--text-muted);
     }
 
@@ -348,7 +348,7 @@ export class AsenS3Uploader extends LitElement {
     }
 
     .field-label {
-      font-size: 12.5px;
+      font-size: 0.78125rem;
       font-weight: 600;
       color: #334155;
     }
@@ -386,10 +386,10 @@ export class AsenS3Uploader extends LitElement {
 
     .compact-input {
       width: 100%;
-      padding: 8px 12px 8px 34px;
+      padding: 12px 12px 12px 34px;
       border: 1px solid var(--border-color);
       border-radius: 6px;
-      font-size: 13px;
+      font-size: 0.8125rem;
       color: #1e293b;
       background: #ffffff;
       outline: none;
@@ -402,12 +402,37 @@ export class AsenS3Uploader extends LitElement {
       box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
     }
 
+    .category-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      max-height: 110px;
+      overflow-y: auto;
+    }
+
+    .category-chip {
+      padding: 5px 12px;
+      border: 1px solid var(--border-color);
+      border-radius: 999px;
+      background: #ffffff;
+      font-size: 0.75rem;
+      color: #334155;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .category-chip.selected {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+    }
+
     .compact-textarea {
       width: 100%;
       padding: 8px 12px 8px 34px;
       border: 1px solid var(--border-color);
       border-radius: 6px;
-      font-size: 13px;
+      font-size: 0.8125rem;
       color: #1e293b;
       background: #ffffff;
       outline: none;
@@ -446,7 +471,7 @@ export class AsenS3Uploader extends LitElement {
       border: 1px solid var(--info-border);
       border-radius: 8px;
       padding: 10px 12px;
-      font-size: 12px;
+      font-size: 0.75rem;
       color: #1e40af;
       line-height: 1.4;
     }
@@ -469,7 +494,7 @@ export class AsenS3Uploader extends LitElement {
     .card-footer-actions {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       gap: 16px;
       margin-top: 28px;
       padding-top: 20px;
@@ -484,7 +509,7 @@ export class AsenS3Uploader extends LitElement {
       color: var(--primary);
       border: 1px solid var(--primary);
       padding: 8px 16px;
-      font-size: 13px;
+      font-size: 0.8125rem;
       font-weight: 600;
       border-radius: 6px;
       cursor: pointer;
@@ -513,7 +538,7 @@ export class AsenS3Uploader extends LitElement {
       color: #475569;
       border: 1px solid var(--border-color);
       padding: 8px 18px;
-      font-size: 13px;
+      font-size: 0.8125rem;
       font-weight: 600;
       border-radius: 6px;
       cursor: pointer;
@@ -533,7 +558,7 @@ export class AsenS3Uploader extends LitElement {
       color: #ffffff;
       border: none;
       padding: 8px 22px;
-      font-size: 13px;
+      font-size: 0.8125rem;
       font-weight: 600;
       border-radius: 6px;
       cursor: pointer;
@@ -629,7 +654,7 @@ export class AsenS3Uploader extends LitElement {
     }
 
     .notif-title {
-      font-size: 13.5px;
+      font-size: 0.84375rem;
       font-weight: 700;
       color: #0f172a;
     }
@@ -658,7 +683,7 @@ export class AsenS3Uploader extends LitElement {
     }
 
     .notif-message {
-      font-size: 12.5px;
+      font-size: 0.78125rem;
       color: var(--text-muted);
       margin-bottom: 8px;
     }
@@ -683,7 +708,7 @@ export class AsenS3Uploader extends LitElement {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 11.5px;
+      font-size: 0.71875rem;
       font-weight: 600;
       color: #475569;
     }
@@ -699,7 +724,7 @@ export class AsenS3Uploader extends LitElement {
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: 12px;
+      font-size: 0.75rem;
       font-weight: 600;
       cursor: pointer;
       animation: slideInRight 0.2s ease;
@@ -715,7 +740,7 @@ export class AsenS3Uploader extends LitElement {
       border-left: 4px solid #f59e0b;
       padding: 12px 16px;
       border-radius: 8px;
-      font-size: 13px;
+      font-size: 0.8125rem;
       color: #92400e;
       margin-bottom: 20px;
     }
@@ -739,14 +764,14 @@ export class AsenS3Uploader extends LitElement {
     }
 
     .success-title {
-      font-size: 22px;
+      font-size: 1.375rem;
       font-weight: 700;
       color: #0f172a;
       margin: 0 0 6px 0;
     }
 
     .success-subtitle {
-      font-size: 13.5px;
+      font-size: 0.84375rem;
       color: var(--text-muted);
       margin: 0 0 20px 0;
     }
@@ -786,7 +811,7 @@ export class AsenS3Uploader extends LitElement {
       }
       .card-top-header .btn-add-more-post {
         padding: 8px 10px;
-        font-size: 12px;
+        font-size: 0.75rem;
       }
     }
   `;
@@ -867,6 +892,18 @@ export class AsenS3Uploader extends LitElement {
 
   dismissNotification(id) {
     this.notifications = this.notifications.filter((n) => n.id !== id);
+  }
+
+  isCategorySelected(post, id) {
+    return post.categories.split(',').map((c) => c.trim()).includes(String(id));
+  }
+
+  toggleCategory(id) {
+    const post = this.videoPosts[this.activePostIndex];
+    const ids = post.categories.split(',').map((c) => c.trim()).filter(Boolean);
+    const key = String(id);
+    const next = ids.includes(key) ? ids.filter((c) => c !== key) : [...ids, key];
+    this.handleFieldChange('categories', next.join(','));
   }
 
   handleAddVideoPost() {
@@ -1259,8 +1296,8 @@ export class AsenS3Uploader extends LitElement {
                   title="Click to expand upload details"
                 >
                   <span class="notif-pulse-dot" style="background:#818cf8;"></span>
-                  <span>Uploading to AWS S3 &bull; ${this.overallProgress}%</span>
-                  <span style="color:#94a3b8;font-size:11px;">${this.uploadSpeed}</span>
+                  <span>Uploading to AWS S3 ${this.overallProgress}%</span>
+                  <span style="color:#94a3b8;font-size:0.6875rem;">${this.uploadSpeed}</span>
                 </div>
               `
             : html`
@@ -1458,7 +1495,7 @@ export class AsenS3Uploader extends LitElement {
             </svg>
           </div>
 
-          <div class="dropzone-main-text" style="font-size:12.5px;margin-bottom:6px;">Add attachment files</div>
+          <div class="dropzone-main-text" style="font-size:0.78125rem;margin-bottom:6px;">Add attachment files</div>
 
           <input
             type="file"
@@ -1469,7 +1506,7 @@ export class AsenS3Uploader extends LitElement {
             @change="${(e) => this.handleAttachmentSelect(e.target.files)}"
           />
 
-          <button type="button" class="btn-select-file" style="padding:6px 14px;font-size:11.5px;">
+          <button type="button" class="btn-select-file" style="padding:6px 14px;font-size:0.71875rem;">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="17 8 12 3 7 8"></polyline>
@@ -1510,7 +1547,7 @@ export class AsenS3Uploader extends LitElement {
                           </svg>
                         </div>
                         <div>
-                          <div class="file-selected-name" style="font-size:12px;max-width:180px;">${att.name}</div>
+                          <div class="file-selected-name" style="font-size:0.75rem;max-width:180px;">${att.name}</div>
                           <div class="file-selected-size">${this.formatBytes(att.size)}</div>
                         </div>
                       </div>
@@ -1551,8 +1588,8 @@ export class AsenS3Uploader extends LitElement {
         ${this.createdPosts.length > 0
           ? html`
               <div class="posts-published-list">
-                <div style="font-weight:700;font-size:13.5px;color:#334155;margin-bottom:8px;">Created Video Posts:</div>
-                <ul style="margin:0;padding-left:18px;font-size:13.5px;line-height:1.6;">
+                <div style="font-weight:700;font-size:0.84375rem;color:#334155;margin-bottom:8px;">Created Video Posts:</div>
+                <ul style="margin:0;padding-left:18px;font-size:0.84375rem;line-height:1.6;">
                   ${this.createdPosts.map(
                     (p) => html`
                       <li>
@@ -1741,6 +1778,20 @@ export class AsenS3Uploader extends LitElement {
               <div class="two-col-fields">
                 <div class="field-row">
                   <label class="field-label" for="field_categories">Categories <span class="req">*</span></label>
+                  ${(this.getConfig().categories || []).length
+                    ? html`
+                        <div class="category-chips" id="field_categories">
+                          ${this.getConfig().categories.map((cat) => html`
+                            <button
+                              type="button"
+                              class="category-chip ${this.isCategorySelected(post, cat.id) ? 'selected' : ''}"
+                              aria-pressed="${this.isCategorySelected(post, cat.id)}"
+                              @click="${() => this.toggleCategory(cat.id)}"
+                            >${cat.name}</button>
+                          `)}
+                        </div>
+                      `
+                    : html`
                   <div class="input-with-icon">
                     <svg class="input-leading-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
@@ -1758,6 +1809,7 @@ export class AsenS3Uploader extends LitElement {
                       <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                   </div>
+                    `}
                 </div>
 
                 <div class="field-row">
@@ -1771,13 +1823,10 @@ export class AsenS3Uploader extends LitElement {
                       type="text"
                       id="field_restriction"
                       class="compact-input"
-                      placeholder="Select restriction"
+                      placeholder="Enter restriction"
                       .value="${post.restriction}"
                       @input="${(e) => this.handleFieldChange('restriction', e.target.value)}"
                     />
-                    <svg class="input-trailing-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
                   </div>
                 </div>
               </div>
