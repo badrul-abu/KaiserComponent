@@ -35,7 +35,7 @@ ASEN_S3_Media_Manager::init();
  */
 function asen_s3_plugin_action_links($links)
 {
-    $settings_link = '<a href="' . esc_url(admin_url('edit.php?post_type=asen_video_post&page=asen-s3-settings')) . '">' . __('Settings', 'asen-s3-upload') . '</a>';
+    $settings_link = '<a href="' . esc_url(admin_url('options-general.php?page=asen-s3-settings')) . '">' . __('Settings', 'asen-s3-upload') . '</a>';
     array_unshift($links, $settings_link);
     return $links;
 }
@@ -96,8 +96,6 @@ function asen_s3_upload_shortcode($atts = array())
     $settings = ASEN_S3_Settings::get_settings();
 
     $atts = shortcode_atts(array(
-        'component_title'=> 'Upload',
-        'header'         => 'yes',
         'allow_multiple' => 'yes',
         'theme'          => 'light',
     ), $atts, 'asen_s3_upload');
@@ -108,9 +106,7 @@ function asen_s3_upload_shortcode($atts = array())
     $is_configured = ($client !== null) ? 'yes' : 'no';
 
     return sprintf(
-        '<asen-s3-uploader component-title="%1$s" show-header="%2$s" allow-multiple="%3$s" theme="%4$s" configured="%5$s" max-file-size="%6$d" chunk-size="%7$d"></asen-s3-uploader>',
-        esc_attr($atts['component_title']),
-        esc_attr($atts['header']),
+        '<asen-s3-uploader allow-multiple="%1$s" theme="%2$s" configured="%3$s" max-file-size="%4$d" chunk-size="%5$d"></asen-s3-uploader>',
         esc_attr($atts['allow_multiple']),
         esc_attr($atts['theme']),
         esc_attr($is_configured),

@@ -56,7 +56,7 @@ If not defined in `wp-config.php`, go to **ASEN S3 Media > AWS S3 Settings** in 
 
 `[asen_s3_upload]`
 
+Posts created through the uploader are saved with **Pending** status for review.
+
 Optional attributes:
-* `title`: Header title (default: "Upload")
-* `header`: "yes" or "no" to show/hide the ASEN banner header
-* `allow_multiple`: "yes" or "no" to allow the "+ New Video Post" button
+* `allow_multiple`: "yes" or "no" to show the **Add More Post** button at the top right and enable multi-post tabs at the top left

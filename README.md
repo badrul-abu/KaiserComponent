@@ -110,7 +110,7 @@ Previously, uploads were sent to the WordPress server and synced via WP Offload 
 - **WordPress Settings Page**: Configure AWS Access Key ID, Secret Access Key, AWS Region, S3 Bucket, S3 Prefix/Folder, CloudFront CDN domain, chunk size, and max file size under **ASEN S3 Media &rarr; AWS S3 Settings**.
 - **Diagnostic Connection Tester**: Built-in 1-click "Test AWS Connection" tool to verify credentials and bucket permissions.
 - **S3 CORS Guide**: 1-click copyable CORS policy for the S3 bucket in the AWS Console.
-- **Media & Post Management**: Custom Post Type `asen_video_post` and dedicated management table to view offloaded files, copy S3/CDN URLs, preview videos, and delete items from both WordPress and S3.
+- **Media & Post Management**: Uploads create posts of the configured post type (default `vidmov_video`, for the Vidmov theme) with extra admin columns to view offloaded files, copy S3/CDN URLs, preview videos, and delete items from both WordPress and S3.
 
 ### Configuration & Credentials (`wp-config.php` Recommended)
 
@@ -149,9 +149,7 @@ If not defined in `wp-config.php`, navigate to **ASEN S3 Media &rarr; AWS S3 Set
 ```text
 [asen_s3_upload]
 ```
+Posts created through the uploader are saved with **Pending** status for review.
 Optional attributes:
-- `title="Upload"`: Page title.
-- `header="yes"`: Show/hide ASEN branding header bar.
-- `allow_multiple="yes"`: Enable "+ New Video Post" button to allow batch uploads.
+- `allow_multiple="yes"`: Show the **Add More Post** button at the top right and enable multi-post tabs at the top left.
 - `theme="light"`: UI theme styling.
-

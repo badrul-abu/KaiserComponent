@@ -175,6 +175,8 @@ class ASEN_S3_Ajax
                 'put_url'          => $put_url,
                 'file_url'         => $client->get_file_url($s3_key),
                 'chunk_size_bytes' => $chunk_size_bytes,
+                'bucket'           => $settings['s3_bucket'],
+                'region'           => $settings['aws_region'],
             ));
         }
 
@@ -298,6 +300,7 @@ class ASEN_S3_Ajax
         $created_posts = array();
 
         foreach ($posts_data as $item) {
+            $item['post_status'] = 'pending';
             $post_id = ASEN_S3_Media_Manager::create_video_post_from_data($item);
             if (!is_wp_error($post_id) && $post_id > 0) {
                 $created_posts[] = array(

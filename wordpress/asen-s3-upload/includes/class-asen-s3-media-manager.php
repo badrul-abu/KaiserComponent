@@ -15,22 +15,32 @@ if (!defined('ABSPATH')) {
 
 class ASEN_S3_Media_Manager
 {
-    const POST_TYPE = 'asen_video_post';
-    const TAXONOMY  = 'asen_category';
+    const DEFAULT_POST_TYPE = 'vidmov_video';
+
+    /**
+     * Post type that uploaded posts are created as (defaults to the Vidmov theme type).
+     *
+     * @return string
+     */
+    public static function get_target_post_type()
+    {
+        $settings = ASEN_S3_Settings::get_settings();
+        return !empty($settings['post_type']) ? $settings['post_type'] : self::DEFAULT_POST_TYPE;
+    }
 
     /**
      * Initialize media manager hooks.
      */
     public static function init()
     {
-        add_action('init', array(__CLASS__, 'register_post_type_and_taxonomies'));
         add_action('admin_menu', array(__CLASS__, 'register_admin_menus'));
         add_filter('manage_media_columns', array(__CLASS__, 'add_media_columns'));
         add_action('manage_media_custom_column', array(__CLASS__, 'render_media_columns'), 10, 2);
 
-        // Custom columns for ASEN Video Posts list table
-        add_filter('manage_' . self::POST_TYPE . '_posts_columns', array(__CLASS__, 'add_video_post_columns'));
-        add_action('manage_' . self::POST_TYPE . '_posts_custom_column', array(__CLASS__, 'render_video_post_columns'), 10, 2);
+        // Custom columns for the configured post type's list table
+        $post_type = self::get_target_post_type();
+        add_filter('manage_' . $post_type . '_posts_columns', array(__CLASS__, 'add_video_post_columns'));
+        add_action('manage_' . $post_type . '_posts_custom_column', array(__CLASS__, 'render_video_post_columns'), 10, 2);
         add_filter('post_row_actions', array(__CLASS__, 'add_video_post_row_actions'), 10, 2);
 
         add_action('delete_attachment', array(__CLASS__, 'handle_attachment_deletion'));
@@ -45,74 +55,11 @@ class ASEN_S3_Media_Manager
     }
 
     /**
-     * Register Custom Post Type and Taxonomy.
-     */
-    public static function register_post_type_and_taxonomies()
-    {
-        // Custom taxonomy for ASEN Categories
-        register_taxonomy(self::TAXONOMY, array(self::POST_TYPE, 'post'), array(
-            'labels' => array(
-                'name'          => 'ASEN Categories',
-                'singular_name' => 'ASEN Category',
-                'search_items'  => 'Search Categories',
-                'all_items'     => 'All Categories',
-                'edit_item'     => 'Edit Category',
-                'update_item'   => 'Update Category',
-                'add_new_item'  => 'Add New Category',
-                'menu_name'     => 'ASEN Categories',
-            ),
-            'hierarchical'      => true,
-            'show_ui'           => true,
-            'show_admin_column' => true,
-            'show_in_rest'      => true,
-            'query_var'         => true,
-            'rewrite'           => array('slug' => 'asen-category'),
-        ));
-
-        // Custom Post Type for Video Posts
-        register_post_type(self::POST_TYPE, array(
-            'labels' => array(
-                'name'               => 'Video Posts',
-                'singular_name'      => 'Video Post',
-                'menu_name'          => 'ASEN S3 Media',
-                'name_admin_bar'     => 'ASEN Video Post',
-                'add_new'            => 'Upload New',
-                'add_new_item'       => 'Add New Video Post',
-                'edit_item'          => 'Edit Video Post',
-                'new_item'           => 'New Video Post',
-                'view_item'          => 'View Video Post',
-                'search_items'       => 'Search Video Posts',
-                'not_found'          => 'No video posts found',
-                'not_found_in_trash' => 'No video posts found in trash',
-            ),
-            'public'             => true,
-            'has_archive'        => true,
-            'show_ui'            => true,
-            'show_in_menu'       => true,
-            'menu_icon'          => 'dashicons-video-alt3',
-            'show_in_rest'       => true,
-            'supports'           => array('title', 'editor', 'thumbnail', 'custom-fields', 'author'),
-            'taxonomies'         => array(self::TAXONOMY, 'post_tag'), // Removed default 'category' taxonomy
-            'rewrite'            => array('slug' => 'video-posts'),
-        ));
-    }
-
-    /**
      * Register Admin Menus.
      */
     public static function register_admin_menus()
     {
-        // Settings submenu under ASEN S3 Media
-        add_submenu_page(
-            'edit.php?post_type=' . self::POST_TYPE,
-            'AWS S3 Settings',
-            'AWS S3 Settings',
-            'manage_options',
-            'asen-s3-settings',
-            array('ASEN_S3_Settings', 'render_settings_page')
-        );
-
-        // Also add under standard Settings for discovery
+        // Settings page under standard Settings
         add_options_page(
             'ASEN AWS S3 Settings',
             'ASEN AWS S3',
@@ -121,10 +68,9 @@ class ASEN_S3_Media_Manager
             array('ASEN_S3_Settings', 'render_settings_page')
         );
 
-        // Also add under configured target post type (e.g. edit.php?post_type=vidmov_video) if different
-        $settings = ASEN_S3_Settings::get_settings();
-        $target_post_type = !empty($settings['post_type']) ? $settings['post_type'] : self::POST_TYPE;
-        if ($target_post_type !== self::POST_TYPE && $target_post_type !== 'post') {
+        // Also add under the configured post type (e.g. edit.php?post_type=vidmov_video)
+        $target_post_type = self::get_target_post_type();
+        if ($target_post_type !== 'post') {
             add_submenu_page(
                 'edit.php?post_type=' . $target_post_type,
                 'AWS S3 Settings',
@@ -235,6 +181,20 @@ class ASEN_S3_Media_Manager
     }
 
     /**
+     * Whether the attachment lives in a different bucket than the one configured here.
+     * Such files must keep their original URL, since our CDN domain / bucket cannot serve them.
+     *
+     * @param array $info
+     * @return bool
+     */
+    private static function is_foreign_bucket(array $info)
+    {
+        $settings = ASEN_S3_Settings::get_settings();
+        $configured = !empty($settings['s3_bucket']) ? trim($settings['s3_bucket']) : '';
+        return !empty($info['bucket']) && $configured !== '' && $info['bucket'] !== $configured;
+    }
+
+    /**
      * Filter wp_get_attachment_url to deliver offloaded files via CloudFront / S3.
      *
      * @param string $url
@@ -249,7 +209,7 @@ class ASEN_S3_Media_Manager
         }
 
         $info = self::get_attachment_s3_info($post_id);
-        if (!$info) {
+        if (!$info || self::is_foreign_bucket($info)) {
             return $url;
         }
 
@@ -273,7 +233,7 @@ class ASEN_S3_Media_Manager
         }
 
         $info = self::get_attachment_s3_info($post_id);
-        if (!$info) {
+        if (!$info || self::is_foreign_bucket($info)) {
             return false;
         }
 
@@ -327,7 +287,7 @@ class ASEN_S3_Media_Manager
         }
 
         $info = self::get_attachment_s3_info($attachment_id);
-        if (!$info) {
+        if (!$info || self::is_foreign_bucket($info)) {
             return $sources;
         }
 
@@ -355,6 +315,11 @@ class ASEN_S3_Media_Manager
     public static function filter_the_content($content)
     {
         if (empty($content) || !is_string($content)) {
+            return $content;
+        }
+
+        // Blanket rewriting breaks local files that are not on S3; opt in via filter.
+        if (!apply_filters('asen_s3_rewrite_content_urls', false)) {
             return $content;
         }
 
@@ -402,8 +367,9 @@ class ASEN_S3_Media_Manager
         $filename = !empty($file_info['filename']) ? sanitize_file_name($file_info['filename']) : basename($file_info['key']);
         $mime_type = !empty($file_info['mime']) ? sanitize_mime_type($file_info['mime']) : 'application/octet-stream';
         $key = sanitize_text_field($file_info['key']);
-        $bucket = sanitize_text_field($file_info['bucket']);
-        $region = sanitize_text_field($file_info['region']);
+        $settings = ASEN_S3_Settings::get_settings();
+        $bucket = !empty($file_info['bucket']) ? sanitize_text_field($file_info['bucket']) : $settings['s3_bucket'];
+        $region = !empty($file_info['region']) ? sanitize_text_field($file_info['region']) : $settings['aws_region'];
         $url = esc_url_raw($file_info['url']);
         $filesize = isset($file_info['filesize']) ? (float) $file_info['filesize'] : 0;
         $etag = !empty($file_info['etag']) ? sanitize_text_field($file_info['etag']) : '';
@@ -468,8 +434,7 @@ class ASEN_S3_Media_Manager
      */
     public static function create_video_post_from_data(array $data)
     {
-        $settings = ASEN_S3_Settings::get_settings();
-        $target_post_type = !empty($settings['post_type']) ? $settings['post_type'] : self::POST_TYPE;
+        $target_post_type = self::get_target_post_type();
 
         $title       = !empty($data['title']) ? sanitize_text_field($data['title']) : 'Untitled Video Post';
         $location    = !empty($data['location']) ? sanitize_text_field($data['location']) : '';
@@ -629,11 +594,6 @@ class ASEN_S3_Media_Manager
                     wp_set_object_terms($post_id, $cat_terms, 'vidmov_video_category', true);
                 }
 
-                // Dedicated ASEN post type taxonomy (asen_category)
-                if ($target_post_type === self::POST_TYPE && taxonomy_exists(self::TAXONOMY)) {
-                    wp_set_object_terms($post_id, $cat_terms, self::TAXONOMY, true);
-                }
-
                 // Standard WordPress post categories (category)
                 if ($target_post_type === 'post' && taxonomy_exists('category')) {
                     wp_set_object_terms($post_id, $cat_terms, 'category', true);
@@ -721,6 +681,11 @@ class ASEN_S3_Media_Manager
             return;
         }
 
+        // Never delete objects that belong to another bucket (e.g. offloaded earlier by WP Offload Media).
+        if (self::is_foreign_bucket($s3_info)) {
+            return;
+        }
+
         $client = ASEN_S3_Settings::get_client();
         if ($client) {
             $client->delete_object($s3_info['key']);
@@ -734,30 +699,48 @@ class ASEN_S3_Media_Manager
      */
     public static function handle_post_deletion($post_id)
     {
-        $settings = ASEN_S3_Settings::get_settings();
-        $target_post_type = !empty($settings['post_type']) ? $settings['post_type'] : self::POST_TYPE;
-        $allowed_post_types = array(self::POST_TYPE, 'post', 'vidmov_video', $target_post_type);
+        $allowed_post_types = array('post', self::DEFAULT_POST_TYPE, self::get_target_post_type());
 
         if (!in_array(get_post_type($post_id), $allowed_post_types, true)) {
             return;
         }
 
-        $client = ASEN_S3_Settings::get_client();
-        if (!$client) {
-            return;
+        $attachment_ids = array();
+        $video_att_id = (int) get_post_meta($post_id, '_asen_video_attachment_id', true);
+        if ($video_att_id > 0) {
+            $attachment_ids[] = $video_att_id;
+        }
+        $extra_ids = get_post_meta($post_id, '_asen_attachment_ids', true);
+        if (is_array($extra_ids)) {
+            $attachment_ids = array_merge($attachment_ids, array_map('intval', $extra_ids));
         }
 
-        // Delete video file
+        // Deleting the attachment record fires delete_attachment, which removes the S3 object.
+        $deleted_keys = array();
+        foreach (array_unique($attachment_ids) as $att_id) {
+            if ($att_id <= 0 || get_post_type($att_id) !== 'attachment') {
+                continue;
+            }
+
+            // Retain media that has been re-attached to another post.
+            $parent_id = (int) wp_get_post_parent_id($att_id);
+            if ($parent_id !== 0 && $parent_id !== (int) $post_id) {
+                continue;
+            }
+
+            $s3_info = get_post_meta($att_id, 'amazonS3_info', true);
+            if (!empty($s3_info['key'])) {
+                $deleted_keys[] = $s3_info['key'];
+            }
+            wp_delete_attachment($att_id, true);
+        }
+
+        // Fallback for posts whose video has no attachment record.
         $video_key = get_post_meta($post_id, '_asen_video_s3_key', true);
-        if (!empty($video_key)) {
-            $client->delete_object($video_key);
-        }
-
-        // Delete associated attachments
-        $att_ids = get_post_meta($post_id, '_asen_attachment_ids', true);
-        if (is_array($att_ids)) {
-            foreach ($att_ids as $att_id) {
-                wp_delete_attachment($att_id, true);
+        if (!empty($video_key) && !in_array($video_key, $deleted_keys, true)) {
+            $client = ASEN_S3_Settings::get_client();
+            if ($client) {
+                $client->delete_object($video_key);
             }
         }
     }
@@ -879,7 +862,7 @@ class ASEN_S3_Media_Manager
      */
     public static function add_video_post_row_actions($actions, $post)
     {
-        if ($post->post_type !== self::POST_TYPE) {
+        if ($post->post_type !== self::get_target_post_type()) {
             return $actions;
         }
 

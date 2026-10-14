@@ -392,9 +392,9 @@ class ASEN_S3_Settings
         $expiry = isset($input['url_expiry_minutes']) ? (int) $input['url_expiry_minutes'] : 30;
         $output['url_expiry_minutes'] = min(1440, max(5, $expiry));
 
-        // Post Type (open input: allows any custom post type such as vidmov_video, asen_video_post, post)
-        $post_type = isset($input['post_type']) ? sanitize_key(trim($input['post_type'])) : 'asen_video_post';
-        $output['post_type'] = !empty($post_type) ? $post_type : 'asen_video_post';
+        // Post Type (open input: allows any post type such as vidmov_video or post)
+        $post_type = isset($input['post_type']) ? sanitize_key(trim($input['post_type'])) : 'vidmov_video';
+        $output['post_type'] = !empty($post_type) ? $post_type : 'vidmov_video';
 
         // Allowed extensions
         $output['allowed_extensions'] = isset($input['allowed_extensions'])
@@ -504,7 +504,7 @@ class ASEN_S3_Settings
                                     <td>
                                         <div style="display:flex;align-items:center;gap:8px;">
                                             <input type="text" id="aws_access_key_id" name="<?php echo esc_attr(self::OPTION_KEY); ?>[aws_access_key_id]"
-                                                value="<?php echo esc_attr($settings['aws_access_key_id']); ?>" class="regular-text" placeholder="AKIAIOSFODNN7EXAMPLE" autocomplete="off" <?php echo $is_key_const ? 'readonly style="background:#f1f5f9;color:#64748b;"' : ''; ?> />
+                                                value="<?php echo esc_attr($settings['aws_access_key_id']); ?>" class="regular-text" placeholder="ACCESSKEYEXAMPLE" autocomplete="off" <?php echo $is_key_const ? 'readonly style="background:#f1f5f9;color:#64748b;"' : ''; ?> />
                                             <?php if ($is_key_const) : ?>
                                                 <span class="dashicons dashicons-lock" title="Defined in wp-config.php" style="color:#64748b;"></span>
                                                 <span style="font-size:12px;color:#64748b;font-style:italic;">(Defined in wp-config.php)</span>
@@ -698,7 +698,7 @@ class ASEN_S3_Settings
                                             Deliver existing attachments previously offloaded by WP Offload Media
                                         </label>
                                         <p class="description" style="color:#0369a1;font-weight:500;">
-                                            CRITICAL: Automatically serves your 115,000+ existing offloaded attachments via CloudFront/S3 by reading <code>amazonS3_info</code> and <code>as3cf_items</code> metadata. Keeps older media 100% accessible even when local files were removed and WP Offload Media license is exceeded.
+                                            CRITICAL: Automatically serves your existing offloaded attachments via CloudFront/S3 by reading <code>amazonS3_info</code> and <code>as3cf_items</code> metadata. Keeps older media 100% accessible even when local files were removed and WP Offload Media license is exceeded.
                                         </p>
                                     </td>
                                 </tr>
@@ -786,13 +786,11 @@ class ASEN_S3_Settings
                                             value="<?php echo esc_attr($settings['post_type']); ?>" class="regular-text" list="asen_post_type_suggestions" placeholder="vidmov_video" autocomplete="off" />
                                         <datalist id="asen_post_type_suggestions">
                                             <option value="vidmov_video">Vidmov Theme Video (vidmov_video)</option>
-                                            <option value="asen_video_post">Dedicated Post Type (asen_video_post)</option>
                                             <option value="post">Standard Post Type (post)</option>
                                         </datalist>
                                         <div style="margin-top:8px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
                                             <span style="font-size:12px;color:#64748b;font-weight:600;">Suggestions:</span>
                                             <button type="button" class="button button-small asen-pt-pill" data-val="vidmov_video" title="Merge directly with Vidmov Theme and BeeTeam368">vidmov_video (Vidmov)</button>
-                                            <button type="button" class="button button-small asen-pt-pill" data-val="asen_video_post" title="Use ASEN Dedicated Post Type">asen_video_post (Dedicated)</button>
                                             <button type="button" class="button button-small asen-pt-pill" data-val="post" title="Use Standard WordPress Posts">post (Standard)</button>
                                         </div>
                                         <p class="description" style="margin-top:6px;">

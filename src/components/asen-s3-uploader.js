@@ -11,8 +11,6 @@ import { LitElement, html, css, nothing } from 'lit';
  */
 export class AsenS3Uploader extends LitElement {
   static properties = {
-    componentTitle: { type: String, attribute: 'component-title' },
-    showHeader: { type: String, attribute: 'show-header' },
     allowMultiple: { type: String, attribute: 'allow-multiple' },
     theme: { type: String },
     configured: { type: String },
@@ -70,95 +68,11 @@ export class AsenS3Uploader extends LitElement {
       box-sizing: border-box;
     }
 
-    /* Top ASEN Brand Navigation Bar */
-    .asen-nav-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 24px;
-      margin-bottom: 24px;
-      background: #ffffff;
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--border-color);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .brand-group {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: #1e1b4b;
-    }
-
-    .brand-icon-logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 34px;
-      height: 34px;
-      border-radius: 8px;
-      background: linear-gradient(135deg, #4f46e5, #7c3aed);
-      color: #ffffff;
-    }
-
-    .brand-title {
-      font-weight: 800;
-      font-size: 18px;
-      letter-spacing: 0.5px;
-      background: linear-gradient(135deg, #1e1b4b 0%, #4338ca 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .nav-btn {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 14px;
-      padding: 6px 14px;
-      border-radius: var(--radius-full);
-      transition: all 0.15s ease;
-    }
-
-    .nav-btn:hover {
-      color: var(--primary);
-    }
-
-    .nav-btn.active {
-      background: #f1f5f9;
-      color: var(--primary);
-      font-weight: 600;
-    }
-
-    .user-avatar-circle {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: #e0e7ff;
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 13px;
-      border: 1px solid var(--primary-border);
-    }
-
     /* Main Container Card */
     .main-card {
       background: var(--bg-card);
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--border-color);
-      box-shadow: var(--shadow-card);
-      padding: 30px 36px;
-      max-width: 1080px;
+      padding: 1.75rem 0;
+      max-width: 1920px;
       margin: 0 auto;
     }
 
@@ -171,38 +85,7 @@ export class AsenS3Uploader extends LitElement {
       margin-bottom: 24px;
       padding-bottom: 18px;
       border-bottom: 1px solid var(--border-color);
-    }
-
-    .card-top-title-group {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .header-icon-circle {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      background: #4338ca;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      box-shadow: 0 4px 10px rgba(67, 56, 202, 0.3);
-    }
-
-    .header-texts h2 {
-      margin: 0 0 2px 0;
-      font-size: 20px;
-      font-weight: 700;
-      color: #0f172a;
-    }
-
-    .header-texts p {
-      margin: 0;
-      font-size: 13.5px;
-      color: var(--text-muted);
+      min-height: 54px;
     }
 
     /* Post switcher tabs if multiple posts exist */
@@ -212,6 +95,8 @@ export class AsenS3Uploader extends LitElement {
       gap: 8px;
       overflow-x: auto;
       padding-bottom: 4px;
+      margin-right: auto;
+      min-width: 0;
     }
 
     .post-tab-item {
@@ -610,6 +495,10 @@ export class AsenS3Uploader extends LitElement {
       background: var(--primary-light);
     }
 
+    .card-top-header .btn-add-more-post {
+      flex-shrink: 0;
+    }
+
     .right-action-btns {
       display: flex;
       align-items: center;
@@ -880,16 +769,30 @@ export class AsenS3Uploader extends LitElement {
       .main-card {
         padding: 20px 18px;
       }
+      .card-top-header {
+        gap: 12px;
+      }
       .two-col-fields {
         grid-template-columns: 1fr;
+      }
+      .posts-tabs-nav {
+        flex: 1;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card-top-header {
+        align-items: flex-start;
+      }
+      .card-top-header .btn-add-more-post {
+        padding: 8px 10px;
+        font-size: 12px;
       }
     }
   `;
 
   constructor() {
     super();
-    this.componentTitle = 'Upload Video Post';
-    this.showHeader = 'yes';
     this.allowMultiple = 'yes';
     this.theme = 'light';
     this.configured = 'yes';
@@ -1343,35 +1246,6 @@ export class AsenS3Uploader extends LitElement {
     this.errorMessage = '';
   }
 
-  renderNavBar() {
-    if (this.showHeader !== 'yes') return nothing;
-    const config = this.getConfig();
-    const userName = config.user?.name || 'Badrul';
-
-    return html`
-      <div class="asen-nav-bar">
-        <a href="${config.homeUrl || '/'}" class="brand-group">
-          <div class="brand-icon-logo">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-          </div>
-          <div class="brand-title">ABU-ASEN</div>
-        </a>
-
-        <div class="nav-actions">
-          <a href="${config.homeUrl || '/'}" class="nav-btn">Home</a>
-          <a href="#" class="nav-btn active">Upload</a>
-          <div class="user-avatar-circle" title="${userName}">
-            ${userName.charAt(0).toUpperCase()}
-          </div>
-        </div>
-      </div>
-    `;
-  }
-
   renderNotificationsDock() {
     return html`
       <div class="notification-dock">
@@ -1703,7 +1577,6 @@ export class AsenS3Uploader extends LitElement {
   render() {
     if (this.uploadSuccess) {
       return html`
-        ${this.renderNavBar()}
         ${this.renderSuccessState()}
         ${this.renderNotificationsDock()}
       `;
@@ -1714,55 +1587,53 @@ export class AsenS3Uploader extends LitElement {
     const post = this.videoPosts[this.activePostIndex] || this.videoPosts[0];
 
     return html`
-      ${this.renderNavBar()}
-
       <div class="main-card">
-        <!-- Card Top Header -->
-        <div class="card-top-header">
-          <div class="card-top-title-group">
-            <div class="header-icon-circle">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="17 8 12 3 7 8"></polyline>
-                <line x1="12" y1="3" x2="12" y2="15"></line>
-              </svg>
-            </div>
-            <div class="header-texts">
-              <h2>${this.componentTitle || 'Upload Video Post'}</h2>
-              <p>Fill in the details and upload your video file.</p>
-            </div>
-          </div>
-
-          <!-- Multi-post tabs switcher if more than 1 post -->
-          ${this.videoPosts.length > 1
-            ? html`
-                <div class="posts-tabs-nav">
-                  ${this.videoPosts.map(
-                    (p, idx) => html`
-                      <div
-                        class="post-tab-item ${this.activePostIndex === idx ? 'active' : ''}"
-                        @click="${() => { this.activePostIndex = idx; }}"
-                      >
-                        <span>Post ${p.index}</span>
-                        ${this.videoPosts.length > 1
-                          ? html`
-                              <button
-                                type="button"
-                                class="post-tab-remove"
-                                @click="${(e) => this.handleRemoveVideoPost(e, idx)}"
-                                title="Remove Post"
-                              >
-                                &times;
-                              </button>
-                            `
-                          : nothing}
+        ${this.allowMultiple === 'yes' || this.videoPosts.length > 1
+          ? html`
+              <div class="card-top-header">
+                ${this.videoPosts.length > 1
+                  ? html`
+                      <div class="posts-tabs-nav">
+                        ${this.videoPosts.map(
+                          (p, idx) => html`
+                            <div
+                              class="post-tab-item ${this.activePostIndex === idx ? 'active' : ''}"
+                              @click="${() => { this.activePostIndex = idx; }}"
+                            >
+                              <span>Post ${p.index}</span>
+                              ${this.videoPosts.length > 1
+                                ? html`
+                                    <button
+                                      type="button"
+                                      class="post-tab-remove"
+                                      @click="${(e) => this.handleRemoveVideoPost(e, idx)}"
+                                      title="Remove Post"
+                                    >
+                                      &times;
+                                    </button>
+                                  `
+                                : nothing}
+                            </div>
+                          `
+                        )}
                       </div>
                     `
-                  )}
-                </div>
-              `
-            : nothing}
-        </div>
+                  : nothing}
+
+                ${this.allowMultiple === 'yes'
+                  ? html`
+                      <button type="button" class="btn-add-more-post" @click="${() => this.handleAddVideoPost()}">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        Add More Post
+                      </button>
+                    `
+                  : nothing}
+              </div>
+            `
+          : nothing}
 
         ${!isConfigured
           ? html`
@@ -1979,22 +1850,7 @@ export class AsenS3Uploader extends LitElement {
           </div>
         </div>
 
-        <!-- Bottom Action Bar -->
         <div class="card-footer-actions">
-          <div>
-            ${this.allowMultiple === 'yes'
-              ? html`
-                  <button type="button" class="btn-add-more-post" @click="${() => this.handleAddVideoPost()}">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                      <line x1="12" y1="5" x2="12" y2="19"></line>
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                    </svg>
-                    Add More Post
-                  </button>
-                `
-              : nothing}
-          </div>
-
           <div class="right-action-btns">
             <button type="button" class="btn-cancel" @click="${() => this.handleCancel()}">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
