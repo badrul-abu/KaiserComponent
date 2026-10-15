@@ -72,7 +72,7 @@ class SOI_Admin
                 $counts[$r['status']] = isset($counts[$r['status']]) ? $counts[$r['status']] + 1 : 1;
             }
 
-            echo '<h2>' . esc_html(get_the_title($post)) . ' (#' . (int) $post_id . ')</h2>';
+            echo '<h2>' . esc_html(get_the_title($post)) . ' (#<span id="post-id">' . (int) $post_id . '</span>)</h2>';
             if (!SOI_Status::as3cf_table_exists()) {
                 echo '<div class="notice notice-warning inline"><p>WP Offload Media table (as3cf_items) not found; falling back to legacy meta.</p></div>';
             }
@@ -101,6 +101,56 @@ class SOI_Admin
                 }
                 echo '</tbody></table>';
             }
+
+            echo '<div style="margin-top:20px"><p><strong>Commands for one attachment</strong> (use the attachment ID from the ID column)</p>';
+            echo '<input type="text" id="item-id" placeholder="Attachment ID" /> ';
+            echo '<button type="button" class="button" id="run-console">Show commands</button>';
+            echo '<pre id="console-output" style="background:#fff;border:1px solid #ccd0d4;padding:10px;overflow:auto">Nothing yet...</pre></div>';
+
+            echo <<<'JS'
+<script>
+(function () {
+    var btn = document.getElementById("run-console");
+    btn.addEventListener("click", function () {
+        var postId = document.getElementById("post-id").textContent.trim();
+        var attachmentId = document.getElementById("item-id").value.trim();
+        var output = document.getElementById("console-output");
+        if (!/^\d+$/.test(attachmentId)) {
+            output.textContent = "Enter a numeric attachment ID (the ID column above).";
+            return;
+        }
+        var wp = "php wp-cli.phar ";
+        var log = "migrate_" + attachmentId + ".log";
+        var backup = "video_url_backup_" + postId + ".txt";
+        output.textContent = [
+            "# 0. Check the post",
+            wp + "soi check " + postId + " --live",
+            "",
+            "# 1. Backup the old URL (from the POST) and look at it",
+            wp + "post meta get " + postId + " beeteam368_video_url > " + backup + " && cat " + backup,
+            "",
+            "# 2. Dry run, then the real migration (ATTACHMENT " + attachmentId + ")",
+            wp + "soi migrate " + attachmentId + " --dry-run",
+            "nohup php -d memory_limit=512M wp-cli.phar soi migrate " + attachmentId + " --part-size-mb=128 > " + log + " 2>&1 &",
+            "tail -f " + log,
+            "",
+            "# 3. Fix the meta if meta_updated was 0 (ATTACHMENT " + attachmentId + ")",
+            wp + "soi fix-meta " + attachmentId + " --dry-run",
+            wp + "soi fix-meta " + attachmentId,
+            "",
+            "# 4. Verify (the POST)",
+            wp + "soi check " + postId + " --live",
+            "",
+            "# 5. Remove the local file (only after the video plays from S3)",
+            wp + "soi remove-local " + attachmentId,
+            "",
+            "# 6. Remove the log and backup files (keep wp-cli.phar if you have more videos to do)",
+            "rm " + log + " " + backup
+        ].join("\n");
+    });
+})();
+</script>
+JS;
         }
         echo '</div>';
     }
