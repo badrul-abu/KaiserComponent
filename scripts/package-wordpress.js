@@ -8,6 +8,16 @@ const projectRoot = path.resolve(__dirname, '..');
 const plugins = {
   'flickr-mosaic': ['flickr-mosaic.php', 'readme.txt', 'assets/flickr-mosaic.js', 'assets/flickr-mosaic.css', 'assets/flickr-logo.png'],
   'abu-programme-pdf': ['abu-programme-pdf.php', 'readme.txt', 'assets/custom-pdf-reader.js'],
+  's3-offload-inspector': [
+    's3-offload-inspector.php',
+    'readme.txt',
+    'README.md',
+    'includes/class-soi-collector.php',
+    'includes/class-soi-status.php',
+    'includes/class-soi-admin.php',
+    'includes/class-soi-cli.php',
+    'includes/class-soi-migrator.php',
+  ],
   'asen-s3-upload': [
     'asen-s3-upload.php',
     'readme.txt',
